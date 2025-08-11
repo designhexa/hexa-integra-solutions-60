@@ -45,7 +45,7 @@ const ProposalSlider = () => {
       id: "modules",
       title: "Modul Aplikasi",
       content: (
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto pb-12">
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
             <h3 className="text-2xl font-semibold text-gray-900 mb-6 text-center">Aplikasi ini akan mencakup:</h3>
             
@@ -101,7 +101,7 @@ const ProposalSlider = () => {
       id: "estimation",
       title: "Estimasi Waktu dan Biaya",
       content: (
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto pb-12">
           <Card className="card-hover border-gray-200 animate-scale-in bg-white">
             <CardContent className="p-8">
               <div className="w-16 h-16 bg-hexa-red/10 rounded-2xl flex items-center justify-center mb-6 mx-auto">
@@ -144,7 +144,7 @@ const ProposalSlider = () => {
       id: "technical",
       title: "Pendekatan Teknis",
       content: (
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto pb-12">
           <Card className="card-hover border-gray-200 animate-scale-in bg-white">
             <CardContent className="p-8">
               <div className="w-16 h-16 bg-hexa-red/10 rounded-2xl flex items-center justify-center mb-6 mx-auto">
@@ -177,7 +177,7 @@ const ProposalSlider = () => {
       id: "portfolio",
       title: "Pengalaman & Portofolio",
       content: (
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto pb-12">
           <Card className="card-hover border-gray-200 animate-scale-in bg-white">
             <CardContent className="p-8">
               <div className="w-16 h-16 bg-hexa-red/10 rounded-2xl flex items-center justify-center mb-6 mx-auto">
@@ -251,7 +251,7 @@ const ProposalSlider = () => {
       id: "closing",
       title: "Penutup Proposal",
       content: (
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto pb-12 text-center">
           <Card className="bg-gray-50 border-gray-200">
             <CardContent className="p-12">
               <MessageCircle className="w-12 h-12 mx-auto mb-6 text-hexa-red" />
