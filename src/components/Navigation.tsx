@@ -26,14 +26,12 @@ const Navigation = () => {
       <div className="container-custom">
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-hexa-red rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">H</span>
-            </div>
-            <div>
-              <div className="font-bold text-gray-900">Hexa Integra</div>
-              <div className="text-xs text-hexa-red font-medium">Mandiri</div>
-            </div>
+          <div className="flex items-center">
+            <img 
+              src="https://hexaintegra.com/wp-content/uploads/2020/12/logo_hexa.png" 
+              alt="Hexa Integra Mandiri" 
+              className="h-10 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}
