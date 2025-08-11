@@ -5,7 +5,6 @@ import ProposalSlider from "@/components/ProposalSlider";
 import CompanyProfile from "@/components/CompanyProfile";
 import ServicesSection from "@/components/ServicesSection";
 import PortfolioSection from "@/components/PortfolioSection";
-import ClosingSection from "@/components/ClosingSection";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 
@@ -18,7 +17,6 @@ const Index = () => {
       <CompanyProfile />
       <ServicesSection />
       <PortfolioSection />
-      <ClosingSection />
       <ContactForm />
       <Footer />
     </div>
