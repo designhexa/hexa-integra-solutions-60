@@ -88,8 +88,8 @@ const CompanyProfile = () => {
 
           {/* Right Content */}
           <div className="animate-fade-in-right flex flex-col justify-between">
-            <Card className="bg-white shadow-2xl border-0 overflow-hidden">
-              <CardContent className="p-0">
+            <Card className="bg-white shadow-2xl border-0 overflow-hidden flex flex-col h-full">
+              <CardContent className="p-0 flex flex-col justify-between h-full">
                 <div className="bg-hexa-red p-8 text-white">
                   <Users className="w-12 h-12 text-white mb-4" />
                   <h3 className="text-2xl font-semibold mb-4">Tim Profesional</h3>
@@ -98,14 +98,16 @@ const CompanyProfile = () => {
                     solusi terbaik untuk kebutuhan teknologi perusahaan Anda.
                   </p>
                 </div>
+
+                <div className="p-8 flex-1 flex items-end">
+                  <img
+                    src="https://hexaintegra.com/wp-content/uploads/2024/12/Frame-4-4.png"
+                    alt="Hexa Integra Technology"
+                    className="w-full h-auto object-contain rounded-lg shadow-lg"
+                  />
+                </div>
               </CardContent>
             </Card>
-
-            <img
-              src="https://hexaintegra.com/wp-content/uploads/2024/12/Frame-4-4.png"
-              alt="Hexa Integra Technology"
-              className="w-full h-48 object-cover rounded-lg shadow-lg mt-6"
-            />
           </div>
         </div>
       </div>
