@@ -314,14 +314,14 @@ const ProposalSlider = () => {
       <div className="container-custom relative">
         
         {/* Judul */}
-        <div className="text-center mb-12 animate-fade-in-up">
+        <div className="text-center mb-12 animate-fade-in-up pb-8">
           <h2 className="section-title text-gray-900 mb-6">
             {slides[currentSlide].title}
           </h2>
         </div>
 
         {/* Konten Slide dengan tinggi tetap */}
-        <div className="h-[60vh] relative flex items-center justify-center pb-16">
+        <div className="h-[60vh] relative flex items-center justify-center pb-12">
           <div className="w-full max-w-5xl h-full flex items-center justify-center">
             <div className="animate-fade-in w-full">
               {slides[currentSlide].content}
