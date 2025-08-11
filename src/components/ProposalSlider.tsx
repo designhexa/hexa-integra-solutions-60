@@ -252,8 +252,6 @@ const ProposalSlider = () => {
       title: "Penutup Proposal",
       content: (
         <div className="max-w-4xl mx-auto text-center">
-          <HandHeart className="w-16 h-16 mx-auto mb-8 text-hexa-red" />
-          
           <Card className="bg-gray-50 border-gray-200">
             <CardContent className="p-12">
               <MessageCircle className="w-12 h-12 mx-auto mb-6 text-hexa-red" />
