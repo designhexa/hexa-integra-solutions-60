@@ -259,8 +259,15 @@ const ProposalSlider = () => {
 
         {/* Konten Slide */}
         <div className="min-h-[70vh] relative flex items-center justify-center">
-          {slides[currentSlide].content}
-
+          <div className="w-full max-w-5xl">
+            <div className="animate-fade-in">
+              {/* Untuk slide pertama, kurangi margin besar */}
+              <div className={`${currentSlide === 0 ? "space-y-6" : ""}`}>
+                {slides[currentSlide].content}
+              </div>
+            </div>
+          </div>
+        
           {/* Tombol Prev */}
           <button
             onClick={prevSlide}
@@ -269,7 +276,7 @@ const ProposalSlider = () => {
           >
             <ChevronLeft className="w-6 h-6 text-gray-700" />
           </button>
-
+        
           {/* Tombol Next */}
           <button
             onClick={nextSlide}
