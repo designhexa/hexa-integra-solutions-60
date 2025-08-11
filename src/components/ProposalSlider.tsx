@@ -350,7 +350,7 @@ const ProposalSlider = () => {
         </div>
 
         {/* Indikator Bulatan dengan posisi tetap */}
-        <div className="flex justify-center gap-3 mt-30">
+        <div className="flex justify-center gap-3 mt-6">
           {slides.map((_, index) => (
             <button
               key={index}
