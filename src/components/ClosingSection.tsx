@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { HandHeart, MessageSquare, CheckCircle } from "lucide-react";
+import { HandHeart, MessageSquare, CheckCircle, Heart } from "lucide-react";
 
 const ClosingSection = () => {
   return (
@@ -14,7 +14,7 @@ const ClosingSection = () => {
             <CardContent className="p-10 md:p-12">
               {/* Icon utama */}
               <div className="w-16 h-16 bg-hexa-red/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <MessageSquare className="w-8 h-8 text-hexa-red" />
+                <Heart className="w-8 h-8 text-hexa-red" />
               </div>
 
               {/* Paragraf penutup */}
