@@ -1,8 +1,10 @@
-
 import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { FileText, Target, Database, BarChart3, CheckCircle, Shield, Clock, Code, Briefcase, MessageCircle, ChevronLeft, ChevronRight } from "lucide-react";
+import {
+  FileText, Target, Database, BarChart3, CheckCircle, Shield,
+  Clock, Code, Briefcase, MessageCircle, ChevronLeft, ChevronRight
+} from "lucide-react";
 
 const ProposalSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -245,65 +247,59 @@ const ProposalSlider = () => {
   };
 
   return (
-    <section id="proposal" className="section-padding bg-gray-50">
-      <div className="container-custom">
-        <div className="relative">
-          {/* Slide Content */}
-          <div className="min-h-[600px] mb-8">
-            <div className="text-center mb-12 animate-fade-in-up">
-              <h2 className="section-title text-gray-900 mb-6">
-                {slides[currentSlide].title}
-              </h2>
-            </div>
-            
-            <div className="animate-fade-in">
-              {slides[currentSlide].content}
-            </div>
-          </div>
+    <section id="proposal" className="section-padding bg-gray-50 relative">
+      <div className="container-custom relative">
+        
+        {/* Judul */}
+        <div className="text-center mb-12 animate-fade-in-up">
+          <h2 className="section-title text-gray-900 mb-6">
+            {slides[currentSlide].title}
+          </h2>
+        </div>
 
-          {/* Navigation Buttons */}
-          <div className="flex justify-between items-center mb-8">
-            <Button 
-              onClick={prevSlide}
-              variant="outline"
-              size="lg"
-              className="flex items-center gap-2"
-              disabled={currentSlide === 0}
-            >
-              <ChevronLeft className="w-4 h-4" />
-              Sebelumnya
-            </Button>
-            
-            <div className="flex items-center gap-2">
-              {slides.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => goToSlide(index)}
-                  className={`w-3 h-3 rounded-full transition-colors ${
-                    index === currentSlide ? 'bg-hexa-red' : 'bg-gray-300'
-                  }`}
-                />
-              ))}
-            </div>
-            
-            <Button 
-              onClick={nextSlide}
-              variant="outline"
-              size="lg"
-              className="flex items-center gap-2"
-              disabled={currentSlide === slides.length - 1}
-            >
-              Selanjutnya
-              <ChevronRight className="w-4 h-4" />
-            </Button>
-          </div>
+        {/* Konten Slide */}
+        <div className="min-h-[70vh] relative flex items-center justify-center">
+          {slides[currentSlide].content}
 
-          {/* Slide Counter */}
-          <div className="text-center text-gray-600">
-            <p className="text-sm">
-              Slide {currentSlide + 1} dari {slides.length}
-            </p>
-          </div>
+          {/* Tombol Prev */}
+          <button
+            onClick={prevSlide}
+            disabled={currentSlide === 0}
+            className="absolute left-0 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white shadow-md rounded-full p-3 transition-all disabled:opacity-40"
+          >
+            <ChevronLeft className="w-6 h-6 text-gray-700" />
+          </button>
+
+          {/* Tombol Next */}
+          <button
+            onClick={nextSlide}
+            disabled={currentSlide === slides.length - 1}
+            className="absolute right-0 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white shadow-md rounded-full p-3 transition-all disabled:opacity-40"
+          >
+            <ChevronRight className="w-6 h-6 text-gray-700" />
+          </button>
+        </div>
+
+        {/* Indikator Bulatan */}
+        <div className="flex justify-center gap-3 mt-8">
+          {slides.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => goToSlide(index)}
+              className={`w-4 h-4 rounded-full transition-all duration-300 ${
+                index === currentSlide
+                  ? "bg-hexa-red scale-110"
+                  : "bg-gray-300 hover:bg-gray-400"
+              }`}
+            />
+          ))}
+        </div>
+
+        {/* Slide Counter */}
+        <div className="text-center text-gray-600 mt-4">
+          <p className="text-sm">
+            Slide {currentSlide + 1} dari {slides.length}
+          </p>
         </div>
       </div>
     </section>
