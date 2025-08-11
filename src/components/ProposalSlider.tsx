@@ -177,11 +177,12 @@ const ProposalSlider = () => {
               
               <div className="space-y-4">
                 {[
-                  "Sistem Surat Izin Kerja Aman Elektronik Pertamina Lomanis (2024)",
+                  "Sistem Pelaporan Surat Izin Kerja Aman Elektronik Pertamina Lomanis",
                   "Sistem Informasi Jalan & Jembatan Dinas PU Bina Marga Jawa Timur",
                   "Ship Monitoring System PT. Global Eka Marine",
                   "Sistem Real Time Absensi & Payroll KCT Group Indonesia",
-                  "10+ tahun pengalaman sistem terintegrasi"
+                  "Sistem Manajemen Aset & Gudang Sekolah Islam Permata Sunnah Sidoarjo",
+                  "Serta beberapa pengalaman sistem terintegrasi lainnya"
                 ].map((project, index) => (
                   <div key={index} className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg">
                     <div className="w-2 h-2 bg-hexa-red rounded-full mt-2 flex-shrink-0"></div>
