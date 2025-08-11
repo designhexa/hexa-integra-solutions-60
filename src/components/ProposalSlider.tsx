@@ -321,7 +321,7 @@ const ProposalSlider = () => {
         </div>
 
         {/* Konten Slide dengan tinggi tetap */}
-        <div className="h-[60vh] relative flex items-center justify-center">
+        <div className="h-[60vh] relative flex items-center justify-center pb-16">
           <div className="w-full max-w-5xl h-full flex items-center justify-center">
             <div className="animate-fade-in w-full">
               {slides[currentSlide].content}
