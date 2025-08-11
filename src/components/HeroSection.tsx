@@ -15,39 +15,39 @@ const HeroSection = () => {
 
   return (
     <section className="min-h-screen bg-white relative overflow-hidden">
-      {/* Background Image */}
+      {/* Background Image Pattern - Soft */}
       <div className="absolute inset-0">
         <img 
           src="https://hexaintegra.com/wp-content/uploads/2024/12/Frame-4-4.png" 
           alt="Technology Background"
-          className="w-full h-full object-cover opacity-10"
+          className="w-full h-full object-cover opacity-5"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-white/90 via-white/80 to-white/70" />
+        <div className="absolute inset-0 bg-gradient-to-br from-white/95 via-white/90 to-white/85" />
       </div>
 
       {/* Background with soft tech pattern */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 opacity-5">
+        <div className="absolute inset-0 opacity-3">
           <svg className="w-full h-full" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <pattern id="tech-pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
-                <circle cx="20" cy="20" r="2" fill="#dc2626" opacity="0.3"/>
-                <circle cx="80" cy="20" r="1" fill="#dc2626" opacity="0.2"/>
-                <circle cx="50" cy="50" r="1.5" fill="#dc2626" opacity="0.25"/>
-                <circle cx="20" cy="80" r="1" fill="#dc2626" opacity="0.2"/>
-                <circle cx="80" cy="80" r="2" fill="#dc2626" opacity="0.3"/>
-                <line x1="20" y1="20" x2="50" y2="50" stroke="#dc2626" strokeWidth="0.5" opacity="0.1"/>
-                <line x1="50" y1="50" x2="80" y2="80" stroke="#dc2626" strokeWidth="0.5" opacity="0.1"/>
-                <line x1="80" y1="20" x2="50" y2="50" stroke="#dc2626" strokeWidth="0.5" opacity="0.1"/>
+                <circle cx="20" cy="20" r="2" fill="#dc2626" opacity="0.2"/>
+                <circle cx="80" cy="20" r="1" fill="#dc2626" opacity="0.15"/>
+                <circle cx="50" cy="50" r="1.5" fill="#dc2626" opacity="0.18"/>
+                <circle cx="20" cy="80" r="1" fill="#dc2626" opacity="0.15"/>
+                <circle cx="80" cy="80" r="2" fill="#dc2626" opacity="0.2"/>
+                <line x1="20" y1="20" x2="50" y2="50" stroke="#dc2626" strokeWidth="0.5" opacity="0.08"/>
+                <line x1="50" y1="50" x2="80" y2="80" stroke="#dc2626" strokeWidth="0.5" opacity="0.08"/>
+                <line x1="80" y1="20" x2="50" y2="50" stroke="#dc2626" strokeWidth="0.5" opacity="0.08"/>
               </pattern>
             </defs>
             <rect width="100%" height="100%" fill="url(#tech-pattern)"/>
           </svg>
         </div>
         {/* Subtle geometric shapes */}
-        <div className="absolute top-20 right-20 w-32 h-32 border border-hexa-red/10 rounded-lg rotate-12 transform"></div>
-        <div className="absolute bottom-40 left-20 w-24 h-24 border border-hexa-red/10 rounded-full"></div>
-        <div className="absolute top-1/2 right-1/4 w-16 h-16 border border-hexa-red/10 rounded-lg rotate-45 transform"></div>
+        <div className="absolute top-20 right-20 w-32 h-32 border border-hexa-red/8 rounded-lg rotate-12 transform"></div>
+        <div className="absolute bottom-40 left-20 w-24 h-24 border border-hexa-red/8 rounded-full"></div>
+        <div className="absolute top-1/2 right-1/4 w-16 h-16 border border-hexa-red/8 rounded-lg rotate-45 transform"></div>
       </div>
       
       <div className="container-custom relative z-10">

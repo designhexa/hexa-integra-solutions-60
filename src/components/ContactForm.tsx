@@ -19,13 +19,11 @@ const ContactForm = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Simulasi pengiriman form
     toast({
       title: "Pesan Terkirim!",
       description: "Terima kasih atas pesan Anda. Kami akan segera menghubungi Anda kembali.",
     });
     
-    // Reset form
     setFormData({
       name: '',
       email: '',
@@ -53,9 +51,9 @@ const ContactForm = () => {
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-3 gap-12">
           {/* Contact Information */}
-          <div className="animate-fade-in-left">
+          <div className="lg:col-span-1 animate-fade-in-left">
             <Card className="bg-white shadow-xl border-0 h-full">
               <CardHeader>
                 <CardTitle className="text-2xl text-hexa-red mb-6">Informasi Kontak</CardTitle>
@@ -66,7 +64,7 @@ const ContactForm = () => {
                     <MapPin className="w-5 h-5" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-hexa-red mb-2">Alamat</h4>
+                    <h4 className="font-semibold text-hexa-red mb-2">Hexa Integra Mandiri Workshop</h4>
                     <p className="text-gray-600">
                       Jalan Bukit Kismadani, Kompleks Balai RW 13<br />
                       Bluru Kidul, Kec. Sidoarjo, Jawa Timur
@@ -101,6 +99,7 @@ const ContactForm = () => {
                   <div>
                     <h4 className="font-semibold text-hexa-red mb-2">Jam Operasional</h4>
                     <p className="text-gray-600">Senin - Jumat: 08:00 - 17:00 WIB</p>
+                    <p className="text-gray-600">Sabtu - Ahad: Jadwalkan Janji Temu</p>
                   </div>
                 </div>
                 
@@ -113,20 +112,23 @@ const ContactForm = () => {
                     Hubungi kami untuk mengatur pertemuan dan konsultasi gratis mengenai kebutuhan IT perusahaan Anda.
                   </p>
                 </div>
-                
-                <div className="mt-6">
-                  <img 
-                    src="https://hexaintegra.com/wp-content/uploads/2024/12/Frame-4-4.png" 
-                    alt="Hexa Integra Office"
-                    className="w-full h-32 object-cover rounded-lg opacity-60"
-                  />
-                </div>
               </CardContent>
             </Card>
           </div>
+
+          {/* Team Image */}
+          <div className="lg:col-span-1 animate-fade-in-up">
+            <div className="h-full flex items-center justify-center">
+              <img 
+                src="https://hexaintegra.com/wp-content/uploads/2024/10/Group-20-1-2048x1445.webp" 
+                alt="Hexa Integra Team"
+                className="w-full h-auto object-cover rounded-lg shadow-xl"
+              />
+            </div>
+          </div>
           
           {/* Contact Form */}
-          <div className="animate-fade-in-right">
+          <div className="lg:col-span-1 animate-fade-in-right">
             <Card className="bg-white shadow-xl border-0">
               <CardHeader>
                 <CardTitle className="text-2xl text-hexa-red mb-6">Kirim Pesan</CardTitle>

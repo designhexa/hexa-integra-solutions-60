@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <h3 className="text-xl font-bold text-hexa-red mb-4">CV. HEXA INTEGRA MANDIRI</h3>
+            <h3 className="text-xl font-bold text-hexa-red mb-4">HEXA INTEGRA MANDIRI WORKSHOP</h3>
             <div className="space-y-3 text-gray-300">
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-hexa-red mt-1 flex-shrink-0" />
@@ -45,6 +45,8 @@ const Footer = () => {
                 <div>
                   <p>Senin - Jumat</p>
                   <p className="text-sm">08:00 - 17:00 WIB</p>
+                  <p className="mt-2">Sabtu - Ahad</p>
+                  <p className="text-sm">Jadwalkan Janji Temu</p>
                 </div>
               </div>
               <Button 

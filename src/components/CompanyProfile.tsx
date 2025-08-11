@@ -1,7 +1,7 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Award, Users, Zap, Globe, ArrowRight, Shield, Code, Building } from "lucide-react";
+import { Award, Users, Zap, Globe, ArrowRight } from "lucide-react";
 
 const CompanyProfile = () => {
   const expertise = [
@@ -90,42 +90,10 @@ const CompanyProfile = () => {
                 <div className="p-8">
                   <div className="mb-6">
                     <img 
-                      src="https://hexaintegra.com/wp-content/uploads/2024/10/Group-20-1-2048x1445.webp" 
-                      alt="Hexa Integra Team"
+                      src="https://hexaintegra.com/wp-content/uploads/2024/12/Frame-4-4.png" 
+                      alt="Hexa Integra Technology"
                       className="w-full h-48 object-cover rounded-lg"
                     />
-                  </div>
-                  
-                  <div className="grid grid-cols-1 gap-6">
-                    <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-hexa-red/10 rounded-xl flex items-center justify-center">
-                        <Shield className="w-6 h-6 text-hexa-red" />
-                      </div>
-                      <div>
-                        <div className="font-semibold text-gray-900">Keamanan Terjamin</div>
-                        <div className="text-sm text-gray-600">Sistem keamanan tingkat enterprise</div>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-hexa-red/10 rounded-xl flex items-center justify-center">
-                        <Code className="w-6 h-6 text-hexa-red" />
-                      </div>
-                      <div>
-                        <div className="font-semibold text-gray-900">Teknologi Modern</div>
-                        <div className="text-sm text-gray-600">Menggunakan framework terdepan</div>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-hexa-red/10 rounded-xl flex items-center justify-center">
-                        <Building className="w-6 h-6 text-hexa-red" />
-                      </div>
-                      <div>
-                        <div className="font-semibold text-gray-900">Solusi Enterprise</div>
-                        <div className="text-sm text-gray-600">Scalable untuk bisnis besar</div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </CardContent>
