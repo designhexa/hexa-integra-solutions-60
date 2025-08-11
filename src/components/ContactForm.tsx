@@ -93,16 +93,17 @@ const ContactForm = () => {
                     Hubungi kami untuk mengatur pertemuan dan konsultasi gratis mengenai kebutuhan IT perusahaan Anda.
                   </p>
                 </div>
+                <div className="lg:col-span-1 animate-fade-in-up">
+                  <div className="h-full flex items-center justify-center">
+                    <img 
+                      src="https://hexaintegra.com/wp-content/uploads/2024/10/Group-20-1-2048x1445.webp" 
+                      alt="Hexa Integra Team"
+                      className="w-full h-auto object-cover rounded-lg shadow-xl"
+                    />
+                  </div>
               </CardContent>
             </Card>
-            <div className="lg:col-span-1 animate-fade-in-up">
-            <div className="h-full flex items-center justify-center">
-              <img 
-                src="https://hexaintegra.com/wp-content/uploads/2024/10/Group-20-1-2048x1445.webp" 
-                alt="Hexa Integra Team"
-                className="w-full h-auto object-cover rounded-lg shadow-xl"
-              />
-            </div>
+            
           </div>
           
           </div>
