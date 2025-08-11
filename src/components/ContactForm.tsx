@@ -68,30 +68,12 @@ const ContactForm = () => {
                     <p className="text-gray-600">
                       Jalan Bukit Kismadani, Kompleks Balai RW 13<br />
                       Bluru Kidul, Kec. Sidoarjo, Jawa Timur
+                      Telepon: 0821 4355 8433
+                      Email: halo@hexaintegra.com
                     </p>
                   </div>
                 </div>
-                
-                <div className="flex items-start gap-4">
-                  <div className="icon-container">
-                    <Phone className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-hexa-red mb-2">Telepon</h4>
-                    <p className="text-gray-600">0821 4355 8433</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start gap-4">
-                  <div className="icon-container">
-                    <Mail className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-hexa-red mb-2">Email</h4>
-                    <p className="text-gray-600">halo@hexaintegra.com</p>
-                  </div>
-                </div>
-                
+                                           
                 <div className="flex items-start gap-4">
                   <div className="icon-container">
                     <Clock className="w-5 h-5" />
@@ -99,7 +81,6 @@ const ContactForm = () => {
                   <div>
                     <h4 className="font-semibold text-hexa-red mb-2">Jam Operasional</h4>
                     <p className="text-gray-600">Senin - Jumat: 08:00 - 17:00 WIB</p>
-                    <p className="text-gray-600">Sabtu - Ahad: Jadwalkan Janji Temu</p>
                   </div>
                 </div>
                 
@@ -114,10 +95,7 @@ const ContactForm = () => {
                 </div>
               </CardContent>
             </Card>
-          </div>
-
-          {/* Team Image */}
-          <div className="lg:col-span-1 animate-fade-in-up">
+            <div className="lg:col-span-1 animate-fade-in-up">
             <div className="h-full flex items-center justify-center">
               <img 
                 src="https://hexaintegra.com/wp-content/uploads/2024/10/Group-20-1-2048x1445.webp" 
@@ -125,6 +103,8 @@ const ContactForm = () => {
                 className="w-full h-auto object-cover rounded-lg shadow-xl"
               />
             </div>
+          </div>
+          
           </div>
           
           {/* Contact Form */}
