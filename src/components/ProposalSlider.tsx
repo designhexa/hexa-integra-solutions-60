@@ -13,7 +13,7 @@ const ProposalSlider = () => {
   const slides = [
     {
       id: "background",
-      title: "Latar Belakang & Tujuan",
+      title: "Latar Belakang",
       content: (
         <div className="max-w-4xl mx-auto">
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
@@ -23,7 +23,31 @@ const ProposalSlider = () => {
           </p>
           
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
-            <h3 className="text-2xl font-semibold text-gray-900 mb-6">Aplikasi ini akan mencakup:</h3>
+            <h3 className="text-2xl font-semibold text-gray-900 mb-6 text-center">Kebutuhan Sistem Terintegrasi</h3>
+            
+            <div className="mt-6 p-6 bg-hexa-red/5 rounded-2xl border border-hexa-red/20">
+              <p className="text-gray-700 leading-relaxed text-center">
+                Sistem ini akan digunakan oleh <span className="font-semibold text-hexa-red">1 group usaha 
+                dengan total 6 perusahaan</span> yang saling terhubung, sehingga integrasi data dan 
+                keamanan menjadi prioritas utama.
+              </p>
+            </div>
+          </div>
+          
+          <p className="text-lg text-gray-700 mt-8 leading-relaxed text-center">
+            Melalui proposal ini, kami berharap dapat memberikan gambaran teknis, estimasi pengembangan, 
+            serta solusi yang tepat untuk kebutuhan PT Samugara Global Capital.
+          </p>
+        </div>
+      )
+    },
+    {
+      id: "modules",
+      title: "Modul Aplikasi",
+      content: (
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+            <h3 className="text-2xl font-semibold text-gray-900 mb-6 text-center">Aplikasi ini akan mencakup:</h3>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
@@ -70,19 +94,6 @@ const ProposalSlider = () => {
               ))}
             </div>
           </div>
-          
-          <div className="mt-8 p-6 bg-hexa-red/5 rounded-2xl border border-hexa-red/20">
-            <p className="text-gray-700 leading-relaxed">
-              Sistem ini akan digunakan oleh <span className="font-semibold text-hexa-red">1 group usaha 
-              dengan total 6 perusahaan</span> yang saling terhubung, sehingga integrasi data dan 
-              keamanan menjadi prioritas utama.
-            </p>
-          </div>
-          
-          <p className="text-lg text-gray-700 mt-8 leading-relaxed">
-            Melalui proposal ini, kami berharap dapat memberikan gambaran teknis, estimasi pengembangan, 
-            serta solusi yang tepat untuk kebutuhan PT Samugara Global Capital.
-          </p>
         </div>
       )
     },
@@ -175,20 +186,22 @@ const ProposalSlider = () => {
               <h3 className="text-2xl font-semibold text-gray-900 mb-6 text-center">Portofolio Proyek Sejenis</h3>
               <p className="text-gray-600 leading-relaxed mb-8 text-center">Pengalaman dan case studies proyek sejenis yang pernah dikerjakan</p>
               
-              <div className="space-y-4">
+              <div className="grid md:grid-cols-2 gap-4">
                 {[
-                  "Sistem Pelaporan Surat Izin Kerja Aman Elektronik Pertamina Lomanis",
-                  "Sistem Informasi Jalan & Jembatan Dinas PU Bina Marga Jawa Timur",
+                  "Sistem Pelaporan SIKA Elektronik Pertamina Lomanis",
+                  "Sistem Informasi Jalan & Jembatan Dinas PU Jawa Timur",
                   "Ship Monitoring System PT. Global Eka Marine",
-                  "Sistem Real Time Absensi & Payroll KCT Group Indonesia",
-                  "Sistem Manajemen Aset & Gudang Sekolah Islam Permata Sunnah Sidoarjo",
-                  "Serta beberapa pengalaman sistem terintegrasi lainnya"
+                  "Sistem Real Time Absensi & Payroll KCT Group"
                 ].map((project, index) => (
                   <div key={index} className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg">
                     <div className="w-2 h-2 bg-hexa-red rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-gray-700 font-medium">{project}</p>
+                    <p className="text-gray-700 font-medium text-sm">{project}</p>
                   </div>
                 ))}
+              </div>
+              
+              <div className="mt-6 text-center">
+                <p className="text-gray-600 italic">Dan beberapa pengalaman sistem terintegrasi lainnya</p>
               </div>
             </CardContent>
           </Card>
@@ -309,14 +322,11 @@ const ProposalSlider = () => {
           </h2>
         </div>
 
-        {/* Konten Slide */}
-        <div className="min-h-[70vh] relative flex items-center justify-center">
-          <div className="w-full max-w-5xl">
-            <div className="animate-fade-in">
-              {/* Untuk slide pertama, kurangi margin besar */}
-              <div className={`${currentSlide === 0 ? "space-y-6" : ""}`}>
-                {slides[currentSlide].content}
-              </div>
+        {/* Konten Slide dengan tinggi tetap */}
+        <div className="h-[60vh] relative flex items-center justify-center">
+          <div className="w-full max-w-5xl h-full flex items-center justify-center">
+            <div className="animate-fade-in w-full">
+              {slides[currentSlide].content}
             </div>
           </div>
         
@@ -339,8 +349,8 @@ const ProposalSlider = () => {
           </button>
         </div>
 
-        {/* Indikator Bulatan */}
-        <div className="flex justify-center gap-3 mt-8">
+        {/* Indikator Bulatan dengan posisi tetap */}
+        <div className="flex justify-center gap-3 mt-12">
           {slides.map((_, index) => (
             <button
               key={index}
