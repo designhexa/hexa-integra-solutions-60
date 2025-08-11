@@ -172,15 +172,15 @@ const ProposalSlider = () => {
               <div className="w-16 h-16 bg-hexa-red/10 rounded-2xl flex items-center justify-center mb-6 mx-auto">
                 <Briefcase className="w-8 h-8 text-hexa-red" />
               </div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-6 text-center">Track Record Proyek Sejenis</h3>
+              <h3 className="text-2xl font-semibold text-gray-900 mb-6 text-center">Portofolio Proyek Sejenis</h3>
               <p className="text-gray-600 leading-relaxed mb-8 text-center">Pengalaman dan case studies proyek sejenis yang pernah dikerjakan</p>
               
               <div className="space-y-4">
                 {[
-                  "Sistem ERP Pertamina Lomanis (2024)",
-                  "Sistem Informasi Dinas PU Jatim",
+                  "Sistem Surat Izin Kerja Aman Elektronik Pertamina Lomanis (2024)",
+                  "Sistem Informasi Jalan & Jembatan Dinas PU Bina Marga Jawa Timur",
                   "Ship Monitoring System PT. Global Eka Marine",
-                  "Sistem Payroll KCT Group Indonesia",
+                  "Sistem Real Time Absensi & Payroll KCT Group Indonesia",
                   "10+ tahun pengalaman sistem terintegrasi"
                 ].map((project, index) => (
                   <div key={index} className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg">
