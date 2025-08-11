@@ -7,8 +7,7 @@ const ClosingSection = () => {
     <section className="section-padding bg-white">
       <div className="container-custom">
         <div className="text-center animate-fade-in-up">
-          <HandHeart className="w-16 h-16 mx-auto mb-8 text-hexa-red" />
-          
+                
           <h2 className="section-title text-gray-900 mb-8">
             Penutup Proposal
           </h2>
