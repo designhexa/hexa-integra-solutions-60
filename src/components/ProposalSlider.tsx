@@ -131,7 +131,7 @@ const ProposalSlider = () => {
                   <div className="text-center">
                     <p className="text-3xl font-bold text-hexa-red mb-2">Rp 50.000.000</p>
                     <p className="text-gray-600 mb-2">sampai dengan</p>
-                    <p className="text-3xl font-bold text-hexa-red">Rp 250.000.000</p>
+                    <p className="text-3xl font-bold text-hexa-red">Rp 150.000.000</p>
                   </div>
                 </div>
               </div>
