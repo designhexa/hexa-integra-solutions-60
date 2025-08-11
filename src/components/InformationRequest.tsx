@@ -13,7 +13,7 @@ const InformationRequest = () => {
         "Fase Development: 12-16 minggu", 
         "Fase Testing & Deployment: 2-3 minggu",
         "Total estimasi: 16-22 minggu",
-        "Investasi: Rp 450.000.000 - Rp 650.000.000"
+        "Investasi: Rp 50.000.000 - Rp 250.000.000"
       ]
     },
     {
