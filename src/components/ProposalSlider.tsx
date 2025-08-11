@@ -314,8 +314,8 @@ const ProposalSlider = () => {
       <div className="container-custom relative">
         
         {/* Judul */}
-        <div className="text-center mb-12 animate-fade-in-up pb-8">
-          <h2 className="section-title text-gray-900 mb-6">
+        <div className="max-w-4xl mx-auto pb-12 px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center mb-8 sm:mb-10">
             {slides[currentSlide].title}
           </h2>
         </div>
