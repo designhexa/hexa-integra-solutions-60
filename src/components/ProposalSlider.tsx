@@ -258,46 +258,6 @@ const ProposalSlider = () => {
         </div>
 
         {/* Konten Slide */}
-        import { useState } from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import {
-  FileText, Target, Database, BarChart3, CheckCircle, Shield,
-  Clock, Code, Briefcase, MessageCircle, ChevronLeft, ChevronRight
-} from "lucide-react";
-
-const ProposalSlider = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const slides = [
-    // --- SLIDE DATA SAMA DENGAN PUNYA KAMU ---
-    // ... (tidak diubah untuk isi)
-  ];
-
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
-  };
-
-  const goToSlide = (index: number) => {
-    setCurrentSlide(index);
-  };
-
-  return (
-    <section id="proposal" className="section-padding bg-gray-50 relative">
-      <div className="container-custom relative">
-        
-        {/* Judul */}
-        <div className="text-center mb-12 animate-fade-in-up">
-          <h2 className="section-title text-gray-900 mb-6">
-            {slides[currentSlide].title}
-          </h2>
-        </div>
-
-        {/* Konten Slide */}
         <div className="min-h-[70vh] relative flex items-center justify-center">
           {slides[currentSlide].content}
 
