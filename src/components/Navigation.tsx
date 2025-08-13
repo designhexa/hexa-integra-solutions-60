@@ -15,10 +15,10 @@ const Navigation = () => {
 
   const navItems = [
     { name: "Beranda", id: "hero", type: "scroll" },
-    { name: "Proposal", href: "/proposal", type: "link" },
     { name: "Tentang Kami", id: "company", type: "scroll" },
     { name: "Layanan", id: "services", type: "scroll" },
     { name: "Portofolio", id: "portfolio", type: "scroll" },
+    { name: "Proposal", href: "/proposal", type: "link" },
     { name: "Kontak", id: "contact", type: "scroll" },
   ];
 
