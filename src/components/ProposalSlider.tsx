@@ -30,6 +30,23 @@ const ProposalSlider = () => {
     );
   }
 
+    return (
+      <section id="proposal" className="section-padding bg-gray-50 pt-28 pb-12 min-h-screen">
+        <div className="container-custom">
+          {/* judul slider */}
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold text-gray-900">{slides[currentSlide].title}</h2>
+          </div>
+    
+          {/* konten slider */}
+          {/* ... */}
+    
+          {/* pagination */}
+          {/* ... */}
+        </div>
+      </section>
+    );
+
   const slides = [
     {
       id: "background",
