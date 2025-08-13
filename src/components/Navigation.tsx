@@ -18,7 +18,6 @@ const Navigation = () => {
     { name: "Tentang Kami", id: "company", type: "scroll" },
     { name: "Layanan", id: "services", type: "scroll" },
     { name: "Portofolio", id: "portfolio", type: "scroll" },
-    { name: "Proposal", href: "/proposal", type: "link" },
     { name: "Kontak", id: "contact", type: "scroll" },
   ];
 
@@ -38,15 +37,7 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) =>
-              item.type === "link" ? (
-                <Link
-                  key={item.name}
-                  to={item.href!}
-                  className="text-gray-700 hover:text-hexa-red transition-colors duration-200 font-medium"
-                >
-                  {item.name}
-                </Link>
-              ) : location.pathname === "/" ? (
+              location.pathname === "/" ? (
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id!)}
@@ -64,6 +55,13 @@ const Navigation = () => {
                 </Link>
               )
             )}
+            {/* Proposal Button */}
+            <Link
+              to="/proposal"
+              className="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors duration-200 font-medium"
+            >
+              Proposal
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -82,16 +80,7 @@ const Navigation = () => {
           <div className="md:hidden py-4 border-t border-gray-200">
             <div className="flex flex-col gap-4">
               {navItems.map((item) =>
-                item.type === "link" ? (
-                  <Link
-                    key={item.name}
-                    to={item.href!}
-                    className="text-left text-gray-700 hover:text-hexa-red transition-colors duration-200 font-medium py-2"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    {item.name}
-                  </Link>
-                ) : location.pathname === "/" ? (
+                location.pathname === "/" ? (
                   <button
                     key={item.id}
                     onClick={() => scrollToSection(item.id!)}
@@ -110,6 +99,14 @@ const Navigation = () => {
                   </Link>
                 )
               )}
+              {/* Proposal Button */}
+              <Link
+                to="/proposal"
+                className="bg-red-600 text-white px-4 py-2 rounded-lg text-center hover:bg-red-700 transition-colors duration-200 font-medium"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Proposal
+              </Link>
             </div>
           </div>
         )}
