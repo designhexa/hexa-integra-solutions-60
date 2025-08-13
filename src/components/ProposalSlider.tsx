@@ -18,7 +18,7 @@ const ProposalSlider = () => {
   // Jika proposal belum di-unlock, tampilkan halaman login
   if (!isProposalUnlocked) {
     return (
-      <section id="proposal" className="section-padding bg-gray-50 pt-28 pb-12">
+      <section id="proposal" className="section-padding bg-gray-50 pt-28 pb-12 min-h-screen">
         <div className="container-custom">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-gray-900">Proposal Pengembangan Aplikasi</h2>
