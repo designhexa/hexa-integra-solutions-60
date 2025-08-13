@@ -1,8 +1,11 @@
 
-import { MapPin, Phone, Mail, Clock, Calendar } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 const Footer = () => {
+  const handleWhatsAppContact = () => {
+    window.open('https://wa.me/6282143558433', '_blank');
+  };
+
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container-custom py-12">
@@ -27,11 +30,21 @@ const Footer = () => {
             <div className="space-y-3 text-gray-300">
               <div className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-hexa-red" />
-                <span>0821 4355 8433</span>
+                <button 
+                  onClick={handleWhatsAppContact}
+                  className="hover:text-hexa-red transition-colors"
+                >
+                  0821 4355 8433
+                </button>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-hexa-red" />
-                <span>halo@hexaintegra.com</span>
+                <a 
+                  href="mailto:halo@hexaintegra.com"
+                  className="hover:text-hexa-red transition-colors"
+                >
+                  halo@hexaintegra.com
+                </a>
               </div>
             </div>
           </div>
@@ -49,18 +62,6 @@ const Footer = () => {
                   <p className="text-sm">Jadwalkan Janji Temu</p>
                 </div>
               </div>
-              <Button 
-                variant="outline" 
-                size="sm"
-                className="border-hexa-red text-hexa-red hover:bg-hexa-red hover:text-white mt-4"
-                onClick={() => {
-                  const element = document.getElementById('contact');
-                  element?.scrollIntoView({ behavior: 'smooth' });
-                }}
-              >
-                <Calendar className="w-4 h-4 mr-2" />
-                Jadwalkan Janji Temu
-              </Button>
             </div>
           </div>
         </div>

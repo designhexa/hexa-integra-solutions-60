@@ -1,11 +1,12 @@
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { MapPin, Send, Clock } from "lucide-react";
+import { MapPin, Send, Clock, Calendar } from "lucide-react";
+import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
   const { toast } = useToast();
@@ -15,22 +16,52 @@ const ContactForm = () => {
     phone: "",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  useEffect(() => {
+    // Initialize EmailJS with your public key
+    emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your actual public key
+  }, []);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
-    toast({
-      title: "Pesan Terkirim!",
-      description:
-        "Terima kasih atas pesan Anda. Kami akan segera menghubungi Anda kembali.",
-    });
+    try {
+      // Send email using EmailJS
+      await emailjs.send(
+        'YOUR_SERVICE_ID', // Replace with your service ID
+        'YOUR_TEMPLATE_ID', // Replace with your template ID
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+          to_email: 'halo@hexaintegra.com'
+        }
+      );
 
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      message: "",
-    });
+      toast({
+        title: "Pesan Terkirim!",
+        description: "Terima kasih atas pesan Anda. Kami akan segera menghubungi Anda kembali.",
+      });
+
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error('Error sending email:', error);
+      toast({
+        title: "Gagal Mengirim Pesan",
+        description: "Terjadi kesalahan. Silakan coba lagi atau hubungi kami langsung.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (
@@ -40,6 +71,15 @@ const ContactForm = () => {
       ...formData,
       [e.target.name]: e.target.value,
     });
+  };
+
+  const handleWhatsAppContact = () => {
+    window.open('https://wa.me/6282143558433', '_blank');
+  };
+
+  const handleScheduleAppointment = () => {
+    const message = encodeURIComponent('Halo, saya ingin menjadwalkan janji temu untuk konsultasi pengembangan aplikasi.');
+    window.open(`https://wa.me/6282143558433?text=${message}`, '_blank');
   };
 
   return (
@@ -78,9 +118,21 @@ const ContactForm = () => {
                       Bluru Kidul, Kec. Sidoarjo, Jawa Timur
                     </p>
                     <p className="text-gray-600">
-                      <span className="font-bold text-hexa-red">Telepon:</span> 0821 4355 8433
+                      <span className="font-bold text-hexa-red">Telepon:</span> 
+                      <button 
+                        onClick={handleWhatsAppContact}
+                        className="font-bold text-hexa-red hover:underline ml-1"
+                      >
+                        0821 4355 8433
+                      </button>
                       <br />
-                      <span className="font-bold text-hexa-red">Email:</span> halo@hexaintegra.com
+                      <span className="font-bold text-hexa-red">Email:</span> 
+                      <a 
+                        href="mailto:halo@hexaintegra.com" 
+                        className="font-bold text-hexa-red hover:underline ml-1"
+                      >
+                        halo@hexaintegra.com
+                      </a>
                     </p>
                   </div>
                 </div>
@@ -96,6 +148,15 @@ const ContactForm = () => {
                     <p className="text-gray-600">
                       Senin - Jumat: 08:00 - 17:00 WIB
                     </p>
+                    <Button 
+                      variant="outline" 
+                      size="sm"
+                      className="border-hexa-red text-hexa-red hover:bg-hexa-red hover:text-white mt-4"
+                      onClick={handleScheduleAppointment}
+                    >
+                      <Calendar className="w-4 h-4 mr-2" />
+                      Jadwalkan Janji Temu
+                    </Button>
                   </div>
                 </div>
 
@@ -137,6 +198,7 @@ const ContactForm = () => {
                       onChange={handleChange}
                       className="border-hexa-gray focus:ring-hexa-red focus:border-hexa-red"
                       placeholder="Masukkan nama lengkap Anda"
+                      disabled={isSubmitting}
                     />
                   </div>
 
@@ -156,6 +218,7 @@ const ContactForm = () => {
                       onChange={handleChange}
                       className="border-hexa-gray focus:ring-hexa-red focus:border-hexa-red"
                       placeholder="nama@email.com"
+                      disabled={isSubmitting}
                     />
                   </div>
 
@@ -175,6 +238,7 @@ const ContactForm = () => {
                       onChange={handleChange}
                       className="border-hexa-gray focus:ring-hexa-red focus:border-hexa-red"
                       placeholder="081234567890"
+                      disabled={isSubmitting}
                     />
                   </div>
 
@@ -194,6 +258,7 @@ const ContactForm = () => {
                       rows={6}
                       className="border-hexa-gray focus:ring-hexa-red focus:border-hexa-red"
                       placeholder="Jelaskan kebutuhan proyek Anda atau pertanyaan yang ingin Anda sampaikan..."
+                      disabled={isSubmitting}
                     />
                   </div>
 
@@ -201,8 +266,9 @@ const ContactForm = () => {
                     type="submit"
                     size="lg"
                     className="w-full bg-hexa-red hover:bg-hexa-red/90 text-white py-3"
+                    disabled={isSubmitting}
                   >
-                    Kirim Pesan
+                    {isSubmitting ? "Mengirim..." : "Kirim Pesan"}
                     <Send className="ml-2 w-5 h-5" />
                   </Button>
                 </form>

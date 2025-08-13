@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -327,7 +326,7 @@ const ProposalSlider = () => {
   };
 
   return (
-    <section id="proposal" className="section-padding bg-gray-50 relative">
+    <section id="proposal" className="py-8 lg:py-12 bg-gray-50 relative">
       <div className="container-custom relative">
         
         {/* Judul dengan tinggi tetap */}
