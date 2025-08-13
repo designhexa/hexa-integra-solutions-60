@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import Link from "next/link"; // kalau pakai Next.js
+import { Link, useLocation } from "react-router-dom";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -40,12 +41,12 @@ const Navigation = () => {
               item.type === "link" ? (
                 <Link
                   key={item.name}
-                  href={item.href!}
+                  to={item.href!}
                   className="text-gray-700 hover:text-hexa-red transition-colors duration-200 font-medium"
                 >
                   {item.name}
                 </Link>
-              ) : (
+              ) : location.pathname === "/" ? (
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id!)}
@@ -53,6 +54,14 @@ const Navigation = () => {
                 >
                   {item.name}
                 </button>
+              ) : (
+                <Link
+                  key={item.name}
+                  to={`/#${item.id}`}
+                  className="text-gray-700 hover:text-hexa-red transition-colors duration-200 font-medium"
+                >
+                  {item.name}
+                </Link>
               )
             )}
           </div>
@@ -76,13 +85,13 @@ const Navigation = () => {
                 item.type === "link" ? (
                   <Link
                     key={item.name}
-                    href={item.href!}
+                    to={item.href!}
                     className="text-left text-gray-700 hover:text-hexa-red transition-colors duration-200 font-medium py-2"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {item.name}
                   </Link>
-                ) : (
+                ) : location.pathname === "/" ? (
                   <button
                     key={item.id}
                     onClick={() => scrollToSection(item.id!)}
@@ -90,6 +99,15 @@ const Navigation = () => {
                   >
                     {item.name}
                   </button>
+                ) : (
+                  <Link
+                    key={item.name}
+                    to={`/#${item.id}`}
+                    className="text-left text-gray-700 hover:text-hexa-red transition-colors duration-200 font-medium py-2"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
                 )
               )}
             </div>
