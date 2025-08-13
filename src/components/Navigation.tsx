@@ -1,24 +1,24 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import Link from "next/link"; // kalau pakai Next.js
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
-    element?.scrollIntoView({ behavior: 'smooth' });
+    element?.scrollIntoView({ behavior: "smooth" });
     setIsMenuOpen(false);
   };
 
   const navItems = [
-    { name: "Beranda", id: "hero" },
-    { name: "Proposal", id: "proposal" },
-    { name: "Tentang Kami", id: "company" },
-    { name: "Layanan", id: "services" },
-    { name: "Portofolio", id: "portfolio" },
-    { name: "Kontak", id: "contact" },
+    { name: "Beranda", id: "hero", type: "scroll" },
+    { name: "Proposal", href: "/proposal", type: "link" },
+    { name: "Tentang Kami", id: "company", type: "scroll" },
+    { name: "Layanan", id: "services", type: "scroll" },
+    { name: "Portofolio", id: "portfolio", type: "scroll" },
+    { name: "Kontak", id: "contact", type: "scroll" },
   ];
 
   return (
@@ -27,24 +27,34 @@ const Navigation = () => {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <div className="flex items-center">
-            <img 
-              src="https://hexaintegra.com/wp-content/uploads/2020/12/logo_hexa.png" 
-              alt="Hexa Integra Mandiri" 
+            <img
+              src="https://hexaintegra.com/wp-content/uploads/2020/12/logo_hexa.png"
+              alt="Hexa Integra Mandiri"
               className="h-10 w-auto"
             />
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            {navItems.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className="text-gray-700 hover:text-hexa-red transition-colors duration-200 font-medium"
-              >
-                {item.name}
-              </button>
-            ))}
+            {navItems.map((item) =>
+              item.type === "link" ? (
+                <Link
+                  key={item.name}
+                  href={item.href!}
+                  className="text-gray-700 hover:text-hexa-red transition-colors duration-200 font-medium"
+                >
+                  {item.name}
+                </Link>
+              ) : (
+                <button
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id!)}
+                  className="text-gray-700 hover:text-hexa-red transition-colors duration-200 font-medium"
+                >
+                  {item.name}
+                </button>
+              )
+            )}
           </div>
 
           {/* Mobile Menu Button */}
@@ -62,15 +72,26 @@ const Navigation = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-gray-200">
             <div className="flex flex-col gap-4">
-              {navItems.map((item) => (
-                <button
-                  key={item.id}
-                  onClick={() => scrollToSection(item.id)}
-                  className="text-left text-gray-700 hover:text-hexa-red transition-colors duration-200 font-medium py-2"
-                >
-                  {item.name}
-                </button>
-              ))}
+              {navItems.map((item) =>
+                item.type === "link" ? (
+                  <Link
+                    key={item.name}
+                    href={item.href!}
+                    className="text-left text-gray-700 hover:text-hexa-red transition-colors duration-200 font-medium py-2"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <button
+                    key={item.id}
+                    onClick={() => scrollToSection(item.id!)}
+                    className="text-left text-gray-700 hover:text-hexa-red transition-colors duration-200 font-medium py-2"
+                  >
+                    {item.name}
+                  </button>
+                )
+              )}
             </div>
           </div>
         )}
