@@ -17,7 +17,7 @@ const LoginAccess = ({ onLoginSuccess }: LoginAccessProps) => {
   const [isLoading, setIsLoading] = useState(false);
 
   // Password untuk akses proposal
-  const PROPOSAL_PASSWORD = "samugara2024";
+  const PROPOSAL_PASSWORD = "samugara2025";
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
