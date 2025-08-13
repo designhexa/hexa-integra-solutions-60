@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -206,7 +207,7 @@ const ProposalSlider = () => {
               <h3 className="text-2xl font-semibold text-gray-900 mb-6 text-center">Portofolio Proyek Sejenis</h3>
               <p className="text-gray-600 leading-relaxed mb-8 text-center">Pengalaman dan case studies proyek sejenis yang pernah dikerjakan</p>
               
-              <div className="grid md:grid-cols-2 gap-4 max-w-3xl mx-auto">
+              <div className="grid md:grid-cols-2 gap-4 max-w-2xl mx-auto">
                 {[
                   "Sistem Pelaporan SIKA Elektronik Pertamina Lomanis",
                   "Sistem Informasi Jalan & Jembatan Dinas PU Jawa Timur",
@@ -218,10 +219,6 @@ const ProposalSlider = () => {
                     <p className="text-gray-700 font-medium text-sm">{project}</p>
                   </div>
                 ))}
-              </div>
-              
-              <div className="mt-6 text-center">
-                <p className="text-gray-600 italic">Dan beberapa pengalaman sistem terintegrasi lainnya</p>
               </div>
             </CardContent>
           </Card>
@@ -342,8 +339,8 @@ const ProposalSlider = () => {
 
         {/* Container untuk konten dan tombol navigasi */}
         <div className="relative px-20">
-          {/* Konten Slide dengan tinggi tetap */}
-          <div className="h-[500px] flex items-center justify-center overflow-hidden">
+          {/* Konten Slide dengan tinggi yang disesuaikan untuk slide terpanjang */}
+          <div className="h-[650px] flex items-center justify-center overflow-hidden">
             <div className="w-full animate-fade-in">
               {slides[currentSlide].content}
             </div>

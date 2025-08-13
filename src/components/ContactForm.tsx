@@ -1,10 +1,11 @@
+
 import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { MapPin, Send, Clock, Calendar } from "lucide-react";
+import { MapPin, Send, Clock } from "lucide-react";
 
 const ContactForm = () => {
   const { toast } = useToast();
@@ -53,9 +54,9 @@ const ContactForm = () => {
           </p>
         </div>
 
-        {/* Grid */}
-        <div className="grid lg:grid-cols-3 gap-12">
-          {/* Informasi Kontak */}
+        {/* Grid 2 kolom */}
+        <div className="grid lg:grid-cols-2 gap-12">
+          {/* Informasi Kontak dengan Gambar */}
           <div className="animate-fade-in-left">
             <Card className="bg-white shadow-xl border-0 h-full">
               <CardHeader>
@@ -97,36 +98,21 @@ const ContactForm = () => {
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-r from-hexa-red/10 to-hexa-gold/10 rounded-xl p-6 border border-hexa-gold/30">
-                  <div className="flex items-center gap-3 mb-3">
-                    <Calendar className="w-6 h-6 text-hexa-red" />
-                    <h4 className="font-semibold text-hexa-red">
-                      Jadwalkan Janji Temu
-                    </h4>
-                  </div>
-                  <p className="text-gray-600 text-sm">
-                    Hubungi kami untuk mengatur pertemuan dan konsultasi gratis
-                    mengenai kebutuhan IT perusahaan Anda.
-                  </p>
+                {/* Gambar Team */}
+                <div className="mt-8">
+                  <img
+                    src="https://hexaintegra.com/wp-content/uploads/2024/10/Group-20-1-2048x1445.webp"
+                    alt="Hexa Integra Team"
+                    className="w-full h-auto object-cover rounded-lg shadow-lg"
+                  />
                 </div>
               </CardContent>
             </Card>
           </div>
 
-          {/* Gambar */}
-          <div className="animate-fade-in-up">
-            <div className="h-full flex items-center justify-center">
-              <img
-                src="https://hexaintegra.com/wp-content/uploads/2024/10/Group-20-1-2048x1445.webp"
-                alt="Hexa Integra Team"
-                className="w-full h-auto object-cover rounded-lg shadow-xl"
-              />
-            </div>
-          </div>
-
-          {/* Form */}
+          {/* Form - diperlebar */}
           <div className="animate-fade-in-right">
-            <Card className="bg-white shadow-xl border-0">
+            <Card className="bg-white shadow-xl border-0 h-full">
               <CardHeader>
                 <CardTitle className="text-2xl text-hexa-red mb-6">
                   Kirim Pesan
@@ -204,7 +190,7 @@ const ContactForm = () => {
                       required
                       value={formData.message}
                       onChange={handleChange}
-                      rows={6}
+                      rows={8}
                       className="border-hexa-gray focus:ring-hexa-red focus:border-hexa-red"
                       placeholder="Jelaskan kebutuhan proyek Anda atau pertanyaan yang ingin Anda sampaikan..."
                     />
