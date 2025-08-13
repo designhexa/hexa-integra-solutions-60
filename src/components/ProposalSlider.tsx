@@ -15,38 +15,6 @@ const ProposalSlider = () => {
     setIsProposalUnlocked(true);
   };
 
-  // Jika proposal belum di-unlock, tampilkan halaman login
-  if (!isProposalUnlocked) {
-    return (
-      <section id="proposal" className="section-padding bg-gray-50 pt-28 pb-12 min-h-screen">
-        <div className="container-custom">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-900">Proposal Pengembangan Aplikasi</h2>
-            <p className="text-lg text-gray-600 mt-4">Untuk PT Samugara Global Capital</p>
-          </div>
-          <LoginAccess onLoginSuccess={handleLoginSuccess} />
-        </div>
-      </section>
-    );
-  }
-
-    return (
-      <section id="proposal" className="section-padding bg-gray-50 pt-28 pb-12 min-h-screen">
-        <div className="container-custom">
-          {/* judul slider */}
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-900">{slides[currentSlide].title}</h2>
-          </div>
-    
-          {/* konten slider */}
-          {/* ... */}
-    
-          {/* pagination */}
-          {/* ... */}
-        </div>
-      </section>
-    );
-
   const slides = [
     {
       id: "background",
@@ -342,9 +310,24 @@ const ProposalSlider = () => {
     setCurrentSlide(index);
   };
 
-  return (
-    <section id="proposal" className="py-8 lg:py-12 bg-gray-50 relative">
-      <div className="container-custom relative">
+ // Jika proposal belum di-unlock, tampilkan halaman login
+  if (!isProposalUnlocked) {
+    return (
+      <section id="proposal" className="section-padding bg-gray-50 pt-28 pb-12 min-h-screen">
+        <div className="container-custom">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold text-gray-900">Proposal Pengembangan Aplikasi</h2>
+            <p className="text-lg text-gray-600 mt-4">Untuk PT Samugara Global Capital</p>
+          </div>
+          <LoginAccess onLoginSuccess={handleLoginSuccess} />
+        </div>
+      </section>
+    );
+  }
+
+   return (
+    <section id="proposal" className="section-padding bg-gray-50 pt-28 pb-12 min-h-screen">
+      <div className="container-custom">
         
         {/* Judul dengan tinggi tetap */}
         <div className="h-12 flex items-center justify-center flex-shrink-0">
