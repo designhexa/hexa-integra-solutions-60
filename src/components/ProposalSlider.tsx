@@ -331,14 +331,14 @@ const ProposalSlider = () => {
       <div className="container-custom relative">
         
         {/* Judul dengan tinggi tetap */}
-        <div className="h-20 flex items-center justify-center flex-shrink-0">
+        <div className="h-16 flex items-center justify-center flex-shrink-0">
           <h2 className="text-3xl font-bold text-center text-gray-900">
             {slides[currentSlide].title}
           </h2>
         </div>
 
         {/* Container untuk konten dan tombol navigasi */}
-        <div className="relative px-20">
+        <div className="relative px-16">
           {/* Konten Slide dengan tinggi yang disesuaikan untuk slide terpanjang */}
           <div className="h-[650px] flex items-center justify-center overflow-hidden">
             <div className="w-full animate-fade-in">
