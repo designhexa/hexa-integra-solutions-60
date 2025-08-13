@@ -366,7 +366,7 @@ const ProposalSlider = () => {
         </div>
 
         {/* Pagination dengan tinggi tetap */}
-        <div className="h-16 flex flex-col items-center justify-center flex-shrink-0 mt-8">
+        <div className="h-12 flex flex-col items-center justify-center flex-shrink-0 mt-8">
           <div className="flex justify-center gap-3 mb-4">
             {slides.map((_, index) => (
               <button
