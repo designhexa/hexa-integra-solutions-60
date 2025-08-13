@@ -91,9 +91,9 @@ const PortfolioSection = () => {
       client: "Rayyan Cendekia Utama",
       location: "Sidoarjo",
       year: "2023",
-      description: "Sistem administrasi sekolah dengan manajemen siswa, guru, jadwal, nilai, dan komunikasi orang tua.",
+      description: "Sistem manajemen paket pembelajaran dan aplikasi tryout online Lembaga Bimbingan Belajar Sony Sugema College.",
       tech: ["React", "Express.js", "PostgreSQL", "Socket.io"],
-      category: "School Management"
+      category: "Tutor Agency Management"
     }
   ];
 
