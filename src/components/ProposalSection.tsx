@@ -37,7 +37,7 @@ const ProposalSection = () => {
   ];
 
   return (
-    <section id="proposal" className="pt-28 pb-4 section-padding bg-gray-50">
+    <section id="proposal" className="section-padding bg-gray-50 pt-28 pb-12 min-h-screen">
       <div className="container-custom">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="section-title text-gray-900 mb-6">
