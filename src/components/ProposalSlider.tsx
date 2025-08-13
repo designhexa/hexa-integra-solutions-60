@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import LoginAccess from "@/components/LoginAccess";
 import {
   FileText, Target, Database, BarChart3, CheckCircle, Shield,
   Clock, Code, Briefcase, MessageCircle, ChevronLeft, ChevronRight, HandHeart
@@ -8,6 +9,26 @@ import {
 
 const ProposalSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isProposalUnlocked, setIsProposalUnlocked] = useState(false);
+
+  const handleLoginSuccess = () => {
+    setIsProposalUnlocked(true);
+  };
+
+  // Jika proposal belum di-unlock, tampilkan halaman login
+  if (!isProposalUnlocked) {
+    return (
+      <section id="proposal" className="section-padding bg-gray-50">
+        <div className="container-custom">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold text-gray-900">Proposal Pengembangan Aplikasi</h2>
+            <p className="text-lg text-gray-600 mt-4">Untuk PT Samugara Global Capital</p>
+          </div>
+          <LoginAccess onLoginSuccess={handleLoginSuccess} />
+        </div>
+      </section>
+    );
+  }
 
   const slides = [
     {
@@ -185,7 +206,7 @@ const ProposalSlider = () => {
               <h3 className="text-2xl font-semibold text-gray-900 mb-6 text-center">Portofolio Proyek Sejenis</h3>
               <p className="text-gray-600 leading-relaxed mb-8 text-center">Pengalaman dan case studies proyek sejenis yang pernah dikerjakan</p>
               
-              <div className="grid md:grid-cols-2 gap-4">
+              <div className="grid md:grid-cols-2 gap-4 max-w-3xl mx-auto">
                 {[
                   "Sistem Pelaporan SIKA Elektronik Pertamina Lomanis",
                   "Sistem Informasi Jalan & Jembatan Dinas PU Jawa Timur",
@@ -309,45 +330,46 @@ const ProposalSlider = () => {
   };
 
   return (
-    <section id="proposal" className="section-padding bg-gray-50 relative min-h-screen flex flex-col">
-      <div className="container-custom relative flex-1 flex flex-col">
+    <section id="proposal" className="section-padding bg-gray-50 relative">
+      <div className="container-custom relative">
         
         {/* Judul dengan tinggi tetap */}
-        <div className="flex-shrink-0 py-8">
+        <div className="h-20 flex items-center justify-center flex-shrink-0">
           <h2 className="text-3xl font-bold text-center text-gray-900">
             {slides[currentSlide].title}
           </h2>
         </div>
 
-        {/* Konten Slide dengan tinggi fleksibel */}
-        <div className="flex-1 relative flex items-center justify-center min-h-[500px]">
-          <div className="w-full max-w-5xl h-full flex items-center justify-center">
-            <div className="animate-fade-in w-full">
+        {/* Container untuk konten dan tombol navigasi */}
+        <div className="relative px-20">
+          {/* Konten Slide dengan tinggi tetap */}
+          <div className="h-[500px] flex items-center justify-center overflow-hidden">
+            <div className="w-full animate-fade-in">
               {slides[currentSlide].content}
             </div>
           </div>
         
-          {/* Tombol Prev */}
+          {/* Tombol Prev - di luar kontainer konten */}
           <button
             onClick={prevSlide}
             disabled={currentSlide === 0}
-            className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white shadow-md rounded-full p-3 transition-all disabled:opacity-40"
+            className="absolute left-0 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white shadow-lg rounded-full p-4 transition-all disabled:opacity-40 disabled:cursor-not-allowed z-10"
           >
             <ChevronLeft className="w-6 h-6 text-gray-700" />
           </button>
         
-          {/* Tombol Next */}
+          {/* Tombol Next - di luar kontainer konten */}
           <button
             onClick={nextSlide}
             disabled={currentSlide === slides.length - 1}
-            className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white shadow-md rounded-full p-3 transition-all disabled:opacity-40"
+            className="absolute right-0 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white shadow-lg rounded-full p-4 transition-all disabled:opacity-40 disabled:cursor-not-allowed z-10"
           >
             <ChevronRight className="w-6 h-6 text-gray-700" />
           </button>
         </div>
 
-        {/* Indikator dan Counter dengan posisi tetap di bawah */}
-        <div className="flex-shrink-0 py-8">
+        {/* Pagination dengan tinggi tetap */}
+        <div className="h-20 flex flex-col items-center justify-center flex-shrink-0 mt-8">
           <div className="flex justify-center gap-3 mb-4">
             {slides.map((_, index) => (
               <button
