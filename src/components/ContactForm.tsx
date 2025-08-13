@@ -43,11 +43,11 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact" className="section-padding bg-hexa-light">
+    <section id="contact" className="py-8 lg:py-12 bg-hexa-light">
       <div className="container-custom">
         {/* Heading */}
-        <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="section-title text-gradient-red mb-6">Hubungi Kami</h2>
+        <div className="text-center mb-12 animate-fade-in-up">
+          <h2 className="section-title text-gradient-red mb-4">Hubungi Kami</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Mari berdiskusi lebih lanjut mengenai kebutuhan pengembangan aplikasi
             terintegrasi Anda.
@@ -55,16 +55,16 @@ const ContactForm = () => {
         </div>
 
         {/* Grid 2 kolom */}
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-8">
           {/* Informasi Kontak dengan Gambar */}
           <div className="animate-fade-in-left">
             <Card className="bg-white shadow-xl border-0 h-full">
-              <CardHeader>
-                <CardTitle className="text-2xl text-hexa-red mb-6">
+              <CardHeader className="pb-4">
+                <CardTitle className="text-2xl text-hexa-red mb-4">
                   Informasi Kontak
                 </CardTitle>
               </CardHeader>
-              <CardContent className="space-y-8">
+              <CardContent className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="icon-container">
                     <MapPin className="w-5 h-5" />
@@ -73,13 +73,14 @@ const ContactForm = () => {
                     <h4 className="font-semibold text-hexa-red mb-2">
                       Hexa Integra Mandiri Workshop
                     </h4>
-                    <p className="text-gray-600">
+                    <p className="text-gray-600 mb-2">
                       Jalan Bukit Kismadani, Kompleks Balai RW 13<br />
                       Bluru Kidul, Kec. Sidoarjo, Jawa Timur
+                    </p>
+                    <p className="text-gray-600">
+                      <span className="font-bold text-hexa-red">Telepon:</span> 0821 4355 8433
                       <br />
-                      Telepon: 0821 4355 8433
-                      <br />
-                      Email: halo@hexaintegra.com
+                      <span className="font-bold text-hexa-red">Email:</span> halo@hexaintegra.com
                     </p>
                   </div>
                 </div>
@@ -99,7 +100,7 @@ const ContactForm = () => {
                 </div>
 
                 {/* Gambar Team */}
-                <div className="mt-8">
+                <div className="mt-6">
                   <img
                     src="https://hexaintegra.com/wp-content/uploads/2024/10/Group-20-1-2048x1445.webp"
                     alt="Hexa Integra Team"
@@ -113,13 +114,13 @@ const ContactForm = () => {
           {/* Form - diperlebar */}
           <div className="animate-fade-in-right">
             <Card className="bg-white shadow-xl border-0 h-full">
-              <CardHeader>
-                <CardTitle className="text-2xl text-hexa-red mb-6">
+              <CardHeader className="pb-4">
+                <CardTitle className="text-2xl text-hexa-red mb-4">
                   Kirim Pesan
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form onSubmit={handleSubmit} className="space-y-4">
                   <div>
                     <label
                       htmlFor="name"
@@ -190,7 +191,7 @@ const ContactForm = () => {
                       required
                       value={formData.message}
                       onChange={handleChange}
-                      rows={8}
+                      rows={6}
                       className="border-hexa-gray focus:ring-hexa-red focus:border-hexa-red"
                       placeholder="Jelaskan kebutuhan proyek Anda atau pertanyaan yang ingin Anda sampaikan..."
                     />

@@ -85,9 +85,9 @@
 }
 
 @layer components {
-  /* Section Padding */
+  /* Section Padding - Reduced for better fit */
   .section-padding {
-    @apply py-16 lg:py-24;
+    @apply py-8 lg:py-12;
   }
 
   /* Container */
