@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -45,7 +44,7 @@ const ProposalSlider = () => {
       id: "modules",
       title: "Modul Aplikasi",
       content: (
-        <div className="max-w-4xl mx-auto pb-12">
+        <div className="max-w-4xl mx-auto">
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
             <h3 className="text-2xl font-semibold text-gray-900 mb-6 text-center">Aplikasi ini akan mencakup:</h3>
             
@@ -101,7 +100,7 @@ const ProposalSlider = () => {
       id: "estimation",
       title: "Estimasi Waktu dan Biaya",
       content: (
-        <div className="max-w-4xl mx-auto pb-12">
+        <div className="max-w-4xl mx-auto">
           <Card className="card-hover border-gray-200 animate-scale-in bg-white">
             <CardContent className="p-8">
               <div className="w-16 h-16 bg-hexa-red/10 rounded-2xl flex items-center justify-center mb-6 mx-auto">
@@ -144,7 +143,7 @@ const ProposalSlider = () => {
       id: "technical",
       title: "Pendekatan Teknis",
       content: (
-        <div className="max-w-4xl mx-auto pb-12">
+        <div className="max-w-4xl mx-auto">
           <Card className="card-hover border-gray-200 animate-scale-in bg-white">
             <CardContent className="p-8">
               <div className="w-16 h-16 bg-hexa-red/10 rounded-2xl flex items-center justify-center mb-6 mx-auto">
@@ -177,7 +176,7 @@ const ProposalSlider = () => {
       id: "portfolio",
       title: "Pengalaman & Portofolio",
       content: (
-        <div className="max-w-4xl mx-auto pb-12">
+        <div className="max-w-4xl mx-auto">
           <Card className="card-hover border-gray-200 animate-scale-in bg-white">
             <CardContent className="p-8">
               <div className="w-16 h-16 bg-hexa-red/10 rounded-2xl flex items-center justify-center mb-6 mx-auto">
@@ -251,7 +250,7 @@ const ProposalSlider = () => {
       id: "closing",
       title: "Penutup Proposal",
       content: (
-        <div className="max-w-4xl mx-auto pb-12 text-center">
+        <div className="max-w-4xl mx-auto text-center">
           <Card className="bg-gray-50 border-gray-200">
             <CardContent className="p-12">
               <MessageCircle className="w-12 h-12 mx-auto mb-6 text-hexa-red" />
@@ -310,18 +309,18 @@ const ProposalSlider = () => {
   };
 
   return (
-    <section id="proposal" className="section-padding bg-gray-50 relative">
-      <div className="container-custom relative">
+    <section id="proposal" className="section-padding bg-gray-50 relative min-h-screen flex flex-col">
+      <div className="container-custom relative flex-1 flex flex-col">
         
-        {/* Judul */}
-        <div className="max-w-4xl mx-auto pb-12 px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-8 sm:mb-10">
+        {/* Judul dengan tinggi tetap */}
+        <div className="flex-shrink-0 py-8">
+          <h2 className="text-3xl font-bold text-center text-gray-900">
             {slides[currentSlide].title}
           </h2>
         </div>
 
-        {/* Konten Slide dengan tinggi tetap */}
-        <div className="h-[60vh] relative flex items-center justify-center pb-12">
+        {/* Konten Slide dengan tinggi fleksibel */}
+        <div className="flex-1 relative flex items-center justify-center min-h-[500px]">
           <div className="w-full max-w-5xl h-full flex items-center justify-center">
             <div className="animate-fade-in w-full">
               {slides[currentSlide].content}
@@ -332,7 +331,7 @@ const ProposalSlider = () => {
           <button
             onClick={prevSlide}
             disabled={currentSlide === 0}
-            className="absolute left-0 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white shadow-md rounded-full p-3 transition-all disabled:opacity-40"
+            className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white shadow-md rounded-full p-3 transition-all disabled:opacity-40"
           >
             <ChevronLeft className="w-6 h-6 text-gray-700" />
           </button>
@@ -341,32 +340,33 @@ const ProposalSlider = () => {
           <button
             onClick={nextSlide}
             disabled={currentSlide === slides.length - 1}
-            className="absolute right-0 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white shadow-md rounded-full p-3 transition-all disabled:opacity-40"
+            className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white shadow-md rounded-full p-3 transition-all disabled:opacity-40"
           >
             <ChevronRight className="w-6 h-6 text-gray-700" />
           </button>
         </div>
 
-        {/* Indikator Bulatan dengan posisi tetap */}
-        <div className="flex justify-center gap-3 mt-24">
-          {slides.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => goToSlide(index)}
-              className={`w-4 h-4 rounded-full transition-all duration-300 ${
-                index === currentSlide
-                  ? "bg-hexa-red scale-110"
-                  : "bg-gray-300 hover:bg-gray-400"
-              }`}
-            />
-          ))}
-        </div>
+        {/* Indikator dan Counter dengan posisi tetap di bawah */}
+        <div className="flex-shrink-0 py-8">
+          <div className="flex justify-center gap-3 mb-4">
+            {slides.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => goToSlide(index)}
+                className={`w-4 h-4 rounded-full transition-all duration-300 ${
+                  index === currentSlide
+                    ? "bg-hexa-red scale-110"
+                    : "bg-gray-300 hover:bg-gray-400"
+                }`}
+              />
+            ))}
+          </div>
 
-        {/* Slide Counter */}
-        <div className="text-center text-gray-600 mt-4">
-          <p className="text-sm">
-            Slide {currentSlide + 1} dari {slides.length}
-          </p>
+          <div className="text-center text-gray-600">
+            <p className="text-sm">
+              Slide {currentSlide + 1} dari {slides.length}
+            </p>
+          </div>
         </div>
       </div>
     </section>
