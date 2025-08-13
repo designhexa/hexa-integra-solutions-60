@@ -338,7 +338,7 @@ const ProposalSlider = () => {
         </div>
 
         {/* Container untuk konten dan tombol navigasi */}
-        <div className="relative px-16">
+        <div className="relative px-20">
           {/* Konten Slide dengan tinggi yang disesuaikan untuk slide terpanjang */}
           <div className="h-[650px] flex items-center justify-center overflow-hidden">
             <div className="w-full animate-fade-in">
@@ -366,7 +366,7 @@ const ProposalSlider = () => {
         </div>
 
         {/* Pagination dengan tinggi tetap */}
-        <div className="h-20 flex flex-col items-center justify-center flex-shrink-0 mt-8">
+        <div className="h-16 flex flex-col items-center justify-center flex-shrink-0 mt-8">
           <div className="flex justify-center gap-3 mb-4">
             {slides.map((_, index) => (
               <button
