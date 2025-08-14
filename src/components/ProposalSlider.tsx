@@ -338,7 +338,7 @@ const ProposalSlider = () => {
         {/* Container untuk konten dan tombol navigasi */}
         <div className="relative px-1 sm:px-20">
           {/* Konten Slide dengan tinggi yang ditambah untuk mobile */}
-          <div className="h-[450px] sm:h-[650px] flex items-center justify-center overflow-hidden">
+          <div className="h-[500px] sm:h-[650px] flex items-center justify-center overflow-hidden">
             <div className="w-full animate-fade-in">
               {slides[currentSlide].content}
             </div>
