@@ -328,8 +328,8 @@ const ProposalSlider = () => {
     <section id="proposal" className="section-padding bg-gray-50 pt-24 sm:pt-28 pb-4 sm:pb-12 min-h-screen">
       <div className="container-custom max-w-7xl">
         
-        {/* Judul dengan tinggi tetap */}
-        <div className="h-6 sm:h-12 flex items-center justify-center flex-shrink-0">
+        {/* Judul dengan tinggi tetap - dikurangi tingginya untuk mobile */}
+        <div className="h-4 sm:h-12 flex items-center justify-center flex-shrink-0">
           <h2 className="text-base sm:text-3xl font-bold text-center text-gray-900">
             {slides[currentSlide].title}
           </h2>
@@ -337,8 +337,8 @@ const ProposalSlider = () => {
 
         {/* Container untuk konten dan tombol navigasi */}
         <div className="relative px-1 sm:px-20">
-          {/* Konten Slide dengan tinggi yang disesuaikan untuk mobile */}
-          <div className="h-[420px] sm:h-[650px] flex items-center justify-center overflow-hidden">
+          {/* Konten Slide dengan tinggi yang ditambah untuk mobile */}
+          <div className="h-[470px] sm:h-[650px] flex items-center justify-center overflow-hidden">
             <div className="w-full animate-fade-in">
               {slides[currentSlide].content}
             </div>
@@ -363,8 +363,8 @@ const ProposalSlider = () => {
           </button>
         </div>
 
-        {/* Pagination dengan tinggi tetap */}
-        <div className="h-8 sm:h-8 flex flex-col items-center justify-center flex-shrink-0 mt-6 sm:mt-8">
+        {/* Pagination dengan tinggi tetap dan jarak yang ditambah */}
+        <div className="h-8 sm:h-8 flex flex-col items-center justify-center flex-shrink-0 mt-8 sm:mt-8">
           <div className="flex justify-center gap-1.5 sm:gap-3 mb-2 sm:mb-4">
             {slides.map((_, index) => (
               <button
