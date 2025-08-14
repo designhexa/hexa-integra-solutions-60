@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowDown, FileText } from "lucide-react";
 import { useNavigate } from "react-router-dom";
@@ -44,16 +45,33 @@ const HeroSection = () => {
               <span className="block text-hexa-red">Aplikasi Terintegrasi</span>
             </h1>
 
-            <p className="text-xl text-gray-600 mb-4 max-w-3xl mx-auto leading-relaxed">
-              Disusun oleh{" "}
-              <span className="font-semibold text-hexa-red">
+            {/* Text yang berbeda untuk mobile dan desktop */}
+            <div className="block sm:hidden">
+              <p className="text-lg text-gray-600 mb-2 max-w-3xl mx-auto leading-relaxed">
+                Disusun oleh
+              </p>
+              <p className="text-lg font-semibold text-hexa-red mb-2">
                 CV. Hexa Integra Mandiri
-              </span>{" "}
-              untuk
-            </p>
-            <p className="text-2xl font-semibold text-gray-900 mb-12">
-              PT Samugara Global Capital
-            </p>
+              </p>
+              <p className="text-lg text-gray-600 mb-2">untuk</p>
+              <p className="text-xl font-semibold text-gray-900 mb-12">
+                PT Samugara Global Capital
+              </p>
+            </div>
+
+            {/* Text untuk desktop */}
+            <div className="hidden sm:block">
+              <p className="text-xl text-gray-600 mb-4 max-w-3xl mx-auto leading-relaxed">
+                Disusun oleh{" "}
+                <span className="font-semibold text-hexa-red">
+                  CV. Hexa Integra Mandiri
+                </span>{" "}
+                untuk
+              </p>
+              <p className="text-2xl font-semibold text-gray-900 mb-12">
+                PT Samugara Global Capital
+              </p>
+            </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
               {/* Tombol ke halaman Proposal */}
