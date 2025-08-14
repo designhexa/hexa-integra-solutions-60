@@ -312,7 +312,7 @@ const ProposalSlider = () => {
 
   if (!isProposalUnlocked) {
     return (
-      <section id="proposal" className="section-padding bg-gray-50 pt-20 sm:pt-28 pb-4 sm:pb-12 min-h-screen">
+      <section id="proposal" className="section-padding bg-gray-50 pt-24 sm:pt-28 pb-4 sm:pb-12 min-h-screen">
         <div className="container-custom">
           <div className="text-center mb-3 sm:mb-8">
             <h2 className="text-lg sm:text-3xl font-bold text-gray-900">Proposal Pengembangan Aplikasi</h2>
@@ -325,8 +325,8 @@ const ProposalSlider = () => {
   }
 
   return (
-    <section id="proposal" className="section-padding bg-gray-50 pt-20 sm:pt-28 pb-4 sm:pb-12 min-h-screen">
-      <div className="container-custom max-w-6xl">
+    <section id="proposal" className="section-padding bg-gray-50 pt-24 sm:pt-28 pb-4 sm:pb-12 min-h-screen">
+      <div className="container-custom max-w-7xl">
         
         {/* Judul dengan tinggi tetap */}
         <div className="h-6 sm:h-12 flex items-center justify-center flex-shrink-0">
@@ -336,35 +336,35 @@ const ProposalSlider = () => {
         </div>
 
         {/* Container untuk konten dan tombol navigasi */}
-        <div className="relative px-4 sm:px-20">
+        <div className="relative px-1 sm:px-20">
           {/* Konten Slide dengan tinggi yang disesuaikan untuk mobile */}
-          <div className="h-[380px] sm:h-[650px] flex items-center justify-center overflow-hidden">
+          <div className="h-[420px] sm:h-[650px] flex items-center justify-center overflow-hidden">
             <div className="w-full animate-fade-in">
               {slides[currentSlide].content}
             </div>
           </div>
         
-          {/* Tombol Prev - di luar kontainer konten */}
+          {/* Tombol Prev - dipindahkan lebih ke tepi */}
           <button
             onClick={prevSlide}
             disabled={currentSlide === 0}
-            className="absolute left-0 sm:left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white shadow-lg rounded-full p-1.5 sm:p-4 transition-all disabled:opacity-40 disabled:cursor-not-allowed z-10"
+            className="absolute -left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white shadow-lg rounded-full p-1 sm:p-4 transition-all disabled:opacity-40 disabled:cursor-not-allowed z-10"
           >
             <ChevronLeft className="w-3 h-3 sm:w-6 sm:h-6 text-gray-700" />
           </button>
         
-          {/* Tombol Next - di luar kontainer konten */}
+          {/* Tombol Next - dipindahkan lebih ke tepi */}
           <button
             onClick={nextSlide}
             disabled={currentSlide === slides.length - 1}
-            className="absolute right-0 sm:right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white shadow-lg rounded-full p-1.5 sm:p-4 transition-all disabled:opacity-40 disabled:cursor-not-allowed z-10"
+            className="absolute -right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white shadow-lg rounded-full p-1 sm:p-4 transition-all disabled:opacity-40 disabled:cursor-not-allowed z-10"
           >
             <ChevronRight className="w-3 h-3 sm:w-6 sm:h-6 text-gray-700" />
           </button>
         </div>
 
         {/* Pagination dengan tinggi tetap */}
-        <div className="h-8 sm:h-8 flex flex-col items-center justify-center flex-shrink-0 mt-4 sm:mt-8">
+        <div className="h-8 sm:h-8 flex flex-col items-center justify-center flex-shrink-0 mt-6 sm:mt-8">
           <div className="flex justify-center gap-1.5 sm:gap-3 mb-2 sm:mb-4">
             {slides.map((_, index) => (
               <button
