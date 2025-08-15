@@ -410,9 +410,6 @@ const ProposalSlider = () => {
               <div className="flex justify-center mb-2 sm:mb-4">
                 <Settings className="w-5 h-5 sm:w-10 sm:h-10 text-hexa-red" />
               </div>
-              <h3 className="text-sm sm:text-2xl font-semibold text-gray-900 mb-4 sm:mb-6">
-                Rencana Teknikal
-              </h3>
             </div>
       
             {/* Grid 2 Kolom */}
@@ -748,11 +745,6 @@ const ProposalSlider = () => {
                 samapp-hexa.vercel.app
               </a>
             </p>
-            <img
-              src="/images/prototype-preview.png"
-              alt="Preview Prototype Design"
-              className="rounded-lg shadow-md mx-auto border border-gray-200"
-            />
           </div>
         </div>
       )
