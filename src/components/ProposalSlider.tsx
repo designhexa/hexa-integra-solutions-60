@@ -3,8 +3,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import LoginAccess from "@/components/LoginAccess";
 import {
-  FileText, Target, Database, BarChart3, CheckCircle, Shield, DollarSign,
-  Clock, Code, Briefcase, MessageCircle, ChevronLeft, ChevronRight, HandHeart
+  FileText, Target, Database, BarChart3, CheckCircle, Shield, DollarSign, BookOpenText,
+  Clock, Code, Briefcase, MessageCircle, ChevronLeft, ChevronRight, Layers, HandHeart
 } from "lucide-react";
 
 const ProposalSlider = () => {
@@ -22,6 +22,7 @@ const ProposalSlider = () => {
       content: (
         <div className="max-w-4xl mx-auto">
           <p className="w-full text-center text-xs sm:text-lg text-gray-700 leading-relaxed mb-2 sm:mb-8 px-2 sm:px-0">
+            <BookOpenText className="w-3 h-3 sm:w-8 sm:h-8 text-hexa-red" />
             Menindaklanjuti permintaan penawaran dari Direktur PT Samugara Global Capital, berikut ini kami kirimkan proposal kerja pengembangan aplikasi perusahaan sesuai yang diminta.
             Proposal ini kami bagi dan rinci ke dalam beberapa aspek pembahasan.
           </p>
@@ -108,7 +109,7 @@ const ProposalSlider = () => {
             <Card className="card-hover border-gray-200 animate-scale-in bg-white mx-2 sm:mx-0">
               <CardContent className="p-2 sm:p-8">
                 <div className="w-6 h-6 sm:w-16 sm:h-16 bg-hexa-red/10 rounded-lg sm:rounded-2xl flex items-center justify-center mb-2 sm:mb-6 mx-auto">
-                  <Clock className="w-3 h-3 sm:w-8 sm:h-8 text-hexa-red" />
+                  <Layers className="w-3 h-3 sm:w-8 sm:h-8 text-hexa-red" />
                 </div>
         
                 <h3 className="text-sm sm:text-2xl font-semibold text-gray-900 mb-2 sm:mb-6 text-center">
@@ -547,6 +548,7 @@ const ProposalSlider = () => {
         <div className="max-w-4xl mx-auto">
           <Card className="card-hover border-gray-200 animate-scale-in bg-white mx-2 sm:mx-0">
             <ul className="list-disc list-inside max-w-3xl mx-auto text-sm sm:text-base space-y-2 p-4 sm:p-6">
+              <Target className="w-3 h-3 sm:w-8 sm:h-8 text-hexa-red" />
               <li>
                 <strong>Fase Awal:</strong> Fokus pada modul yang paling krusial
                 (Keuangan, Pengadaan, Inventory) untuk percepatan pengerjaan.
