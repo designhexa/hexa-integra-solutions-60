@@ -463,10 +463,16 @@ const ProposalSlider = () => {
               </tr>
             </tbody>
           </table>
+    
+          {/* Sisipkan gambar Gantt Chart */}
+          <img
+            src="/images/gantt-chart.png" // ganti dengan path gambar kamu
+            alt="Gantt Chart Pengerjaan"
+            className="mt-6 max-w-full h-auto rounded-lg shadow"
+          />
         </div>
       )
     },
-
     {
       id: "estimation",
       title: "Estimasi Waktu dan Biaya",
