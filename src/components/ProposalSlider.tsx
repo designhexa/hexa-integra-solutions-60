@@ -727,6 +727,37 @@ const ProposalSlider = () => {
         </div>
       )
     },
+{
+  id: "prototype-design",
+  title: "Prototype Design",
+  content: (
+    <div className="max-w-4xl mx-auto text-center">
+      <div className="bg-white rounded-lg sm:rounded-2xl p-2 sm:p-6 shadow-lg border border-gray-200">
+        <h3 className="text-sm sm:text-2xl font-semibold text-gray-900 mb-4">
+          Prototype Design
+        </h3>
+        <p className="text-gray-700 text-sm sm:text-base mb-4">
+          Visualisasi awal dari sistem yang dirancang.  
+          Untuk melihat versi <strong>clickable</strong>, silakan kunjungi:{" "}
+          <a
+            href="https://samapp-hexa.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-hexa-red font-semibold hover:underline"
+          >
+            samapp-hexa.vercel.app
+          </a>
+        </p>
+        <img
+          src="/images/prototype-preview.png"
+          alt="Preview Prototype Design"
+          className="rounded-lg shadow-md mx-auto border border-gray-200"
+        />
+      </div>
+    </div>
+  )
+}
+
     {
       id: "discussion",
       title: "Mari Berdiskusi",
