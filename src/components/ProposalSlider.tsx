@@ -294,7 +294,7 @@ const ProposalSlider = () => {
                 Kami mengikuti prosedur standar <strong>SDLC</strong> untuk kualitas terbaik. <strong>Setiap Fase Terdiri dari:</strong>
               </p>
       
-              <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 mb-0">
+              <div className="bg-gray-50 border border-gray-200 rounded-lg p-2 mb-0">
                 <ol className="list-decimal list-inside text-sm text-gray-700 space-y-1">
                   <li>Kick-off & Finalisasi Requirement</li>
                   <li>Sprint Per Fase</li>
@@ -305,7 +305,7 @@ const ProposalSlider = () => {
             </div>
       
             {/* Tabel Pekerjaan */}
-            <div className="flex flex-col items-center justify-center text-center p-4 mt-0">
+            <div className="flex flex-col items-center justify-center text-center p-2 mt-0">
               <table className="table-auto border-collapse border border-gray-300 text-sm">
                 <thead className="bg-gray-100">
                   <tr>
