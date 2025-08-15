@@ -17,44 +17,49 @@ const ProposalSlider = () => {
 
   const slides = [
     {
-      id: "background",
-      title: "Latar Belakang",
-      content: (
-        <div className="max-w-4xl mx-auto">
-          <p className="w-full text-center text-xs sm:text-lg text-gray-700 leading-relaxed mb-2 sm:mb-8 px-2 sm:px-0">
-            Menindaklanjuti permintaan penawaran dari Direktur PT Samugara Global Capital,
-            berikut ini kami kirimkan proposal kerja pengembangan aplikasi perusahaan sesuai yang diminta.
-            Proposal ini kami bagi dan rinci ke dalam beberapa aspek pembahasan.
-          </p>
-    
-          <div className="w-6 h-6 sm:w-16 sm:h-16 bg-hexa-red/10 rounded-lg sm:rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-6">
-            <BookOpenText className="w-5 h-5 sm:w-10 sm:h-10 text-hexa-red" />
-          </div>
-    
-          <h3 className="text-sm sm:text-2xl font-semibold text-gray-900 mb-2 sm:mb-6">
-            Kebutuhan Sistem Terintegrasi
-          </h3>
-    
-          <div className="mt-2 sm:mt-6 p-2 sm:p-6 bg-hexa-red/5 rounded-lg sm:rounded-2xl border border-hexa-red/20">
-            <div className="flex flex-col items-center text-center">
-              <p className="text-xs sm:text-base text-gray-700 leading-relaxed">
-                Kebutuhan yang diminta adalah{" "}
-                <span className="font-semibold text-hexa-red">
-                  Aplikasi Web terintegrasi untuk sebuah Grup Usaha
-                </span>{" "}
-                yang terdiri dari enam perusahaan dan saling terhubung,
-                sehingga integrasi data dan keamanan menjadi prioritas utama.
-              </p>
-            </div>
-          </div>
-    
-          <p className="text-xs sm:text-lg text-gray-700 mt-2 sm:mt-8 leading-relaxed text-center px-2 sm:px-0">
-            Melalui proposal ini, kami berharap dapat memberikan gambaran teknis, estimasi pengembangan,
-            serta solusi yang tepat untuk kebutuhan PT Samugara Global Capital.
+  id: "background",
+  title: "Latar Belakang",
+  content: (
+    <div className="max-w-4xl mx-auto">
+      {/* Paragraf pembuka */}
+      <p className="w-full text-center text-xs sm:text-lg text-gray-700 leading-relaxed mb-2 sm:mb-8 px-2 sm:px-0">
+        Menindaklanjuti permintaan penawaran dari Direktur PT Samugara Global Capital,
+        berikut ini kami kirimkan proposal kerja pengembangan aplikasi perusahaan sesuai yang diminta.
+        Proposal ini kami bagi dan rinci ke dalam beberapa aspek pembahasan.
+      </p>
+
+      {/* Icon + Title dalam 1 baris */}
+      <div className="flex items-center justify-center gap-3 sm:gap-4 mb-4 sm:mb-8">
+        <div className="w-6 h-6 sm:w-16 sm:h-16 bg-hexa-red/10 rounded-lg sm:rounded-2xl flex items-center justify-center">
+          <BookOpenText className="w-5 h-5 sm:w-10 sm:h-10 text-hexa-red" />
+        </div>
+        <h3 className="text-sm sm:text-2xl font-semibold text-gray-900">
+          Kebutuhan Sistem Terintegrasi
+        </h3>
+      </div>
+
+      {/* Box kebutuhan */}
+      <div className="mt-2 sm:mt-6 p-2 sm:p-6 bg-hexa-red/5 rounded-lg sm:rounded-2xl border border-hexa-red/20">
+        <div className="text-center">
+          <p className="text-xs sm:text-base text-gray-700 leading-relaxed">
+            Kebutuhan yang diminta adalah{" "}
+            <span className="font-semibold text-hexa-red">
+              Aplikasi Web terintegrasi untuk sebuah Grup Usaha
+            </span>{" "}
+            yang terdiri dari enam perusahaan dan saling terhubung,
+            sehingga integrasi data dan keamanan menjadi prioritas utama.
           </p>
         </div>
-      )
-    },
+      </div>
+
+      {/* Penutup */}
+      <p className="text-xs sm:text-lg text-gray-700 mt-2 sm:mt-8 leading-relaxed text-center px-2 sm:px-0">
+        Melalui proposal ini, kami berharap dapat memberikan gambaran teknis, estimasi pengembangan,
+        serta solusi yang tepat untuk kebutuhan PT Samugara Global Capital.
+      </p>
+    </div>
+  )
+},
     {
       id: "modules",
       title: "Modul Aplikasi",
