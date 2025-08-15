@@ -220,7 +220,7 @@ const ProposalSlider = () => {
     },
     {
     id: "pengalaman",
-    title: "Pengalaman Implementasi",
+    title: "Pengalaman Kerja Semisal",
     content: (
       <div className="max-w-4xl mx-auto max-h-[450px] sm:max-h-[500px] lg:max-h-none overflow-y-auto">
         <div className="bg-white rounded-lg sm:rounded-2xl p-2 sm:p-4 lg:p-8 shadow-lg border border-gray-200 mx-1 sm:mx-2 lg:mx-0">
@@ -282,7 +282,7 @@ const ProposalSlider = () => {
     },
     {
       id: "project-phases",
-      title: "Tahapan Pengerjaan",
+      title: "Rencana Kerja",
       content: (
         <div className="max-w-4xl mx-auto max-h-[450px] sm:max-h-[500px] lg:max-h-none overflow-y-auto">
           <div className="bg-white rounded-lg sm:rounded-2xl p-2 sm:p-4 lg:p-8 shadow-lg border border-gray-200 mx-1 sm:mx-2 lg:mx-0">
@@ -394,14 +394,11 @@ const ProposalSlider = () => {
     },
     {
       id: "tech-stack",
-      title: "Pendekatan Teknis (Tech Stack)",
+      title: "Rencana Teknikal",
       content: (
       <div className="max-w-4xl mx-auto max-h-[450px] sm:max-h-[500px] lg:max-h-none overflow-y-auto">
         <div className="bg-white rounded-lg sm:rounded-2xl p-2 sm:p-4 lg:p-8 shadow-lg border border-gray-200 mx-1 sm:mx-2 lg:mx-0">
-          <h3 className="text-sm sm:text-lg lg:text-2xl font-semibold text-gray-900 mb-4 text-center">
-            Rencana Teknikal
-          </h3>
-    
+        
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             {/* Kolom Kiri */}
             <div className="space-y-4">
@@ -549,7 +546,7 @@ const ProposalSlider = () => {
       title: "Rencana Strategis",
       content: (
         <div className="max-w-4xl mx-auto">
-          <ul className="list-disc text-left max-w-3xl text-sm sm:text-base space-y-2">
+          <Card className="card-hover border-gray-200 animate-scale-in bg-white mx-2 sm:mx-0">
             <li>
               <strong>Fase Awal:</strong> Fokus pada modul yang paling krusial (Keuangan, Pengadaan, Inventory) untuk percepatan pengerjaan.
             </li>
