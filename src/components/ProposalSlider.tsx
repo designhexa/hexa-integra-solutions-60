@@ -104,8 +104,8 @@ const ProposalSlider = () => {
         id: "penawaran",
         title: "Penawaran Kerjasama",
         content: (
-          <div className="max-w-4xl mx-auto max-h-[450px] sm:max-h-[500px] lg:max-h-none overflow-y-a
-            <Card className="card-hover border-gray-200 animate-scale-in bg-white mx-2 sm:mx-0 lg:max-h-none sm:overflow-y-auto">
+          <div className="max-w-4xl mx-auto max-h-[450px] sm:max-h-[500px] lg:max-h-none overflow-y-auto">
+            <Card className="card-hover border-gray-200 animate-scale-in bg-white mx-2 sm:mx-0">
               <CardContent className="p-2 sm:p-8">
                 <div className="w-6 h-6 sm:w-16 sm:h-16 bg-hexa-red/10 rounded-lg sm:rounded-2xl flex items-center justify-center mb-2 sm:mb-6 mx-auto">
                   <Clock className="w-3 h-3 sm:w-8 sm:h-8 text-hexa-red" />
@@ -217,7 +217,6 @@ const ProposalSlider = () => {
             </Card>
           </div>
         )
-
     },
     {
       id: "estimation",
