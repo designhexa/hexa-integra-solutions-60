@@ -100,7 +100,7 @@ const ProposalSlider = () => {
         </div>
       )
     },
-    {
+   {
       id: "penawaran",
       title: "Penawaran Kerjasama",
       content: (
@@ -110,87 +110,92 @@ const ProposalSlider = () => {
               <div className="w-6 h-6 sm:w-16 sm:h-16 bg-hexa-red/10 rounded-lg sm:rounded-2xl flex items-center justify-center mb-2 sm:mb-6 mx-auto">
                 <Clock className="w-3 h-3 sm:w-8 sm:h-8 text-hexa-red" />
               </div>
-              <h3 className="text-sm sm:text-2xl font-semibold text-gray-900 mb-2 sm:mb-6 text-center">Format & Scope Kerjasama</h3>
-              <p className="text-xs sm:text-base text-gray-600 leading-relaxed mb-2 sm:mb-8 text-center">Format kerjasama yang ditawarkan adalah:</p>
-                              
-                              {/* Bagian 1 - Timeline & Keterangan */}
-                <h4 className="text-xs sm:text-lg font-semibold text-gray-900 mb-1 sm:mb-4">
-                  Timeline Pengembangan
-                </h4>
-                
-                {/* 1. Kerjasama antara dua pihak */}
-                <div className="flex flex-col gap-1.5 mb-2">
-                  <div className="flex items-start gap-1.5">
-                    <div className="w-1 h-1 sm:w-2 sm:h-2 bg-hexa-red rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
-                    <p className="text-gray-700 text-xs sm:text-base">
-                      1. Kerjasama antara dua pihak, yaitu:
-                    </p>
-                  </div>
-                  <div className="ml-6">
-                    {[
-                      "a. CV. Hexa Integra Mandiri",
-                      "b. PT. Samugara Global Capital",
-                    ].map((subItem, subIndex) => (
-                      <div key={subIndex} className="flex items-start gap-1.5">
-                        <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-hexa-red rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
-                        <p className="text-gray-700 text-xs sm:text-base">{subItem}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-                
-                {/* 2 & 3 */}
-                {[
-                  "2. Output kerjasama adalah aplikasi berbasis web sesuai requirement yang sudah siap digunakan",
-                  "3. Proses pengerjaan tidak mengharuskan pihak Hexa untuk hadir atau stay di kantor Samugara, pengerjaan dimaksimalkan secara online",
-                ].map((item, index) => (
-                  <div key={index} className="flex items-start gap-1.5">
-                    <div className="w-1 h-1 sm:w-2 sm:h-2 bg-hexa-red rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
-                    <p className="text-gray-700 text-xs sm:text-base">{item}</p>
-                  </div>
-                ))}
-                
-                {/* Bagian 2 - Scope & Ketentuan */}
-                <h4 className="text-xs sm:text-lg font-semibold text-gray-900 mt-6 mb-1 sm:mb-4">
-                  4. Yang termasuk scope kerja:
-                </h4>
-                {[
-                  "Pengembangan aplikasi sesuai request",
-                  "Setting server",
-                  "Garansi aplikasi sebanyak jumlah bulan pengembangan",
-                ].map((item, index) => (
-                  <div key={index} className="flex items-start gap-1.5">
-                    <div className="w-1 h-1 sm:w-2 sm:h-2 bg-hexa-red rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
-                    <p className="text-gray-700 text-xs sm:text-base">{item}</p>
-                  </div>
-                ))}
-                
-                <h4 className="text-xs sm:text-lg font-semibold text-gray-900 mt-6 mb-1 sm:mb-4">
-                  5. Yang tidak termasuk scope kerja:
-                </h4>
-                {[
-                  "Penyediaan server dan domain",
-                  "Technical support setelah proses serah terima",
-                ].map((item, index) => (
-                  <div key={index} className="flex items-start gap-1.5">
-                    <div className="w-1 h-1 sm:w-2 sm:h-2 bg-hexa-red rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
-                    <p className="text-gray-700 text-xs sm:text-base">{item}</p>
-                  </div>
-                ))}
-                
-                {/* Ketentuan tambahan */}
-                <div className="mt-6 flex items-start gap-1.5">
+    
+              <h3 className="text-sm sm:text-2xl font-semibold text-gray-900 mb-2 sm:mb-6 text-center">
+                Format & Scope Kerjasama
+              </h3>
+              <p className="text-xs sm:text-base text-gray-600 leading-relaxed mb-2 sm:mb-8 text-center">
+                Format kerjasama yang ditawarkan adalah:
+              </p>
+    
+              {/* Bagian 1 - Timeline & Keterangan */}
+              <h4 className="text-xs sm:text-lg font-semibold text-gray-900 mb-1 sm:mb-4">
+                Timeline Pengembangan
+              </h4>
+    
+              {/* 1. Kerjasama antara dua pihak */}
+              <div className="flex flex-col gap-1.5 mb-2">
+                <div className="flex items-start gap-1.5">
                   <div className="w-1 h-1 sm:w-2 sm:h-2 bg-hexa-red rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
                   <p className="text-gray-700 text-xs sm:text-base">
-                    6. Keterlambatan dari salah satu pihak bisa berdampak pada penerapan late charge
+                    1. Kerjasama antara dua pihak, yaitu:
                   </p>
                 </div>
+                <div className="ml-6">
+                  {[
+                    "a. CV. Hexa Integra Mandiri",
+                    "b. PT. Samugara Global Capital",
+                  ].map((subItem, subIndex) => (
+                    <div key={subIndex} className="flex items-start gap-1.5">
+                      <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-hexa-red rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
+                      <p className="text-gray-700 text-xs sm:text-base">{subItem}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+    
+              {/* 2 & 3 */}
+              {[
+                "2. Output kerjasama adalah aplikasi berbasis web sesuai requirement yang sudah siap digunakan",
+                "3. Proses pengerjaan tidak mengharuskan pihak Hexa untuk hadir atau stay di kantor Samugara, pengerjaan dimaksimalkan secara online",
+              ].map((item, index) => (
+                <div key={index} className="flex items-start gap-1.5">
+                  <div className="w-1 h-1 sm:w-2 sm:h-2 bg-hexa-red rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
+                  <p className="text-gray-700 text-xs sm:text-base">{item}</p>
+                </div>
+              ))}
+    
+              {/* Bagian 2 - Scope & Ketentuan */}
+              <h4 className="text-xs sm:text-lg font-semibold text-gray-900 mt-6 mb-1 sm:mb-4">
+                4. Yang termasuk scope kerja:
+              </h4>
+              {[
+                "Pengembangan aplikasi sesuai request",
+                "Setting server",
+                "Garansi aplikasi sebanyak jumlah bulan pengembangan",
+              ].map((item, index) => (
+                <div key={index} className="flex items-start gap-1.5">
+                  <div className="w-1 h-1 sm:w-2 sm:h-2 bg-hexa-red rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
+                  <p className="text-gray-700 text-xs sm:text-base">{item}</p>
+                </div>
+              ))}
+    
+              <h4 className="text-xs sm:text-lg font-semibold text-gray-900 mt-6 mb-1 sm:mb-4">
+                5. Yang tidak termasuk scope kerja:
+              </h4>
+              {[
+                "Penyediaan server dan domain",
+                "Technical support setelah proses serah terima",
+              ].map((item, index) => (
+                <div key={index} className="flex items-start gap-1.5">
+                  <div className="w-1 h-1 sm:w-2 sm:h-2 bg-hexa-red rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
+                  <p className="text-gray-700 text-xs sm:text-base">{item}</p>
+                </div>
+              ))}
+    
+              {/* Ketentuan tambahan */}
+              <div className="mt-6 flex items-start gap-1.5">
+                <div className="w-1 h-1 sm:w-2 sm:h-2 bg-hexa-red rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
+                <p className="text-gray-700 text-xs sm:text-base">
+                  6. Keterlambatan dari salah satu pihak bisa berdampak pada penerapan late charge
+                </p>
               </div>
             </CardContent>
           </Card>
         </div>
       )
-    },
+    }
+
 
 {
       id: "estimation",
