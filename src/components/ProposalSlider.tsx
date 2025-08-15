@@ -402,6 +402,7 @@ const ProposalSlider = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             {/* Kolom Kiri */}
             <div className="space-y-4">
+              <Settings className="w-3 h-3 sm:w-8 sm:h-8 text-hexa-red" />
               <div>
                 <h4 className="font-semibold text-gray-900 mb-2">1. Frontend</h4>
                 <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
@@ -579,21 +580,6 @@ const ProposalSlider = () => {
       )
     },
     {
-      id: "gambar-prototype1",
-      title: "Prototype 1",
-      content: (
-        <div className="max-w-4xl mx-auto flex justify-center">
-          <Card className="card-hover border-gray-200 animate-scale-in bg-white mx-2 sm:mx-0">
-            <img
-              src="/images/contoh-gambar.png"
-              alt="Contoh Gambar"
-              className="max-h-[400px] w-auto object-contain mx-auto"
-            />
-          </Card>
-        </div>
-      )
-    },
-    {
     id: "estimation",
     title: "Estimasi Biaya",
     content: (
@@ -614,6 +600,21 @@ const ProposalSlider = () => {
           </CardContent>
         </Card>
       </div>
+      )
+    },
+    {
+      id: "gambar-prototype1",
+      title: "Prototype 1",
+      content: (
+        <div className="max-w-4xl mx-auto flex justify-center">
+          <Card className="card-hover border-gray-200 animate-scale-in bg-white mx-2 sm:mx-0">
+            <img
+              src="/images/contoh-gambar.png"
+              alt="Contoh Gambar"
+              className="max-h-[400px] w-auto object-contain mx-auto"
+            />
+          </Card>
+        </div>
       )
     },
     {
