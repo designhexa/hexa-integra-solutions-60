@@ -114,11 +114,13 @@ const ProposalSlider = () => {
               <p className="text-xs sm:text-base text-gray-600 leading-relaxed mb-2 sm:mb-8 text-center">Format kerjasama yang ditawarkan adalah:</p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-8">
-                <div className="space-y-1 sm:space-y-4">
-                  <h4 className="text-xs sm:text-lg font-semibold text-gray-900 mb-1 sm:mb-4">Timeline Pengembangan</h4>
+                {/* Bagian 1: Timeline Pengembangan */}
+                  <h4 className="text-xs sm:text-lg font-semibold text-gray-900 mb-1 sm:mb-4">
+                    Timeline Pengembangan
+                  </h4>
                   {[
                     "Kerjasama antara dua pihak, yaitu: CV. Hexa Integra Mandiri dan PT. Samugara Global Capital",
-                    "Output kerjasama adalah aplikasi berbasis web sesuai requirement yang sudah siap digunakan", 
+                    "Output kerjasama adalah aplikasi berbasis web sesuai requirement yang sudah siap digunakan",
                     "Proses pengerjaan tidak mengharuskan pihak Hexa untuk hadir atau stay di kantor Samugara, pengerjaan dimaksimalkan secara online",
                   ].map((item, index) => (
                     <div key={index} className="flex items-start gap-1.5">
@@ -126,15 +128,39 @@ const ProposalSlider = () => {
                       <p className="text-gray-700 text-xs sm:text-base">{item}</p>
                     </div>
                   ))}
-                </div>
-                
-                <div className="bg-hexa-red/5 rounded-lg sm:rounded-xl p-2 sm:p-6">
-                  <h4 className="text-xs sm:text-lg font-semibold text-gray-900 mb-1 sm:mb-4">Investasi</h4>
-                  <div className="text-center">
-                    <p className="text-sm sm:text-3xl font-bold text-hexa-red mb-0.5 sm:mb-2">Rp 50.000.000</p>
-                    <p className="text-gray-600 mb-0.5 sm:mb-2 text-xs sm:text-base">sampai dengan</p>
-                    <p className="text-sm sm:text-3xl font-bold text-hexa-red">Rp 150.000.000</p>
-                  </div>
+                  
+                  {/* Bagian 2: Poin 4, 5, 6 */}
+                  <h4 className="text-xs sm:text-lg font-semibold text-gray-900 mt-6 mb-1 sm:mb-4">
+                    4. Yang termasuk scope kerja:
+                  </h4>
+                  {[
+                    "Pengembangan aplikasi sesuai request",
+                    "Setting server",
+                    "Garansi aplikasi sebanyak jumlah bulan pengembangan",
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-start gap-1.5">
+                      <div className="w-1 h-1 sm:w-2 sm:h-2 bg-hexa-red rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
+                      <p className="text-gray-700 text-xs sm:text-base">{item}</p>
+                    </div>
+                  ))}
+                  
+                  <h4 className="text-xs sm:text-lg font-semibold text-gray-900 mt-6 mb-1 sm:mb-4">
+                    5. Yang tidak termasuk scope kerja:
+                  </h4>
+                  {[
+                    "Penyediaan server dan domain",
+                    "Technical support setelah proses serah terima",
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-start gap-1.5">
+                      <div className="w-1 h-1 sm:w-2 sm:h-2 bg-hexa-red rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
+                      <p className="text-gray-700 text-xs sm:text-base">{item}</p>
+                    </div>
+                  ))}
+                  
+                  <h4 className="text-xs sm:text-lg font-semibold text-gray-900 mt-6 mb-1 sm:mb-4">
+                    6. Keterlambatan dari salah satu pihak bisa berdampak pada penerapan late charge
+                  </h4>
+
                 </div>
               </div>
             </CardContent>
