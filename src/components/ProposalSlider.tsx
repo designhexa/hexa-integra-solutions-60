@@ -733,7 +733,7 @@ const ProposalSlider = () => {
             <p className="text-gray-700 text-sm sm:text-base mb-4">
               Prototype ini memberikan gambaran awal tentang tampilan dan alur penggunaan aplikasi sebelum tahap pengembangan penuh. 
               Desain ini membantu memvisualisasikan fitur, memastikan pengalaman pengguna yang intuitif, 
-              serta mempermudah komunikasi ide antara tim developer dan stakeholder.<br /> Untuk melihat versi <strong>clickable</strong>, <br /> silakan kunjungi:{" "}
+              serta mempermudah komunikasi ide antara tim developer dan stakeholder.<br /><br /> Untuk melihat versi <strong>clickable</strong>, silakan kunjungi:{" "}
               <a
                 href="https://samapp-hexa.vercel.app/"
                 target="_blank"
