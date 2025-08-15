@@ -112,55 +112,78 @@ const ProposalSlider = () => {
               </div>
               <h3 className="text-sm sm:text-2xl font-semibold text-gray-900 mb-2 sm:mb-6 text-center">Format & Scope Kerjasama</h3>
               <p className="text-xs sm:text-base text-gray-600 leading-relaxed mb-2 sm:mb-8 text-center">Format kerjasama yang ditawarkan adalah:</p>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-8">
-                {/* Bagian 1: Timeline Pengembangan */}
-                  <h4 className="text-xs sm:text-lg font-semibold text-gray-900 mb-1 sm:mb-4">
-                    Timeline Pengembangan
-                  </h4>
-                  {[
-                    "Kerjasama antara dua pihak, yaitu: CV. Hexa Integra Mandiri dan PT. Samugara Global Capital",
-                    "Output kerjasama adalah aplikasi berbasis web sesuai requirement yang sudah siap digunakan",
-                    "Proses pengerjaan tidak mengharuskan pihak Hexa untuk hadir atau stay di kantor Samugara, pengerjaan dimaksimalkan secara online",
-                  ].map((item, index) => (
-                    <div key={index} className="flex items-start gap-1.5">
-                      <div className="w-1 h-1 sm:w-2 sm:h-2 bg-hexa-red rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
-                      <p className="text-gray-700 text-xs sm:text-base">{item}</p>
-                    </div>
-                  ))}
-                  
-                  {/* Bagian 2: Poin 4, 5, 6 */}
-                  <h4 className="text-xs sm:text-lg font-semibold text-gray-900 mt-6 mb-1 sm:mb-4">
-                    4. Yang termasuk scope kerja:
-                  </h4>
-                  {[
-                    "Pengembangan aplikasi sesuai request",
-                    "Setting server",
-                    "Garansi aplikasi sebanyak jumlah bulan pengembangan",
-                  ].map((item, index) => (
-                    <div key={index} className="flex items-start gap-1.5">
-                      <div className="w-1 h-1 sm:w-2 sm:h-2 bg-hexa-red rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
-                      <p className="text-gray-700 text-xs sm:text-base">{item}</p>
-                    </div>
-                  ))}
-                  
-                  <h4 className="text-xs sm:text-lg font-semibold text-gray-900 mt-6 mb-1 sm:mb-4">
-                    5. Yang tidak termasuk scope kerja:
-                  </h4>
-                  {[
-                    "Penyediaan server dan domain",
-                    "Technical support setelah proses serah terima",
-                  ].map((item, index) => (
-                    <div key={index} className="flex items-start gap-1.5">
-                      <div className="w-1 h-1 sm:w-2 sm:h-2 bg-hexa-red rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
-                      <p className="text-gray-700 text-xs sm:text-base">{item}</p>
-                    </div>
-                  ))}
-                  
-                  <h4 className="text-xs sm:text-lg font-semibold text-gray-900 mt-6 mb-1 sm:mb-4">
+                              
+                              {/* Bagian 1 - Timeline & Keterangan */}
+                <h4 className="text-xs sm:text-lg font-semibold text-gray-900 mb-1 sm:mb-4">
+                  Timeline Pengembangan
+                </h4>
+                
+                {/* 1. Kerjasama antara dua pihak */}
+                <div className="flex flex-col gap-1.5 mb-2">
+                  <div className="flex items-start gap-1.5">
+                    <div className="w-1 h-1 sm:w-2 sm:h-2 bg-hexa-red rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
+                    <p className="text-gray-700 text-xs sm:text-base">
+                      1. Kerjasama antara dua pihak, yaitu:
+                    </p>
+                  </div>
+                  <div className="ml-6">
+                    {[
+                      "a. CV. Hexa Integra Mandiri",
+                      "b. PT. Samugara Global Capital",
+                    ].map((subItem, subIndex) => (
+                      <div key={subIndex} className="flex items-start gap-1.5">
+                        <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-hexa-red rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
+                        <p className="text-gray-700 text-xs sm:text-base">{subItem}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                
+                {/* 2 & 3 */}
+                {[
+                  "2. Output kerjasama adalah aplikasi berbasis web sesuai requirement yang sudah siap digunakan",
+                  "3. Proses pengerjaan tidak mengharuskan pihak Hexa untuk hadir atau stay di kantor Samugara, pengerjaan dimaksimalkan secara online",
+                ].map((item, index) => (
+                  <div key={index} className="flex items-start gap-1.5">
+                    <div className="w-1 h-1 sm:w-2 sm:h-2 bg-hexa-red rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
+                    <p className="text-gray-700 text-xs sm:text-base">{item}</p>
+                  </div>
+                ))}
+                
+                {/* Bagian 2 - Scope & Ketentuan */}
+                <h4 className="text-xs sm:text-lg font-semibold text-gray-900 mt-6 mb-1 sm:mb-4">
+                  4. Yang termasuk scope kerja:
+                </h4>
+                {[
+                  "Pengembangan aplikasi sesuai request",
+                  "Setting server",
+                  "Garansi aplikasi sebanyak jumlah bulan pengembangan",
+                ].map((item, index) => (
+                  <div key={index} className="flex items-start gap-1.5">
+                    <div className="w-1 h-1 sm:w-2 sm:h-2 bg-hexa-red rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
+                    <p className="text-gray-700 text-xs sm:text-base">{item}</p>
+                  </div>
+                ))}
+                
+                <h4 className="text-xs sm:text-lg font-semibold text-gray-900 mt-6 mb-1 sm:mb-4">
+                  5. Yang tidak termasuk scope kerja:
+                </h4>
+                {[
+                  "Penyediaan server dan domain",
+                  "Technical support setelah proses serah terima",
+                ].map((item, index) => (
+                  <div key={index} className="flex items-start gap-1.5">
+                    <div className="w-1 h-1 sm:w-2 sm:h-2 bg-hexa-red rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
+                    <p className="text-gray-700 text-xs sm:text-base">{item}</p>
+                  </div>
+                ))}
+                
+                {/* Ketentuan tambahan */}
+                <div className="mt-6 flex items-start gap-1.5">
+                  <div className="w-1 h-1 sm:w-2 sm:h-2 bg-hexa-red rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
+                  <p className="text-gray-700 text-xs sm:text-base">
                     6. Keterlambatan dari salah satu pihak bisa berdampak pada penerapan late charge
-                  </h4>
-
+                  </p>
                 </div>
               </div>
             </CardContent>
