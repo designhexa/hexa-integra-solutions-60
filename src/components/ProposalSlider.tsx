@@ -551,47 +551,49 @@ const ProposalSlider = () => {
       )
       },
       {
-  id: "rencana-strategis",
-  title: "Rencana Strategis",
-  content: (
-    <div className="max-w-4xl mx-auto">
-      <Card className="card-hover border-gray-200 animate-scale-in bg-white mx-2 sm:mx-0">
-        
-        <div className="w-6 h-6 sm:w-16 sm:h-16 bg-hexa-red/10 rounded-lg sm:rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-6">
-          <Target className="w-5 h-5 sm:w-10 sm:h-10 text-hexa-red" />
+      id: "rencana-strategis",
+      title: "Rencana Strategis",
+      content: (
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Card className="card-hover border-gray-200 animate-scale-in bg-white p-6 sm:p-8">
+            
+            {/* Icon */}
+            <div className="w-10 h-10 sm:w-16 sm:h-16 bg-hexa-red/10 rounded-lg sm:rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <Target className="w-6 h-6 sm:w-10 sm:h-10 text-hexa-red" />
+            </div>
+      
+            {/* List */}
+            <ul className="list-disc list-inside max-w-3xl mx-auto text-sm sm:text-base space-y-3 text-left leading-relaxed">
+              <li>
+                <strong>Fase Awal:</strong> Fokus pada modul yang paling krusial
+                (Keuangan, Pengadaan, Inventory) untuk percepatan pengerjaan.
+              </li>
+              <li>
+                <strong>Integrasi Bertahap:</strong> Setiap modul diuji dan
+                diintegrasikan ke sistem live sebelum fase berikutnya.
+              </li>
+              <li>
+                <strong>User-Centric Development:</strong> Setiap akhir sprint
+                dilakukan review dengan user untuk memastikan kebutuhan terpenuhi.
+              </li>
+              <li>
+                <strong>Scalability:</strong> Arsitektur disiapkan untuk
+                multi-company &amp; multi-user tanpa mengubah core sistem.
+              </li>
+              <li>
+                <strong>Keamanan Data:</strong> Implementasi best-practice keamanan
+                data &amp; audit trail.
+              </li>
+              <li>
+                <strong>Training &amp; Handover:</strong> Menjamin transisi smooth
+                dari tim development ke tim operasional klien.
+              </li>
+            </ul>
+      
+          </Card>
         </div>
-
-        <ul className="list-disc list-inside max-w-3xl text-sm sm:text-base space-y-2 text-left">
-          <li>
-            <strong>Fase Awal:</strong> Fokus pada modul yang paling krusial
-            (Keuangan, Pengadaan, Inventory) untuk percepatan pengerjaan.
-          </li>
-          <li>
-            <strong>Integrasi Bertahap:</strong> Setiap modul diuji dan
-            diintegrasikan ke sistem live sebelum fase berikutnya.
-          </li>
-          <li>
-            <strong>User-Centric Development:</strong> Setiap akhir sprint
-            dilakukan review dengan user untuk memastikan kebutuhan terpenuhi.
-          </li>
-          <li>
-            <strong>Scalability:</strong> Arsitektur disiapkan untuk
-            multi-company &amp; multi-user tanpa mengubah core sistem.
-          </li>
-          <li>
-            <strong>Keamanan Data:</strong> Implementasi best-practice keamanan
-            data &amp; audit trail.
-          </li>
-          <li>
-            <strong>Training &amp; Handover:</strong> Menjamin transisi smooth
-            dari tim development ke tim operasional klien.
-          </li>
-        </ul>
-
-      </Card>
-    </div>
-  )
-},
+      )
+    },
     {
     id: "estimation",
     title: "Estimasi Biaya",
