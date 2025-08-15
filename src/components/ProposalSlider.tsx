@@ -290,15 +290,11 @@ const ProposalSlider = () => {
             {/* Konten Deskripsi */}
             <div className="flex flex-col items-center justify-center text-center p-4">
               <p className="text-sm text-gray-700">
-                Di samping ini adalah daftar pekerjaan yang akan dilakukan.
-                Proses pengerjaan dilaksanakan secara bertahap dibagi 3 fase.
-                Kami mengikuti prosedur standar <strong>SDLC</strong> untuk menghasilkan kualitas terbaik.
+                Di samping ini adalah daftar pekerjaan yang akan dilakukan. Proses pengerjaan dilaksanakan secara bertahap dibagi 3 fase.
+                Kami mengikuti prosedur standar <strong>SDLC</strong> untuk menghasilkan kualitas terbaik. Setiap Fase Terdiri dari:
               </p>
       
               <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
-                <h4 className="font-semibold text-gray-900 mb-3 text-center">
-                  Setiap Fase Terdiri dari:
-                </h4>
                 <ol className="list-decimal list-inside text-sm text-gray-700 space-y-1">
                   <li>Kick-off & Finalisasi Requirement</li>
                   <li>Sprint Per Fase</li>
