@@ -26,12 +26,14 @@ const ProposalSlider = () => {
             Proposal ini kami bagi dan rinci ke dalam beberapa aspek pembahasan.
           </p>
     
-          <div className="bg-white rounded-lg sm:rounded-2xl p-2 sm:p-8 shadow-lg border border-gray-200 mx-2 sm:mx-0">
-            <BookOpenText className="w-3 h-3 sm:w-8 sm:h-8 text-hexa-red mb-2" />
-            <h3 className="text-sm sm:text-2xl font-semibold text-gray-900 mb-2 sm:mb-6 text-center">
-              Kebutuhan Sistem Terintegrasi
-            </h3>
-    
+              <div className="bg-white rounded-lg sm:rounded-2xl p-2 sm:p-8 shadow-lg border border-gray-200 mx-2 sm:mx-0 text-center">
+          <div className="flex justify-center mb-2 sm:mb-4">
+            <BookOpenText className="w-5 h-5 sm:w-10 sm:h-10 text-hexa-red" />
+          </div>
+          <h3 className="text-sm sm:text-2xl font-semibold text-gray-900 mb-2 sm:mb-6">
+            Kebutuhan Sistem Terintegrasi
+          </h3>
+            
             <div className="mt-2 sm:mt-6 p-2 sm:p-6 bg-hexa-red/5 rounded-lg sm:rounded-2xl border border-hexa-red/20">
               <div className="flex flex-col items-center text-center">
                 <p className="text-xs sm:text-base text-gray-700 leading-relaxed">
@@ -398,12 +400,16 @@ const ProposalSlider = () => {
     },
     {
       id: "tech-stack",
-      title: "Rencana Teknikal",
-      content: (
-      <div className="max-w-4xl mx-auto max-h-[450px] sm:max-h-[500px] lg:max-h-none overflow-y-auto">
-        <div className="bg-white rounded-lg sm:rounded-2xl p-2 sm:p-4 lg:p-8 shadow-lg border border-gray-200 mx-1 sm:mx-2 lg:mx-0">
-        <Settings className="w-3 h-3 sm:w-8 sm:h-8 text-hexa-red" />
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+title: "Rencana Teknikal",
+content: (
+  <div className="max-w-4xl mx-auto max-h-[450px] sm:max-h-[500px] lg:max-h-none overflow-y-auto">
+    <div className="bg-white rounded-lg sm:rounded-2xl p-2 sm:p-4 lg:p-8 shadow-lg border border-gray-200 mx-1 sm:mx-2 lg:mx-0 text-center">
+      <div className="flex justify-center mb-2 sm:mb-4">
+        <Settings className="w-5 h-5 sm:w-10 sm:h-10 text-hexa-red" />
+      </div>
+      <h3 className="text-sm sm:text-2xl font-semibold text-gray-900 mb-2 sm:mb-6">
+        Rencana Teknikal
+      </h3>
             {/* Kolom Kiri */}
             <div className="space-y-4">
               <div>
