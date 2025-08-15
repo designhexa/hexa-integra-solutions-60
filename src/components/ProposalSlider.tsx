@@ -577,47 +577,66 @@ const ProposalSlider = () => {
       )
     },
     {
-      id: "estimation",
-      title: "Estimasi Biaya",
+      id: "gambar-prototype1",
+      title: "Prototype 1",
       content: (
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto flex justify-center">
           <Card className="card-hover border-gray-200 animate-scale-in bg-white mx-2 sm:mx-0">
-            <CardContent className="p-2 sm:p-8">
-              <div className="w-6 h-6 sm:w-16 sm:h-16 bg-hexa-red/10 rounded-lg sm:rounded-2xl flex items-center justify-center mb-2 sm:mb-6 mx-auto">
-                <Clock className="w-3 h-3 sm:w-8 sm:h-8 text-hexa-red" />
-              </div>
-              <h3 className="text-sm sm:text-2xl font-semibold text-gray-900 mb-2 sm:mb-6 text-center">Timeline & Investasi Pengembangan</h3>
-              <p className="text-xs sm:text-base text-gray-600 leading-relaxed mb-2 sm:mb-8 text-center">Timeline detail dan breakdown biaya untuk setiap fase pengembangan</p>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-8">
-                <div className="space-y-1 sm:space-y-4">
-                  <h4 className="text-xs sm:text-lg font-semibold text-gray-900 mb-1 sm:mb-4">Timeline Pengembangan</h4>
-                  {[
-                    "Fase Analisis & Desain: 2-3 minggu",
-                    "Fase Development: 12-16 minggu", 
-                    "Fase Testing & Deployment: 2-3 minggu",
-                    "Total estimasi: 16-22 minggu"
-                  ].map((item, index) => (
-                    <div key={index} className="flex items-start gap-1.5">
-                      <div className="w-1 h-1 sm:w-2 sm:h-2 bg-hexa-red rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
-                      <p className="text-gray-700 text-xs sm:text-base">{item}</p>
-                    </div>
-                  ))}
-                </div>
-                
-                <div className="bg-hexa-red/5 rounded-lg sm:rounded-xl p-2 sm:p-6">
-                  <h4 className="text-xs sm:text-lg font-semibold text-gray-900 mb-1 sm:mb-4">Investasi</h4>
-                  <div className="text-center">
-                    <p className="text-sm sm:text-3xl font-bold text-hexa-red mb-0.5 sm:mb-2">Rp 50.000.000</p>
-                    <p className="text-gray-600 mb-0.5 sm:mb-2 text-xs sm:text-base">sampai dengan</p>
-                    <p className="text-sm sm:text-3xl font-bold text-hexa-red">Rp 150.000.000</p>
-                  </div>
-                </div>
-              </div>
-            </CardContent>
+            <img
+              src="/images/contoh-gambar.png"
+              alt="Contoh Gambar"
+              className="max-h-[400px] w-auto object-contain mx-auto"
+            />
           </Card>
         </div>
       )
+    },
+    {
+      {
+  id: "estimation",
+  title: "Estimasi Biaya",
+  content: (
+    <div className="max-w-4xl mx-auto">
+      <Card className="card-hover border-gray-200 animate-scale-in bg-white mx-2 sm:mx-0">
+        <CardContent className="p-4 sm:p-12 text-center">
+          <div className="w-6 h-6 sm:w-16 sm:h-16 bg-hexa-red/10 rounded-lg sm:rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-6">
+            <Clock className="w-3 h-3 sm:w-8 sm:h-8 text-hexa-red" />
+          </div>
+          <h3 className="text-sm sm:text-2xl font-semibold text-gray-900 mb-2 sm:mb-4">
+            Estimasi Biaya Pengembangan
+          </h3>
+          <p className="text-xs sm:text-lg text-gray-600 leading-relaxed">
+            Demi kenyamanan dan transparansi, detail estimasi biaya akan kami
+            sampaikan melalui dokumen terpisah yang mudah dibaca (PDF atau format
+            lain yang sesuai).
+          </p>
+        </CardContent>
+      </Card>
+    </div>
+  )
+  },
+  {
+    id: "estimation",
+    title: "Estimasi Biaya",
+    content: (
+      <div className="max-w-4xl mx-auto">
+        <Card className="card-hover border-gray-200 animate-scale-in bg-white mx-2 sm:mx-0">
+          <CardContent className="p-4 sm:p-12 text-center">
+            <div className="w-6 h-6 sm:w-16 sm:h-16 bg-hexa-red/10 rounded-lg sm:rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-6">
+              <Clock className="w-3 h-3 sm:w-8 sm:h-8 text-hexa-red" />
+            </div>
+            <h3 className="text-sm sm:text-2xl font-semibold text-gray-900 mb-2 sm:mb-4">
+              Estimasi Biaya Pengembangan
+            </h3>
+            <p className="text-xs sm:text-lg text-gray-600 leading-relaxed">
+              Demi kenyamanan dan transparansi, detail estimasi biaya akan kami
+              sampaikan melalui dokumen terpisah yang mudah dibaca (PDF atau format
+              lain yang sesuai).
+            </p>
+          </CardContent>
+        </Card>
+      </div>
+    )
     },
     {
       id: "discussion",
@@ -629,7 +648,7 @@ const ProposalSlider = () => {
             <h3 className="text-sm sm:text-3xl font-semibold mb-2 sm:mb-6 text-gray-900">Siap untuk Diskusi Lebih Lanjut</h3>
             <p className="text-xs sm:text-xl text-gray-700 mb-2 sm:mb-8 leading-relaxed">
               Kami siap untuk menjadwalkan meeting dan diskusi mendalam mengenai kebutuhan 
-              pengembangan aplikasi terintegrasi untuk PT Samugara Global Capital.
+              pengembangan aplikasi terintegrasi ini.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-6 mt-2 sm:mt-8">
               <div className="text-center">
