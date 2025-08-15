@@ -264,7 +264,7 @@ const ProposalSlider = () => {
               <Card key={index} className="card-hover border-gray-200 bg-white">
                 <CardContent className="p-2 sm:p-6">
                   <div className="w-5 h-5 sm:w-12 sm:h-12 bg-hexa-red/10 rounded-lg sm:rounded-xl flex items-center justify-center mb-1 sm:mb-4">
-                    <item.icon className="w-3 h-3 sm:w-6 sm:h-6 text-hexa-red" />
+                    <Database className="w-3 h-3 sm:w-6 sm:h-6 text-hexa-red" />
                   </div>
                   <h4 className="font-semibold text-gray-900 mb-1 sm:mb-3 text-xs sm:text-base">{item.title}</h4>
                   <p className="text-gray-600 text-xs sm:text-sm leading-relaxed mb-1">{item.description}</p>
