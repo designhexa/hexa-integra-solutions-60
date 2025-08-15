@@ -296,7 +296,7 @@ const ProposalSlider = () => {
           
             <div className="flex flex-col items-center justify-center text-center">
               <p className="text-sm text-gray-700">
-                Di samping ini adalah daftar pekerjaan yang akan dilakukan. Proses pengerjaan dilaksanakan secara bertahap dibagi 3 fase.
+                Di samping ini adalah daftar pekerjaan yang akan dilakukan. Proses pengerjaan dilaksanakan secara bertahap <br />dibagi menjadi 3 fase.
                 Kami mengikuti prosedur standar <strong>SDLC</strong> untuk kualitas terbaik. <strong>Setiap Fase Terdiri dari:</strong>
               </p>
       
