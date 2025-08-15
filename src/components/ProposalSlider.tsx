@@ -624,12 +624,102 @@ const ProposalSlider = () => {
     },
     {
       id: "gambar-prototype1",
-      title: "Prototype 1",
+      title: "Gambar Prototype 1",
       content: (
         <div className="max-w-4xl mx-auto flex justify-center">
           <Card className="card-hover border-gray-200 animate-scale-in bg-white mx-2 sm:mx-0">
             <img
-              src="/images/contoh-gambar.png"
+              src="https://hexaintegra.com/wp-content/uploads/2025/08/SamugaraPT-Picture1.jpg"
+              alt="Contoh Gambar"
+              className="max-h-[400px] w-auto object-contain mx-auto"
+            />
+          </Card>
+        </div>
+      )
+    },
+{
+      id: "gambar-prototype2",
+      title: "Gambar Prototype 2",
+      content: (
+        <div className="max-w-4xl mx-auto flex justify-center">
+          <Card className="card-hover border-gray-200 animate-scale-in bg-white mx-2 sm:mx-0">
+            <img
+              src="https://hexaintegra.com/wp-content/uploads/2025/08/SamugaraPT-Picture2.jpg"
+              alt="Contoh Gambar"
+              className="max-h-[400px] w-auto object-contain mx-auto"
+            />
+          </Card>
+        </div>
+      )
+    },
+{
+      id: "gambar-prototype3",
+      title: "Gambar Prototype 3",
+      content: (
+        <div className="max-w-4xl mx-auto flex justify-center">
+          <Card className="card-hover border-gray-200 animate-scale-in bg-white mx-2 sm:mx-0">
+            <img
+              src="https://hexaintegra.com/wp-content/uploads/2025/08/SamugaraPT-Picture3.jpg"
+              alt="Contoh Gambar"
+              className="max-h-[400px] w-auto object-contain mx-auto"
+            />
+          </Card>
+        </div>
+      )
+    },
+{
+      id: "gambar-prototype4",
+      title: "Gambar Prototype 4",
+      content: (
+        <div className="max-w-4xl mx-auto flex justify-center">
+          <Card className="card-hover border-gray-200 animate-scale-in bg-white mx-2 sm:mx-0">
+            <img
+              src="https://hexaintegra.com/wp-content/uploads/2025/08/SamugaraPT-Picture4.jpg"
+              alt="Contoh Gambar"
+              className="max-h-[400px] w-auto object-contain mx-auto"
+            />
+          </Card>
+        </div>
+      )
+    },
+{
+      id: "gambar-prototype5",
+      title: "Gambar Prototype 5",
+      content: (
+        <div className="max-w-4xl mx-auto flex justify-center">
+          <Card className="card-hover border-gray-200 animate-scale-in bg-white mx-2 sm:mx-0">
+            <img
+              src="https://hexaintegra.com/wp-content/uploads/2025/08/SamugaraPT-Picture5.jpg"
+              alt="Contoh Gambar"
+              className="max-h-[400px] w-auto object-contain mx-auto"
+            />
+          </Card>
+        </div>
+      )
+    },
+    {
+      id: "gambar-prototype6",
+      title: "Gambar Prototype 6",
+      content: (
+        <div className="max-w-4xl mx-auto flex justify-center">
+          <Card className="card-hover border-gray-200 animate-scale-in bg-white mx-2 sm:mx-0">
+            <img
+              src="https://hexaintegra.com/wp-content/uploads/2025/08/SamugaraPT-Picture6.jpg"
+              alt="Contoh Gambar"
+              className="max-h-[400px] w-auto object-contain mx-auto"
+            />
+          </Card>
+        </div>
+      )
+    },
+    {
+      id: "gambar-prototype7",
+      title: "Gambar Prototype 7",
+      content: (
+        <div className="max-w-4xl mx-auto flex justify-center">
+          <Card className="card-hover border-gray-200 animate-scale-in bg-white mx-2 sm:mx-0">
+            <img
+              src="https://hexaintegra.com/wp-content/uploads/2025/08/SamugaraPT-Picture7.jpg"
               alt="Contoh Gambar"
               className="max-h-[400px] w-auto object-contain mx-auto"
             />
