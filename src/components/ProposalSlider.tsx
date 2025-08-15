@@ -396,7 +396,7 @@ const ProposalSlider = () => {
       id: "timeline",
       title: "Rencana Timeline",
       content: (
-        <div className="flex flex-col items-center justify-center text-center p-6">
+        <div className="max-w-4xl mx-auto max-h-[450px] sm:max-h-[500px] lg:max-h-none overflow-y-auto">
           <p className="mb-6 text-base sm:text-lg">
             Pengerjaan dilaksanakan dalam 4 fase, dengan estimasi total 4–5 bulan
             sampai dengan proses implementasi.
