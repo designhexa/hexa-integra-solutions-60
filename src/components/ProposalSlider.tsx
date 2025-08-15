@@ -110,17 +110,16 @@ const ProposalSlider = () => {
               <div className="w-6 h-6 sm:w-16 sm:h-16 bg-hexa-red/10 rounded-lg sm:rounded-2xl flex items-center justify-center mb-2 sm:mb-6 mx-auto">
                 <Clock className="w-3 h-3 sm:w-8 sm:h-8 text-hexa-red" />
               </div>
-              <h3 className="text-sm sm:text-2xl font-semibold text-gray-900 mb-2 sm:mb-6 text-center">Timeline & Investasi Pengembangan</h3>
-              <p className="text-xs sm:text-base text-gray-600 leading-relaxed mb-2 sm:mb-8 text-center">Timeline detail dan breakdown biaya untuk setiap fase pengembangan</p>
+              <h3 className="text-sm sm:text-2xl font-semibold text-gray-900 mb-2 sm:mb-6 text-center">Format & Scope Kerjasama</h3>
+              <p className="text-xs sm:text-base text-gray-600 leading-relaxed mb-2 sm:mb-8 text-center">Format kerjasama yang ditawarkan adalah:</p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-8">
                 <div className="space-y-1 sm:space-y-4">
                   <h4 className="text-xs sm:text-lg font-semibold text-gray-900 mb-1 sm:mb-4">Timeline Pengembangan</h4>
                   {[
-                    "Fase Analisis & Desain: 2-3 minggu",
-                    "Fase Development: 12-16 minggu", 
-                    "Fase Testing & Deployment: 2-3 minggu",
-                    "Total estimasi: 16-22 minggu"
+                    "Kerjasama antara dua pihak, yaitu: CV. Hexa Integra Mandiri dan PT. Samugara Global Capital",
+                    "Output kerjasama adalah aplikasi berbasis web sesuai requirement yang sudah siap digunakan", 
+                    "Proses pengerjaan tidak mengharuskan pihak Hexa untuk hadir atau stay di kantor Samugara, pengerjaan dimaksimalkan secara online",
                   ].map((item, index) => (
                     <div key={index} className="flex items-start gap-1.5">
                       <div className="w-1 h-1 sm:w-2 sm:h-2 bg-hexa-red rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
