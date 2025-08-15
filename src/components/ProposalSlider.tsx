@@ -22,10 +22,7 @@ const ProposalSlider = () => {
       content: (
         <div className="max-w-4xl mx-auto">
           <p className="text-xs sm:text-lg text-gray-700 leading-relaxed mb-2 sm:mb-8 px-2 sm:px-0">
-            Menindaklanjuti permintaan penawaran dari Direktur PT Samugara Global Capital, Berikut ini kami kirimkan proposal kerja pengembangan aplikasi perusahaan sesuai yang diminta. Pada proposal ini kami rinci dan bagi ke beberapa aspek pembahasan.
-Perkenankan kami, <span className="font-semibold text-hexa-red">CV. Hexa Integra Mandiri</span>, 
-            menyampaikan proposal pengembangan aplikasi terintegrasi untuk memenuhi kebutuhan 
-            <span className="font-semibold text-hexa-red"> PT Samugara Global Capital</span>.
+            Menindaklanjuti permintaan penawaran dari Direktur PT Samugara Global Capital, berikut ini kami kirimkan proposal kerja pengembangan aplikasi perusahaan sesuai yang diminta. Pada proposal ini kami rinci dan bagi ke beberapa aspek pembahasan.
           </p>
           
           <div className="bg-white rounded-lg sm:rounded-2xl p-2 sm:p-8 shadow-lg border border-gray-200 mx-2 sm:mx-0">
@@ -33,8 +30,7 @@ Perkenankan kami, <span className="font-semibold text-hexa-red">CV. Hexa Integra
             
             <div className="mt-2 sm:mt-6 p-2 sm:p-6 bg-hexa-red/5 rounded-lg sm:rounded-2xl border border-hexa-red/20">
               <p className="text-xs sm:text-base text-gray-700 leading-relaxed text-center">
-                Kebutuhan yang diminta adalah <span className="font-semibold text-hexa-red">Aplikasi Web terintegrasi untuk sebuah Grup Usaha</span> yang terdiri dari 
-                  6 perusahaan dan saling terhubung, sehingga integrasi data dan 
+                Kebutuhan yang diminta adalah <span className="font-semibold text-hexa-red">Aplikasi Web terintegrasi untuk sebuah Grup Usaha</span> yang terdiri dari enam perusahaan dan saling terhubung, sehingga integrasi data dan 
                 keamanan menjadi prioritas utama.
               </p>
             </div>
