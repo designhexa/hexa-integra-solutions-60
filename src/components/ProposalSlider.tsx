@@ -32,8 +32,8 @@ const ProposalSlider = () => {
             
             <div className="mt-2 sm:mt-6 p-2 sm:p-6 bg-hexa-red/5 rounded-lg sm:rounded-2xl border border-hexa-red/20">
               <p className="text-xs sm:text-base text-gray-700 leading-relaxed text-center">
-                Sistem ini akan digunakan oleh <span className="font-semibold text-hexa-red">1 group usaha 
-                dengan total 6 perusahaan</span> yang saling terhubung, sehingga integrasi data dan 
+                Kebutuhan yang diminta adalah <span className="font-semibold text-hexa-red">Aplikasi Web terintegrasi untuk sebuah Grup Usaha</span> yang terdiri dari 
+                  6 perusahaan dan saling terhubung, sehingga integrasi data dan 
                 keamanan menjadi prioritas utama.
               </p>
             </div>
