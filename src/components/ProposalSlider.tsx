@@ -286,11 +286,16 @@ const ProposalSlider = () => {
       content: (
         <div className="max-w-4xl mx-auto max-h-[450px] sm:max-h-[500px] lg:max-h-none overflow-y-auto">
           <div className="bg-white rounded-lg sm:rounded-2xl p-2 sm:p-4 lg:p-8 shadow-lg border border-gray-200 mx-1 sm:mx-2 lg:mx-0">
-           
-            {/* Konten */}
+      
+            {/* Judul */}
+            <h3 className="text-sm sm:text-lg lg:text-2xl font-semibold text-gray-900 mb-4 text-center">
+              Tahapan Pengerjaan
+            </h3>
+      
+            {/* Konten Deskripsi */}
             <div className="space-y-4">
               <p className="text-sm text-gray-700">
-                Di bawah ini adalah daftar pekerjaan yang akan dilakukan.
+                Di samping ini adalah daftar pekerjaan yang akan dilakukan.
                 Proses pengerjaan dilaksanakan secara bertahap dibagi 3 fase.
                 Kami mengikuti prosedur standar <strong>SDLC</strong> untuk menghasilkan kualitas terbaik.
               </p>
@@ -308,13 +313,33 @@ const ProposalSlider = () => {
               </div>
             </div>
       
-            {/* Frame Gambar */}
-            <div className="w-full h-[400px] bg-gray-100 border border-gray-300 rounded-lg mt-6 flex items-center justify-center overflow-hidden">
-              <img 
-                src="https://hexaintegra.com/wp-content/uploads/2025/08/Phases.png" // ganti path sesuai gambar yang kamu punya
-                alt="Ilustrasi Tahapan Pengerjaan"
-                className="object-contain h-full"
-              />
+            {/* Tabel Pekerjaan */}
+            <div className="mt-6 overflow-x-auto">
+              <table className="w-full border border-gray-300 text-sm text-gray-700">
+                <thead className="bg-gray-100">
+                  <tr>
+                    <th className="border border-gray-300 px-3 py-2 text-left w-10">No</th>
+                    <th className="border border-gray-300 px-3 py-2 text-left">Item Pekerjaan</th>
+                    <th className="border border-gray-300 px-3 py-2 text-left">Deskripsi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td className="border px-3 py-2">1</td><td className="border px-3 py-2">Requirement Gathering</td><td className="border px-3 py-2">Workshop, wawancara stakeholder, analisis kebutuhan</td></tr>
+                  <tr><td className="border px-3 py-2">2</td><td className="border px-3 py-2">UI/UX Design</td><td className="border px-3 py-2">Wireframe, prototype, desain responsif</td></tr>
+                  <tr><td className="border px-3 py-2">3</td><td className="border px-3 py-2">Arsitektur Sistem</td><td className="border px-3 py-2">Perancangan database, API, struktur folder</td></tr>
+                  <tr><td className="border px-3 py-2">4</td><td className="border px-3 py-2">Modul Keuangan</td><td className="border px-3 py-2">CRUD transaksi, laporan, integrasi dashboard</td></tr>
+                  <tr><td className="border px-3 py-2">5</td><td className="border px-3 py-2">Modul Pengadaan</td><td className="border px-3 py-2">Permintaan barang/jasa, proses pembelian, monitoring</td></tr>
+                  <tr><td className="border px-3 py-2">6</td><td className="border px-3 py-2">Modul Inventory</td><td className="border px-3 py-2">Pencatatan stok, keluar/masuk barang, integrasi keuangan</td></tr>
+                  <tr><td className="border px-3 py-2">7</td><td className="border px-3 py-2">Dashboard & KPI Monitoring</td><td className="border px-3 py-2">Visualisasi data real-time</td></tr>
+                  <tr><td className="border px-3 py-2">8</td><td className="border px-3 py-2">Multi Approval System</td><td className="border px-3 py-2">Alur persetujuan bertingkat</td></tr>
+                  <tr><td className="border px-3 py-2">9</td><td className="border px-3 py-2">Data Induk</td><td className="border px-3 py-2">Master data perusahaan, supplier, proyek, kategori</td></tr>
+                  <tr><td className="border px-3 py-2">10</td><td className="border px-3 py-2">Setting Sistem</td><td className="border px-3 py-2">User management, role, konfigurasi</td></tr>
+                  <tr><td className="border px-3 py-2">11</td><td className="border px-3 py-2">Testing</td><td className="border px-3 py-2">Unit test, integration test, UAT</td></tr>
+                  <tr><td className="border px-3 py-2">12</td><td className="border px-3 py-2">Deployment</td><td className="border px-3 py-2">Setup server, konfigurasi hosting/cloud</td></tr>
+                  <tr><td className="border px-3 py-2">13</td><td className="border px-3 py-2">Training</td><td className="border px-3 py-2">Pelatihan admin dan end-user</td></tr>
+                  <tr><td className="border px-3 py-2">14</td><td className="border px-3 py-2">Dokumentasi</td><td className="border px-3 py-2">Panduan teknis & user manual</td></tr>
+                </tbody>
+              </table>
             </div>
       
           </div>
