@@ -144,15 +144,7 @@ const PortfolioSection = () => {
                     ))}
                   </div>
                 </div>
-                
-                <Button 
-                  variant="outline" 
-                  size="sm" 
-                  className="border-hexa-red text-hexa-red hover:bg-hexa-red hover:text-white mt-auto"
-                >
-                  Lihat Detail
-                  <ExternalLink className="ml-2 w-3 h-3" />
-                </Button>
+               
               </CardContent>
             </Card>
           ))}
