@@ -281,8 +281,88 @@ const ProposalSlider = () => {
     )
     },
     {
-    id: "tech-stack",
-    title: "Teknologi Yang Akan Digunakan (Tech Stack)",
+      id: "project-phases",
+      title: "Tahapan Pengerjaan",
+      content: (
+        <div className="max-w-4xl mx-auto max-h-[450px] sm:max-h-[500px] lg:max-h-none overflow-y-auto">
+          <div className="bg-white rounded-lg sm:rounded-2xl p-2 sm:p-4 lg:p-8 shadow-lg border border-gray-200 mx-1 sm:mx-2 lg:mx-0">
+            <h3 className="text-sm sm:text-lg lg:text-2xl font-semibold text-gray-900 mb-4 text-center">
+              Tahapan Pengerjaan
+            </h3>
+      
+            {/* Slide Konten */}
+            <div className="space-y-4">
+              <p className="text-sm text-gray-700">
+                Di samping ini adalah daftar pekerjaan yang akan dilakukan.
+                Proses pengerjaan dilaksanakan secara bertahap dibagi 3 fase.
+                Kami mengikuti prosedur standar <strong>SDLC</strong> untuk menghasilkan kualitas terbaik.
+              </p>
+      
+              <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
+                <h4 className="font-semibold text-gray-900 mb-3 text-center">
+                  Setiap Fase Terdiri dari:
+                </h4>
+                <ol className="list-decimal list-inside text-sm text-gray-700 space-y-1">
+                  <li>Kick-off & Finalisasi Requirement</li>
+                  <li>Sprint Per Fase</li>
+                  <li>Integrasi & Testing</li>
+                  <li>UAT & Serah Terima</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      )
+    },
+    {
+      id: "estimation",
+      title: "Estimasi Waktu dan Biaya",
+      content: (
+        <div className="max-w-4xl mx-auto">
+          <Card className="card-hover border-gray-200 animate-scale-in bg-white mx-2 sm:mx-0">
+            <CardContent className="p-2 sm:p-8">
+              <div className="w-6 h-6 sm:w-16 sm:h-16 bg-hexa-red/10 rounded-lg sm:rounded-2xl flex items-center justify-center mb-2 sm:mb-6 mx-auto">
+                <Clock className="w-3 h-3 sm:w-8 sm:h-8 text-hexa-red" />
+              </div>
+              <h3 className="text-sm sm:text-2xl font-semibold text-gray-900 mb-2 sm:mb-6 text-center">Timeline & Investasi Pengembangan</h3>
+              <p className="text-xs sm:text-base text-gray-600 leading-relaxed mb-2 sm:mb-8 text-center">Timeline detail dan breakdown biaya untuk setiap fase pengembangan</p>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-8">
+                <div className="space-y-1 sm:space-y-4">
+                  <h4 className="text-xs sm:text-lg font-semibold text-gray-900 mb-1 sm:mb-4">Timeline Pengembangan</h4>
+                  {[
+                    "Fase Analisis & Desain: 2-3 minggu",
+                    "Fase Development: 12-16 minggu", 
+                    "Fase Testing & Deployment: 2-3 minggu",
+                    "Total estimasi: 16-22 minggu"
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-start gap-1.5">
+                      <div className="w-1 h-1 sm:w-2 sm:h-2 bg-hexa-red rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
+                      <p className="text-gray-700 text-xs sm:text-base">{item}</p>
+                    </div>
+                  ))}
+                </div>
+                
+                <div className="bg-hexa-red/5 rounded-lg sm:rounded-xl p-2 sm:p-6">
+                  <h4 className="text-xs sm:text-lg font-semibold text-gray-900 mb-1 sm:mb-4">Investasi</h4>
+                  <div className="text-center">
+                    <p className="text-sm sm:text-3xl font-bold text-hexa-red mb-0.5 sm:mb-2">Rp 50.000.000</p>
+                    <p className="text-gray-600 mb-0.5 sm:mb-2 text-xs sm:text-base">sampai dengan</p>
+                    <p className="text-sm sm:text-3xl font-bold text-hexa-red">Rp 150.000.000</p>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      )
+    },
+
+    {
+      id: "technical",
+      title: "Pendekatan Teknis",
+      id: "tech-stack",
+    title: "Tech Stack",
     content: (
       <div className="max-w-4xl mx-auto max-h-[450px] sm:max-h-[500px] lg:max-h-none overflow-y-auto">
         <div className="bg-white rounded-lg sm:rounded-2xl p-2 sm:p-4 lg:p-8 shadow-lg border border-gray-200 mx-1 sm:mx-2 lg:mx-0">
@@ -350,83 +430,6 @@ const ProposalSlider = () => {
         </div>
       </div>
     )
-    },
-    {
-      id: "estimation",
-      title: "Estimasi Waktu dan Biaya",
-      content: (
-        <div className="max-w-4xl mx-auto">
-          <Card className="card-hover border-gray-200 animate-scale-in bg-white mx-2 sm:mx-0">
-            <CardContent className="p-2 sm:p-8">
-              <div className="w-6 h-6 sm:w-16 sm:h-16 bg-hexa-red/10 rounded-lg sm:rounded-2xl flex items-center justify-center mb-2 sm:mb-6 mx-auto">
-                <Clock className="w-3 h-3 sm:w-8 sm:h-8 text-hexa-red" />
-              </div>
-              <h3 className="text-sm sm:text-2xl font-semibold text-gray-900 mb-2 sm:mb-6 text-center">Timeline & Investasi Pengembangan</h3>
-              <p className="text-xs sm:text-base text-gray-600 leading-relaxed mb-2 sm:mb-8 text-center">Timeline detail dan breakdown biaya untuk setiap fase pengembangan</p>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-8">
-                <div className="space-y-1 sm:space-y-4">
-                  <h4 className="text-xs sm:text-lg font-semibold text-gray-900 mb-1 sm:mb-4">Timeline Pengembangan</h4>
-                  {[
-                    "Fase Analisis & Desain: 2-3 minggu",
-                    "Fase Development: 12-16 minggu", 
-                    "Fase Testing & Deployment: 2-3 minggu",
-                    "Total estimasi: 16-22 minggu"
-                  ].map((item, index) => (
-                    <div key={index} className="flex items-start gap-1.5">
-                      <div className="w-1 h-1 sm:w-2 sm:h-2 bg-hexa-red rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
-                      <p className="text-gray-700 text-xs sm:text-base">{item}</p>
-                    </div>
-                  ))}
-                </div>
-                
-                <div className="bg-hexa-red/5 rounded-lg sm:rounded-xl p-2 sm:p-6">
-                  <h4 className="text-xs sm:text-lg font-semibold text-gray-900 mb-1 sm:mb-4">Investasi</h4>
-                  <div className="text-center">
-                    <p className="text-sm sm:text-3xl font-bold text-hexa-red mb-0.5 sm:mb-2">Rp 50.000.000</p>
-                    <p className="text-gray-600 mb-0.5 sm:mb-2 text-xs sm:text-base">sampai dengan</p>
-                    <p className="text-sm sm:text-3xl font-bold text-hexa-red">Rp 150.000.000</p>
-                  </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-      )
-    },
-
-    {
-      id: "technical",
-      title: "Pendekatan Teknis",
-      content: (
-        <div className="max-w-4xl mx-auto">
-          <Card className="card-hover border-gray-200 animate-scale-in bg-white mx-2 sm:mx-0">
-            <CardContent className="p-2 sm:p-8">
-              <div className="w-6 h-6 sm:w-16 sm:h-16 bg-hexa-red/10 rounded-lg sm:rounded-2xl flex items-center justify-center mb-2 sm:mb-6 mx-auto">
-                <Code className="w-3 h-3 sm:w-8 sm:h-8 text-hexa-red" />
-              </div>
-              <h3 className="text-sm sm:text-2xl font-semibold text-gray-900 mb-2 sm:mb-6 text-center">Arsitektur Sistem & Teknologi</h3>
-              <p className="text-xs sm:text-base text-gray-600 leading-relaxed mb-2 sm:mb-8 text-center">Teknologi yang disarankan dan arsitektur sistem yang optimal</p>
-              
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-6">
-                {[
-                  { label: "Frontend", value: "React.js dengan TypeScript" },
-                  { label: "Backend", value: "Node.js dengan Express.js" },
-                  { label: "Database", value: "PostgreSQL dengan Redis Cache" },
-                  { label: "Cloud", value: "AWS dengan Auto Scaling" },
-                  { label: "Security", value: "JWT Authentication & Role-based Access" },
-                  { label: "API", value: "RESTful API dengan GraphQL" }
-                ].map((tech, index) => (
-                  <div key={index} className="bg-gray-50 rounded-lg p-2 sm:p-4">
-                    <h4 className="font-semibold text-hexa-red mb-0.5 sm:mb-2 text-xs sm:text-base">{tech.label}</h4>
-                    <p className="text-xs sm:text-sm text-gray-700">{tech.value}</p>
-                  </div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-      )
     },
     {
       id: "portfolio",
