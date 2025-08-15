@@ -4,7 +4,38 @@ import { FileText, Target, Database, BarChart3, CheckCircle, Shield } from "luci
 
 const ProposalSection = () => {
   const features = [
-    
+    {
+      icon: BarChart3,
+      title: "Keuangan",
+      description: "Pencatatan, pengelolaan, dan pelaporan transaksi keuangan secara real-time."
+    },
+    {
+      icon: FileText,
+      title: "Pengadaan",
+      description: "Manajemen permintaan dan pembelian barang/jasa hingga monitoring proses pengadaan."
+    },
+    {
+      icon: Database,
+      title: "Inventory Management",
+      description: "Mengatur keluar masuk barang per proyek dan terintegrasi dengan keuangan."
+    },
+    {
+      icon: Target,
+      title: "Finance Dashboard",
+      description: "Dashboard interaktif untuk memantau kondisi keuangan dan KPI utama."
+    },
+    {
+      icon: CheckCircle,
+      title: "Multi Approval System",
+      description: "Persetujuan berlapis sesuai struktur organisasi dan otorisasi."
+    },
+    {
+      icon: Shield,
+      title: "Keamanan Data",
+      description: "Integrasi data dan keamanan menjadi prioritas utama untuk 6 perusahaan."
+    }
+  ];
+
   return (
     <section id="proposal" className="section-padding bg-gray-50 pt-28 pb-12 min-h-screen">
       <div className="container-custom">
