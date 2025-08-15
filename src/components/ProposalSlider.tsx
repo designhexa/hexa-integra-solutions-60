@@ -313,7 +313,7 @@ const ProposalSlider = () => {
               <img 
                 src="https://hexaintegra.com/wp-content/uploads/2025/08/Phases.png" // ganti path sesuai gambar yang kamu punya
                 alt="Ilustrasi Tahapan Pengerjaan"
-                className="object-cover w-full h-full"
+                className="object-contain h-full"
               />
             </div>
       
