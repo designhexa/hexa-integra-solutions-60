@@ -740,7 +740,7 @@ const ProposalSlider = () => {
                 rel="noopener noreferrer"
                 className="text-hexa-red font-semibold hover:underline"
               >
-                samapp-hexa.vercel.app
+                <br /><br />samapp-hexa.vercel.app<br />
               </a>
             </p>
           </div>
