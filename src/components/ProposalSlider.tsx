@@ -25,8 +25,6 @@ const ProposalSlider = () => {
             Menindaklanjuti permintaan penawaran dari Direktur PT Samugara Global Capital, berikut ini kami kirimkan proposal kerja pengembangan aplikasi perusahaan sesuai yang diminta.
             Proposal ini kami bagi dan rinci ke dalam beberapa aspek pembahasan.
           </p>
-    
-              <div className="bg-white rounded-lg sm:rounded-2xl p-2 sm:p-8 shadow-lg border border-gray-200 mx-2 sm:mx-0 text-center">
               <div className="w-6 h-6 sm:w-16 sm:h-16 bg-hexa-red/10 rounded-lg sm:rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-6">
               <BookOpenText className="w-5 h-5 sm:w-10 sm:h-10 text-hexa-red" />
             </div>
