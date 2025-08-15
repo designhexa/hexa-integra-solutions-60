@@ -22,7 +22,8 @@ const ProposalSlider = () => {
       content: (
         <div className="max-w-4xl mx-auto">
           <p className="text-xs sm:text-lg text-gray-700 leading-relaxed mb-2 sm:mb-8 px-2 sm:px-0">
-            Perkenankan kami, <span className="font-semibold text-hexa-red">CV. Hexa Integra Mandiri</span>, 
+            Menindaklanjuti permintaan penawaran dari Direktur PT Samugara Global Capital, Berikut ini kami kirimkan proposal kerja pengembangan aplikasi perusahaan sesuai yang diminta. Pada proposal ini kami rinci dan bagi ke beberapa aspek pembahasan.
+Perkenankan kami, <span className="font-semibold text-hexa-red">CV. Hexa Integra Mandiri</span>, 
             menyampaikan proposal pengembangan aplikasi terintegrasi untuk memenuhi kebutuhan 
             <span className="font-semibold text-hexa-red"> PT Samugara Global Capital</span>.
           </p>
