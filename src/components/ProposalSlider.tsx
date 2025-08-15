@@ -104,120 +104,48 @@ const ProposalSlider = () => {
         id: "penawaran",
         title: "Penawaran Kerjasama",
         content: (
-          <div className="max-w-4xl mx-auto">
-            <Card className="card-hover border-gray-200 animate-scale-in bg-white mx-2 sm:mx-0 lg:max-h-none sm:overflow-y-auto">
-              <CardContent className="p-2 sm:p-8">
-                <div className="w-6 h-6 sm:w-16 sm:h-16 bg-hexa-red/10 rounded-lg sm:rounded-2xl flex items-center justify-center mb-2 sm:mb-6 mx-auto">
-                  <Clock className="w-3 h-3 sm:w-8 sm:h-8 text-hexa-red" />
+          <div className="max-w-4xl mx-auto max-h-[450px] sm:max-h-[500px] lg:max-h-none overflow-y-auto">
+            <div className="bg-white rounded-lg sm:rounded-2xl p-2 sm:p-4 lg:p-8 shadow-lg border border-gray-200 mx-1 sm:mx-2 lg:mx-0">
+              
+              {/* Timeline Pengembangan */}
+              <h4 className="text-xs sm:text-lg font-semibold text-gray-900 mb-1 sm:mb-4">
+                Timeline Pengembangan
+              </h4>
+              {[
+                "Kerjasama antara dua pihak, yaitu: CV. Hexa Integra Mandiri dan PT. Samugara Global Capital",
+                "Output kerjasama adalah aplikasi berbasis web sesuai requirement yang sudah siap digunakan",
+                "Proses pengerjaan tidak mengharuskan pihak Hexa untuk hadir atau stay di kantor Samugara, pengerjaan dimaksimalkan secara online",
+              ].map((item, index) => (
+                <div key={index} className="flex items-start gap-1.5 mb-1">
+                  <div className="w-1 h-1 sm:w-2 sm:h-2 bg-hexa-red rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
+                  <p className="text-gray-700 text-xs sm:text-base">{item}</p>
                 </div>
+              ))}
         
-                <h3 className="text-sm sm:text-2xl font-semibold text-gray-900 mb-2 sm:mb-6 text-center">
-                  Format & Scope Kerjasama
-                </h3>
-                <p className="text-xs sm:text-base text-gray-600 leading-relaxed mb-2 sm:mb-8 text-center">
-                  Format kerjasama yang ditawarkan adalah:
-                </p>
-        
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8">
-                  {/* Kolom Kiri */}
-                  <div className="space-y-4">
-                    {/* 1 */}
-                    <div>
-                      <div className="flex items-start gap-2">
-                        <span className="text-hexa-red font-bold">1.</span>
-                        <p className="text-gray-700 text-xs sm:text-base font-semibold">
-                          Kerjasama antara dua pihak, yaitu:
-                        </p>
-                      </div>
-                      <div className="ml-8 mt-1 space-y-1">
-                        {[
-                          "CV. Hexa Integra Mandiri",
-                          "PT. Samugara Global Capital",
-                        ].map((subItem, i) => (
-                          <div key={i} className="flex items-start gap-1.5">
-                            <div className="w-1.5 h-1.5 bg-hexa-red rounded-full mt-1.5 flex-shrink-0"></div>
-                            <p className="text-gray-700 text-xs sm:text-base">{subItem}</p>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-        
-                    {/* 2 */}
-                    <div className="flex items-start gap-2">
-                      <span className="text-hexa-red font-bold">2.</span>
-                      <p className="text-gray-700 text-xs sm:text-base">
-                        Output kerjasama adalah aplikasi berbasis web sesuai requirement yang sudah siap digunakan
-                      </p>
-                    </div>
-        
-                    {/* 3 */}
-                    <div className="flex items-start gap-2">
-                      <span className="text-hexa-red font-bold">3.</span>
-                      <p className="text-gray-700 text-xs sm:text-base">
-                        Proses pengerjaan tidak mengharuskan pihak Hexa untuk hadir atau stay di kantor Samugara, pengerjaan dimaksimalkan secara online
-                      </p>
-                    </div>
-        
-                    {/* 4 */}
-                    <div>
-                      <div className="flex items-start gap-2">
-                        <span className="text-hexa-red font-bold">4.</span>
-                        <p className="text-gray-700 text-xs sm:text-base font-semibold">
-                          Yang termasuk scope kerja:
-                        </p>
-                      </div>
-                      <div className="ml-8 mt-1 space-y-1">
-                        {[
-                          "Pengembangan aplikasi sesuai request",
-                          "Setting server",
-                          "Garansi aplikasi sebanyak jumlah bulan pengembangan",
-                        ].map((item, i) => (
-                          <div key={i} className="flex items-start gap-1.5">
-                            <div className="w-1.5 h-1.5 bg-hexa-red rounded-full mt-1.5 flex-shrink-0"></div>
-                            <p className="text-gray-700 text-xs sm:text-base">{item}</p>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-        
-                  {/* Kolom Kanan */}
-                  <div className="space-y-4">
-                    {/* 5 */}
-                    <div>
-                      <div className="flex items-start gap-2">
-                        <span className="text-hexa-red font-bold">5.</span>
-                        <p className="text-gray-700 text-xs sm:text-base font-semibold">
-                          Yang tidak termasuk scope kerja:
-                        </p>
-                      </div>
-                      <div className="ml-8 mt-1 space-y-1">
-                        {[
-                          "Penyediaan server dan domain",
-                          "Technical support setelah proses serah terima",
-                        ].map((item, i) => (
-                          <div key={i} className="flex items-start gap-1.5">
-                            <div className="w-1.5 h-1.5 bg-hexa-red rounded-full mt-1.5 flex-shrink-0"></div>
-                            <p className="text-gray-700 text-xs sm:text-base">{item}</p>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-        
-                    {/* 6 */}
-                    <div className="flex items-start gap-2">
-                      <span className="text-hexa-red font-bold">6.</span>
-                      <p className="text-gray-700 text-xs sm:text-base">
-                        Keterlambatan dari salah satu pihak bisa berdampak pada penerapan late charge
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+              {/* Scope Kerja */}
+              <h4 className="text-xs sm:text-lg font-semibold text-gray-900 mt-4 mb-1 sm:mb-4">
+                Scope Kerja
+              </h4>
+              <ol className="list-decimal list-inside text-gray-700 text-xs sm:text-base space-y-2">
+                <li>
+                  Yang termasuk scope kerja:
+                  <ul className="list-disc list-inside ml-4 space-y-1">
+                    <li>Pengembangan aplikasi sesuai request</li>
+                    <li>Setting server</li>
+                    <li>Garansi aplikasi sebanyak jumlah bulan pengembangan</li>
+                  </ul>
+                </li>
+                <li>
+                  Yang tidak termasuk scope kerja:
+                  <ul className="list-disc list-inside ml-4 space-y-1">
+                    <li>Penyediaan server dan domain</li>
+                    <li>Technical support setelah proses serah terima</li>
+                  </ul>
+                </li>
+              </ol>
+            </div>
           </div>
         )
-
     },
     {
       id: "estimation",
