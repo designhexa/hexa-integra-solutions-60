@@ -286,22 +286,7 @@ const ProposalSlider = () => {
       content: (
         <div className="max-w-4xl mx-auto max-h-[450px] sm:max-h-[500px] lg:max-h-none overflow-y-auto">
           <div className="bg-white rounded-lg sm:rounded-2xl p-2 sm:p-4 lg:p-8 shadow-lg border border-gray-200 mx-1 sm:mx-2 lg:mx-0">
-      
-            {/* Frame Gambar */}
-            <div className="w-full h-[400px] bg-gray-100 border border-gray-300 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
-              {/* Contoh placeholder, ganti src dengan gambar aslinya */}
-              <img 
-                src="/images/project-phases.png" 
-                alt="Ilustrasi Tahapan Pengerjaan"
-                className="object-cover w-full h-full"
-              />
-            </div>
-      
-            {/* Judul */}
-            <h3 className="text-sm sm:text-lg lg:text-2xl font-semibold text-gray-900 mb-4 text-center">
-              Tahapan Pengerjaan
-            </h3>
-      
+           
             {/* Konten */}
             <div className="space-y-4">
               <p className="text-sm text-gray-700">
@@ -322,6 +307,16 @@ const ProposalSlider = () => {
                 </ol>
               </div>
             </div>
+      
+            {/* Frame Gambar */}
+            <div className="w-full h-[400px] bg-gray-100 border border-gray-300 rounded-lg mt-6 flex items-center justify-center overflow-hidden">
+              <img 
+                src="https://hexaintegra.com/wp-content/uploads/2025/08/Phases.png" // ganti path sesuai gambar yang kamu punya
+                alt="Ilustrasi Tahapan Pengerjaan"
+                className="object-cover w-full h-full"
+              />
+            </div>
+      
           </div>
         </div>
       )
