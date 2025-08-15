@@ -130,9 +130,7 @@ const ProposalSlider = () => {
                 </p>
         
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8">
-                  {/* Kolom Kiri */}
                   <div className="space-y-4">
-                    {/* 1 */}
                     <div>
                       <div className="flex items-start gap-2">
                         <span className="text-hexa-red font-bold">1.</span>
@@ -153,7 +151,6 @@ const ProposalSlider = () => {
                       </div>
                     </div>
         
-                    {/* 2 */}
                     <div className="flex items-start gap-2">
                       <span className="text-hexa-red font-bold">2.</span>
                       <p className="text-gray-700 text-xs sm:text-base">
@@ -161,7 +158,6 @@ const ProposalSlider = () => {
                       </p>
                     </div>
         
-                    {/* 3 */}
                     <div className="flex items-start gap-2">
                       <span className="text-hexa-red font-bold">3.</span>
                       <p className="text-gray-700 text-xs sm:text-base">
@@ -170,9 +166,7 @@ const ProposalSlider = () => {
                     </div>
                   </div>
         
-                  {/* Kolom Kanan */}
                   <div className="space-y-4">
-                    {/* 4 */}
                     <div>
                       <div className="flex items-start gap-2">
                         <span className="text-hexa-red font-bold">4.</span>
@@ -193,7 +187,6 @@ const ProposalSlider = () => {
                         ))}
                       </div>
                     </div>
-                    {/* 5 */}
                     <div>
                       <div className="flex items-start gap-2">
                         <span className="text-hexa-red font-bold">5.</span>
@@ -214,7 +207,6 @@ const ProposalSlider = () => {
                       </div>
                     </div>
         
-                    {/* 6 */}
                     <div className="flex items-start gap-2">
                       <span className="text-hexa-red font-bold">6.</span>
                       <p className="text-gray-700 text-xs sm:text-base">
@@ -297,7 +289,6 @@ const ProposalSlider = () => {
         <div className="max-w-4xl mx-auto max-h-[450px] sm:max-h-[500px] lg:max-h-none overflow-y-auto">
           <div className="bg-white rounded-lg sm:rounded-2xl p-2 sm:p-4 lg:p-8 shadow-lg border border-gray-200 mx-1 sm:mx-2 lg:mx-0">
           
-            {/* Konten Deskripsi */}
             <div className="flex flex-col items-center justify-center text-center">
               <p className="text-sm text-gray-700">
                 Di samping ini adalah daftar pekerjaan yang akan dilakukan. Proses pengerjaan dilaksanakan secara bertahap dibagi 3 fase.
@@ -314,7 +305,6 @@ const ProposalSlider = () => {
               </div>
             </div>
       
-            {/* Tabel Pekerjaan */}
             <div className="flex flex-col items-center justify-center text-center p-1">
               <table className="table-auto border-collapse border border-gray-300 text-sm">
                 <thead className="bg-gray-100">
@@ -409,17 +399,14 @@ const ProposalSlider = () => {
         <div className="max-w-4xl mx-auto max-h-[450px] sm:max-h-[500px] lg:max-h-none overflow-y-auto">
           <div className="bg-white rounded-lg sm:rounded-2xl p-2 sm:p-4 lg:p-8 shadow-lg border border-gray-200 mx-1 sm:mx-2 lg:mx-0">
             
-            {/* Icon & Title */}
             <div className="text-center">
               <div className="w-6 h-6 sm:w-16 sm:h-16 bg-hexa-red/10 rounded-lg sm:rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-6">
               <Settings className="w-5 h-5 sm:w-10 sm:h-10 text-hexa-red" />
             </div>
             </div>
       
-            {/* Grid 2 Kolom */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
               
-              {/* Kolom Kiri */}
               <div className="space-y-4">
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">1. Frontend</h4>
@@ -448,7 +435,6 @@ const ProposalSlider = () => {
                 </div>
               </div>
       
-              {/* Kolom Kanan */}
               <div className="space-y-4">
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">4. Infrastruktur & Hosting</h4>
@@ -490,7 +476,6 @@ const ProposalSlider = () => {
             sampai dengan proses implementasi.
           </p>
     
-          {/* Tabel Timeline */}
           <table className="table-auto border-collapse border border-gray-300 text-xs sm:text-sm md:text-base w-full max-w-5xl">
             <thead className="bg-gray-100">
               <tr>
@@ -552,7 +537,6 @@ const ProposalSlider = () => {
             </tbody>
           </table>
     
-          {/* Sisipkan gambar Gantt Chart */}
           <img
             src="https://hexaintegra.com/wp-content/uploads/2025/08/Ghantchart.png" 
             alt="Gantt Chart Pengerjaan"
@@ -568,12 +552,10 @@ const ProposalSlider = () => {
     <div className="max-w-4xl mx-auto">
       <Card className="card-hover border-gray-200 animate-scale-in bg-white mx-2 sm:mx-0">
         
-        {/* Icon */}
         <div className="w-6 h-6 sm:w-16 sm:h-16 bg-hexa-red/10 rounded-lg sm:rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-6">
           <Target className="w-5 h-5 sm:w-10 sm:h-10 text-hexa-red" />
         </div>
 
-        {/* List */}
         <ul className="list-disc list-inside max-w-3xl text-sm sm:text-base space-y-2 text-left">
           <li>
             <strong>Fase Awal:</strong> Fokus pada modul yang paling krusial
@@ -755,7 +737,6 @@ const ProposalSlider = () => {
               </a>
             </p>
           </div>
-        </div>
       )
     },
     {
@@ -889,23 +870,19 @@ const ProposalSlider = () => {
     <section id="proposal" className="section-padding bg-gray-50 pt-24 sm:pt-28 pb-4 sm:pb-12 min-h-screen">
       <div className="container-custom max-w-7xl">
         
-        {/* Judul dengan tinggi tetap - dikurangi tingginya untuk mobile */}
         <div className="h-4 sm:h-12 flex items-center justify-center flex-shrink-0">
           <h2 className="text-base sm:text-3xl font-bold text-center text-gray-900">
             {slides[currentSlide].title}
           </h2>
         </div>
 
-        {/* Container untuk konten dan tombol navigasi */}
         <div className="relative px-1 sm:px-20">
-          {/* Konten Slide dengan tinggi yang ditambah untuk mobile */}
           <div className="h-[500px] sm:h-[650px] flex items-center justify-center overflow-hidden">
             <div className="w-full animate-fade-in">
               {slides[currentSlide].content}
             </div>
           </div>
         
-          {/* Tombol Prev - dipindahkan lebih ke tepi */}
           <button
             onClick={prevSlide}
             disabled={currentSlide === 0}
@@ -914,7 +891,6 @@ const ProposalSlider = () => {
             <ChevronLeft className="w-3 h-3 sm:w-6 sm:h-6 text-gray-700" />
           </button>
         
-          {/* Tombol Next - dipindahkan lebih ke tepi */}
           <button
             onClick={nextSlide}
             disabled={currentSlide === slides.length - 1}
@@ -924,7 +900,6 @@ const ProposalSlider = () => {
           </button>
         </div>
 
-        {/* Pagination dengan tinggi tetap dan jarak yang ditambah */}
         <div className="h-8 sm:h-8 flex flex-col items-center justify-center flex-shrink-0 mt-8 sm:mt-8">
           <div className="flex justify-center gap-1.5 sm:gap-3 mb-2 sm:mb-4">
             {slides.map((_, index) => (
