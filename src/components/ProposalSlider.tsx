@@ -282,7 +282,7 @@ const ProposalSlider = () => {
     },
     {
     id: "tech-stack",
-    title: "Teknologi Yang Digunakan (Tech Stack)",
+    title: "Teknologi Yang Akan Digunakan (Tech Stack)",
     content: (
       <div className="max-w-4xl mx-auto max-h-[450px] sm:max-h-[500px] lg:max-h-none overflow-y-auto">
         <div className="bg-white rounded-lg sm:rounded-2xl p-2 sm:p-4 lg:p-8 shadow-lg border border-gray-200 mx-1 sm:mx-2 lg:mx-0">
