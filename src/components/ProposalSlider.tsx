@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import LoginAccess from "@/components/LoginAccess";
 import {
-  FileText, Target, Database, BarChart3, CheckCircle, Shield, DollarSign, BookOpenText,
+  FileText, Target, Database, BarChart3, CheckCircle, Shield, DollarSign, BookOpenText, Settings,
   Clock, Code, Briefcase, MessageCircle, ChevronLeft, ChevronRight, Layers, HandHeart
 } from "lucide-react";
 
@@ -22,7 +22,6 @@ const ProposalSlider = () => {
       content: (
         <div className="max-w-4xl mx-auto">
           <p className="w-full text-center text-xs sm:text-lg text-gray-700 leading-relaxed mb-2 sm:mb-8 px-2 sm:px-0">
-            <BookOpenText className="w-3 h-3 sm:w-8 sm:h-8 text-hexa-red" />
             Menindaklanjuti permintaan penawaran dari Direktur PT Samugara Global Capital, berikut ini kami kirimkan proposal kerja pengembangan aplikasi perusahaan sesuai yang diminta.
             Proposal ini kami bagi dan rinci ke dalam beberapa aspek pembahasan.
           </p>
@@ -32,6 +31,7 @@ const ProposalSlider = () => {
             
             <div className="mt-2 sm:mt-6 p-2 sm:p-6 bg-hexa-red/5 rounded-lg sm:rounded-2xl border border-hexa-red/20">
               <p className="text-xs sm:text-base text-gray-700 leading-relaxed text-center">
+                <BookOpenText className="w-3 h-3 sm:w-8 sm:h-8 text-hexa-red" />
                 Kebutuhan yang diminta adalah <span className="font-semibold text-hexa-red">Aplikasi Web terintegrasi untuk sebuah Grup Usaha</span> yang terdiri dari enam perusahaan dan saling terhubung, sehingga integrasi data dan 
                 keamanan menjadi prioritas utama.
               </p>
