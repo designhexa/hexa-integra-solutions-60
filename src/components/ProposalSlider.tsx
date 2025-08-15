@@ -621,7 +621,7 @@ const ProposalSlider = () => {
     },
     {
       id: "gambar-prototype1",
-      title: "Gambar Prototype 1",
+      title: "Prototype Design 1",
       content: (
         <div className="max-w-4xl mx-auto flex justify-center">
           <Card className="card-hover border-gray-200 animate-scale-in bg-white mx-2 sm:mx-0">
@@ -636,7 +636,7 @@ const ProposalSlider = () => {
     },
 {
       id: "gambar-prototype2",
-      title: "Gambar Prototype 2",
+      title: "Prototype Design 2",
       content: (
         <div className="max-w-4xl mx-auto flex justify-center">
           <Card className="card-hover border-gray-200 animate-scale-in bg-white mx-2 sm:mx-0">
@@ -651,7 +651,7 @@ const ProposalSlider = () => {
     },
 {
       id: "gambar-prototype3",
-      title: "Gambar Prototype 3",
+      title: "Prototype Design 3",
       content: (
         <div className="max-w-4xl mx-auto flex justify-center">
           <Card className="card-hover border-gray-200 animate-scale-in bg-white mx-2 sm:mx-0">
@@ -666,7 +666,7 @@ const ProposalSlider = () => {
     },
 {
       id: "gambar-prototype4",
-      title: "Gambar Prototype 4",
+      title: "Prototype Design 4",
       content: (
         <div className="max-w-4xl mx-auto flex justify-center">
           <Card className="card-hover border-gray-200 animate-scale-in bg-white mx-2 sm:mx-0">
@@ -681,7 +681,7 @@ const ProposalSlider = () => {
     },
 {
       id: "gambar-prototype5",
-      title: "Gambar Prototype 5",
+      title: "Prototype Design 5",
       content: (
         <div className="max-w-4xl mx-auto flex justify-center">
           <Card className="card-hover border-gray-200 animate-scale-in bg-white mx-2 sm:mx-0">
@@ -696,7 +696,7 @@ const ProposalSlider = () => {
     },
     {
       id: "gambar-prototype6",
-      title: "Gambar Prototype 6",
+      title: "Prototype Design 6",
       content: (
         <div className="max-w-4xl mx-auto flex justify-center">
           <Card className="card-hover border-gray-200 animate-scale-in bg-white mx-2 sm:mx-0">
@@ -711,7 +711,7 @@ const ProposalSlider = () => {
     },
     {
       id: "gambar-prototype7",
-      title: "Gambar Prototype 7",
+      title: "Prototype Design 7",
       content: (
         <div className="max-w-4xl mx-auto flex justify-center">
           <Card className="card-hover border-gray-200 animate-scale-in bg-white mx-2 sm:mx-0">
@@ -730,9 +730,6 @@ const ProposalSlider = () => {
       content: (
         <div className="max-w-4xl mx-auto text-center">
           <div className="bg-white rounded-lg sm:rounded-2xl p-2 sm:p-6 shadow-lg border border-gray-200">
-            <h3 className="text-sm sm:text-2xl font-semibold text-gray-900 mb-4">
-              Prototype Design
-            </h3>
             <p className="text-gray-700 text-sm sm:text-base mb-4">
               Visualisasi awal dari sistem yang dirancang.  
               Untuk melihat versi <strong>clickable</strong>, <br /> silakan kunjungi:{" "}
