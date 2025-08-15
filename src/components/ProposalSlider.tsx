@@ -157,7 +157,10 @@ const ProposalSlider = () => {
                         Proses pengerjaan tidak mengharuskan pihak Hexa untuk hadir atau stay di kantor Samugara, pengerjaan dimaksimalkan secara online
                       </p>
                     </div>
+                  </div>
         
+                  {/* Kolom Kanan */}
+                  <div className="space-y-4">
                     {/* 4 */}
                     <div>
                       <div className="flex items-start gap-2">
@@ -179,10 +182,6 @@ const ProposalSlider = () => {
                         ))}
                       </div>
                     </div>
-                  </div>
-        
-                  {/* Kolom Kanan */}
-                  <div className="space-y-4">
                     {/* 5 */}
                     <div>
                       <div className="flex items-start gap-2">
