@@ -314,34 +314,89 @@ const ProposalSlider = () => {
             </div>
       
             {/* Tabel Pekerjaan */}
-            <div className="mt-6 overflow-x-auto">
-              <table className="w-full border border-gray-300 text-sm text-gray-700">
+            <div className="overflow-x-auto">
+              <table className="table-auto border-collapse border border-gray-300 text-sm">
                 <thead className="bg-gray-100">
                   <tr>
-                    <th className="border border-gray-300 px-3 py-2 text-left w-10">No</th>
-                    <th className="border border-gray-300 px-3 py-2 text-left">Item Pekerjaan</th>
-                    <th className="border border-gray-300 px-3 py-2 text-left">Deskripsi</th>
+                    <th className="border border-gray-300 px-2 py-1">No</th>
+                    <th className="border border-gray-300 px-2 py-1">Item Pekerjaan</th>
+                    <th className="border border-gray-300 px-2 py-1">Deskripsi</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr><td className="border px-3 py-2">1</td><td className="border px-3 py-2">Requirement Gathering</td><td className="border px-3 py-2">Workshop, wawancara stakeholder, analisis kebutuhan</td></tr>
-                  <tr><td className="border px-3 py-2">2</td><td className="border px-3 py-2">UI/UX Design</td><td className="border px-3 py-2">Wireframe, prototype, desain responsif</td></tr>
-                  <tr><td className="border px-3 py-2">3</td><td className="border px-3 py-2">Arsitektur Sistem</td><td className="border px-3 py-2">Perancangan database, API, struktur folder</td></tr>
-                  <tr><td className="border px-3 py-2">4</td><td className="border px-3 py-2">Modul Keuangan</td><td className="border px-3 py-2">CRUD transaksi, laporan, integrasi dashboard</td></tr>
-                  <tr><td className="border px-3 py-2">5</td><td className="border px-3 py-2">Modul Pengadaan</td><td className="border px-3 py-2">Permintaan barang/jasa, proses pembelian, monitoring</td></tr>
-                  <tr><td className="border px-3 py-2">6</td><td className="border px-3 py-2">Modul Inventory</td><td className="border px-3 py-2">Pencatatan stok, keluar/masuk barang, integrasi keuangan</td></tr>
-                  <tr><td className="border px-3 py-2">7</td><td className="border px-3 py-2">Dashboard & KPI Monitoring</td><td className="border px-3 py-2">Visualisasi data real-time</td></tr>
-                  <tr><td className="border px-3 py-2">8</td><td className="border px-3 py-2">Multi Approval System</td><td className="border px-3 py-2">Alur persetujuan bertingkat</td></tr>
-                  <tr><td className="border px-3 py-2">9</td><td className="border px-3 py-2">Data Induk</td><td className="border px-3 py-2">Master data perusahaan, supplier, proyek, kategori</td></tr>
-                  <tr><td className="border px-3 py-2">10</td><td className="border px-3 py-2">Setting Sistem</td><td className="border px-3 py-2">User management, role, konfigurasi</td></tr>
-                  <tr><td className="border px-3 py-2">11</td><td className="border px-3 py-2">Testing</td><td className="border px-3 py-2">Unit test, integration test, UAT</td></tr>
-                  <tr><td className="border px-3 py-2">12</td><td className="border px-3 py-2">Deployment</td><td className="border px-3 py-2">Setup server, konfigurasi hosting/cloud</td></tr>
-                  <tr><td className="border px-3 py-2">13</td><td className="border px-3 py-2">Training</td><td className="border px-3 py-2">Pelatihan admin dan end-user</td></tr>
-                  <tr><td className="border px-3 py-2">14</td><td className="border px-3 py-2">Dokumentasi</td><td className="border px-3 py-2">Panduan teknis & user manual</td></tr>
+                  <tr>
+                    <td className="border border-gray-300 px-2 py-1">1</td>
+                    <td className="border border-gray-300 px-2 py-1">Requirement Gathering</td>
+                    <td className="border border-gray-300 px-2 py-1">Workshop, wawancara stakeholder, analisis kebutuhan</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-2 py-1">2</td>
+                    <td className="border border-gray-300 px-2 py-1">UI/UX Design</td>
+                    <td className="border border-gray-300 px-2 py-1">Wireframe, prototype, desain responsif</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-2 py-1">3</td>
+                    <td className="border border-gray-300 px-2 py-1">Arsitektur Sistem</td>
+                    <td className="border border-gray-300 px-2 py-1">Perancangan database, API, struktur folder</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-2 py-1">4</td>
+                    <td className="border border-gray-300 px-2 py-1">Modul Keuangan</td>
+                    <td className="border border-gray-300 px-2 py-1">CRUD transaksi, laporan, integrasi dashboard</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-2 py-1">5</td>
+                    <td className="border border-gray-300 px-2 py-1">Modul Pengadaan</td>
+                    <td className="border border-gray-300 px-2 py-1">Permintaan barang/jasa, proses pembelian, monitoring</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-2 py-1">6</td>
+                    <td className="border border-gray-300 px-2 py-1">Modul Inventory</td>
+                    <td className="border border-gray-300 px-2 py-1">Pencatatan stok, keluar/masuk barang, integrasi keuangan</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-2 py-1">7</td>
+                    <td className="border border-gray-300 px-2 py-1">Dashboard & KPI Monitoring</td>
+                    <td className="border border-gray-300 px-2 py-1">Visualisasi data real-time</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-2 py-1">8</td>
+                    <td className="border border-gray-300 px-2 py-1">Multi Approval System</td>
+                    <td className="border border-gray-300 px-2 py-1">Alur persetujuan bertingkat</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-2 py-1">9</td>
+                    <td className="border border-gray-300 px-2 py-1">Data Induk</td>
+                    <td className="border border-gray-300 px-2 py-1">Master data perusahaan, supplier, proyek, kategori</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-2 py-1">10</td>
+                    <td className="border border-gray-300 px-2 py-1">Setting Sistem</td>
+                    <td className="border border-gray-300 px-2 py-1">User management, role, konfigurasi</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-2 py-1">11</td>
+                    <td className="border border-gray-300 px-2 py-1">Testing</td>
+                    <td className="border border-gray-300 px-2 py-1">Unit test, integration test, UAT</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-2 py-1">12</td>
+                    <td className="border border-gray-300 px-2 py-1">Deployment</td>
+                    <td className="border border-gray-300 px-2 py-1">Setup server, konfigurasi hosting/cloud</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-2 py-1">13</td>
+                    <td className="border border-gray-300 px-2 py-1">Training</td>
+                    <td className="border border-gray-300 px-2 py-1">Pelatihan admin dan end-user</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-2 py-1">14</td>
+                    <td className="border border-gray-300 px-2 py-1">Dokumentasi</td>
+                    <td className="border border-gray-300 px-2 py-1">Panduan teknis & user manual</td>
+                  </tr>
                 </tbody>
               </table>
-            </div>
-      
+            </div>     
           </div>
         </div>
       )
