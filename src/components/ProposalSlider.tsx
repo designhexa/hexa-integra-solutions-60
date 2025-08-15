@@ -225,7 +225,7 @@ const ProposalSlider = () => {
       <div className="max-w-4xl mx-auto max-h-[450px] sm:max-h-[500px] lg:max-h-none overflow-y-auto">
         <div className="bg-white rounded-lg sm:rounded-2xl p-2 sm:p-4 lg:p-8 shadow-lg border border-gray-200 mx-1 sm:mx-2 lg:mx-0">
           <h3 className="text-sm sm:text-lg lg:text-2xl font-semibold text-gray-900 mb-2 sm:mb-4 lg:mb-6 text-center">
-            Kami cukup berpengalaman dalam menghandle pekerjaan berikut:
+            Kami cukup berpengalaman dalam menangani pekerjaan-pekerjaan berikut:
           </h3>
     
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-4 lg:gap-6">
@@ -282,7 +282,7 @@ const ProposalSlider = () => {
     },
     {
     id: "tech-stack",
-    title: "Tech Stack",
+    title: "Teknologi Yang Digunakan (Tech Stack)",
     content: (
       <div className="max-w-4xl mx-auto max-h-[450px] sm:max-h-[500px] lg:max-h-none overflow-y-auto">
         <div className="bg-white rounded-lg sm:rounded-2xl p-2 sm:p-4 lg:p-8 shadow-lg border border-gray-200 mx-1 sm:mx-2 lg:mx-0">
