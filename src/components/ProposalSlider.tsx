@@ -286,12 +286,7 @@ const ProposalSlider = () => {
       content: (
         <div className="max-w-4xl mx-auto max-h-[450px] sm:max-h-[500px] lg:max-h-none overflow-y-auto">
           <div className="bg-white rounded-lg sm:rounded-2xl p-2 sm:p-4 lg:p-8 shadow-lg border border-gray-200 mx-1 sm:mx-2 lg:mx-0">
-      
-            {/* Judul */}
-            <h3 className="text-sm sm:text-lg lg:text-2xl font-semibold text-gray-900 mb-4 text-center">
-              Tahapan Pengerjaan
-            </h3>
-      
+          
             {/* Konten Deskripsi */}
             <div className="space-y-4">
               <p className="text-sm text-gray-700">
