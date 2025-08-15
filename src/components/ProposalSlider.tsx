@@ -554,7 +554,7 @@ const ProposalSlider = () => {
     
           {/* Sisipkan gambar Gantt Chart */}
           <img
-            src="https://hexaintegra.com/wp-content/uploads/2025/08/Ghantchart.png" // ganti dengan path gambar kamu
+            src="https://hexaintegra.com/wp-content/uploads/2025/08/Ghantchart.png" 
             alt="Gantt Chart Pengerjaan"
             className="mt-6 max-w-full h-auto rounded-lg shadow"
           />
@@ -805,7 +805,7 @@ const ProposalSlider = () => {
       <Card className="bg-gray-50 border-gray-200 mx-2 sm:mx-0">
         <CardContent className="p-3 sm:p-12">
           <div className="w-6 h-6 sm:w-16 sm:h-16 bg-hexa-red/10 rounded-lg sm:rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-6">
-            <BriefCase className="w-5 h-5 sm:w-10 sm:h-10 text-hexa-red" />
+            <Briefcase className="w-5 h-5 sm:w-10 sm:h-10 text-hexa-red" />
           </div>
           
           <p className="text-xs sm:text-lg leading-relaxed mb-2 sm:mb-8 text-gray-700">
