@@ -29,11 +29,11 @@ const ProposalSlider = () => {
       </p>
 
       {/* Icon + Title dalam 1 baris */}
-      <div className="flex items-center justify-center gap-3 sm:gap-4 mb-4 sm:mb-8">
-        <div className="w-6 h-6 sm:w-16 sm:h-16 bg-hexa-red/10 rounded-lg sm:rounded-2xl flex items-center justify-center">
+       <div className="flex flex-col items-center justify-center mb-4 sm:mb-8">
+        <div className="w-6 h-6 sm:w-16 sm:h-16 bg-hexa-red/10 rounded-lg sm:rounded-2xl flex items-center justify-center mb-2 sm:mb-4">
           <BookOpenText className="w-5 h-5 sm:w-10 sm:h-10 text-hexa-red" />
         </div>
-        <h3 className="text-sm sm:text-2xl font-semibold text-gray-900">
+        <h3 className="text-sm sm:text-2xl font-semibold text-gray-900 text-center">
           Kebutuhan Sistem Terintegrasi
         </h3>
       </div>
