@@ -793,66 +793,65 @@ const ProposalSlider = () => {
       )
     },
     {
-      id: "closing",
-      title: "Penutup Proposal",
-      content: (
-        <div className="max-w-4xl mx-auto text-center">
-          <Card className="bg-gray-50 border-gray-200 mx-2 sm:mx-0">
-            <CardContent className="p-3 sm:p-12">
-              <div className="w-6 h-6 sm:w-16 sm:h-16 bg-hexa-red/10 rounded-lg sm:rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-6">
-              <BriefCase className="w-5 h-5 sm:w-10 sm:h-10 text-hexa-red" />
-            </div>
-              
-              <p className="text-xs sm:text-lg leading-relaxed mb-2 sm:mb-8 text-gray-700">
-                Terima kasih atas perhatian dan kerja sama yang baik. Kami menantikan kesempatan 
-                untuk berdiskusi lebih lanjut mengenai proyek ini dan memberikan solusi terbaik 
-                untuk kebutuhan <span className="font-semibold text-hexa-red">PT Samugara Global Capital</span>.
-              </p>
-              
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-6 mt-2 sm:mt-8">
-                <div className="text-center">
-                  <CheckCircle className="w-4 h-4 sm:w-8 sm:h-8 mx-auto mb-1 sm:mb-3 text-hexa-red" />
-                  <h4 className="font-semibold mb-0.5 sm:mb-2 text-gray-900 text-xs sm:text-base">Solusi Terpercaya</h4>
-                  <p className="text-xs sm:text-sm text-gray-600">Pengalaman dan keahlian untuk proyek Anda</p>
-                </div>
-                
-                <div className="text-center">
-                  <MessageCircle className="w-4 h-4 sm:w-8 sm:h-8 mx-auto mb-1 sm:mb-3 text-hexa-red" />
-                  <h4 className="font-semibold mb-0.5 sm:mb-2 text-gray-900 text-xs sm:text-base">Komunikasi Terbuka</h4>
-                  <p className="text-xs sm:text-sm text-gray-600">Diskusi mendalam untuk hasil optimal</p>
-                </div>
-                
-                <div className="text-center">
-                  <HandHeart className="w-4 h-4 sm:w-8 sm:h-8 mx-auto mb-1 sm:mb-3 text-hexa-red" />
-                  <h4 className="font-semibold mb-0.5 sm:mb-2 text-gray-900 text-xs sm:text-base">Komitmen Tinggi</h4>
-                  <p className="text-xs sm:text-sm text-gray-600">Dedikasi penuh untuk kesuksesan proyek</p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-          
-          <div className="mt-3 sm:mt-12 text-center">
-            <p className="text-hexa-red font-semibold text-xs sm:text-lg">
-              CV. Hexa Integra Mandiri
-            </p>
-            <p className="text-gray-600 mt-0.5 sm:mt-2 text-xs sm:text-base">
-              Siap menjadi partner teknologi terpercaya Anda
-            </p>
-            <p className="text-gray-700 text-sm sm:text-base">
-              Klik tautan berikut untuk melihat proposal dalam format PDF:{" "}
-              <a
-                href="https://drive.google.com/file/d/1wPFoAxPdjcDkokuj0N-KsY_5agu4gGkN/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-hexa-red font-semibold hover:underline"
-              >
-                Unduh Proposal PDF
-              </a>
-            </p>
+  id: "closing",
+  title: "Penutup Proposal",
+  content: (
+    <div className="max-w-4xl mx-auto text-center">
+      <Card className="bg-gray-50 border-gray-200 mx-2 sm:mx-0">
+        <CardContent className="p-3 sm:p-12">
+          <div className="w-6 h-6 sm:w-16 sm:h-16 bg-hexa-red/10 rounded-lg sm:rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-6">
+            <BriefCase className="w-5 h-5 sm:w-10 sm:h-10 text-hexa-red" />
           </div>
+          
+          <p className="text-xs sm:text-lg leading-relaxed mb-2 sm:mb-8 text-gray-700">
+            Terima kasih atas perhatian dan kerja sama yang baik. Kami menantikan kesempatan 
+            untuk berdiskusi lebih lanjut mengenai proyek ini dan memberikan solusi terbaik 
+            untuk kebutuhan <span className="font-semibold text-hexa-red">PT Samugara Global Capital</span>.
+          </p>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-6 mt-2 sm:mt-8">
+            <div className="text-center">
+              <CheckCircle className="w-4 h-4 sm:w-8 sm:h-8 mx-auto mb-1 sm:mb-3 text-hexa-red" />
+              <h4 className="font-semibold mb-0.5 sm:mb-2 text-gray-900 text-xs sm:text-base">Solusi Terpercaya</h4>
+              <p className="text-xs sm:text-sm text-gray-600">Pengalaman dan keahlian untuk proyek Anda</p>
+            </div>
+            
+            <div className="text-center">
+              <MessageCircle className="w-4 h-4 sm:w-8 sm:h-8 mx-auto mb-1 sm:mb-3 text-hexa-red" />
+              <h4 className="font-semibold mb-0.5 sm:mb-2 text-gray-900 text-xs sm:text-base">Komunikasi Terbuka</h4>
+              <p className="text-xs sm:text-sm text-gray-600">Diskusi mendalam untuk hasil optimal</p>
+            </div>
+            
+            <div className="text-center">
+              <HandHeart className="w-4 h-4 sm:w-8 sm:h-8 mx-auto mb-1 sm:mb-3 text-hexa-red" />
+              <h4 className="font-semibold mb-0.5 sm:mb-2 text-gray-900 text-xs sm:text-base">Komitmen Tinggi</h4>
+              <p className="text-xs sm:text-sm text-gray-600">Dedikasi penuh untuk kesuksesan proyek</p>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+      
+      <div className="mt-3 sm:mt-12 text-center">
+        <p className="text-hexa-red font-semibold text-xs sm:text-lg">
+          CV. Hexa Integra Mandiri
+        </p>
+        <p className="text-gray-600 mt-0.5 sm:mt-2 text-xs sm:text-base">
+          Siap menjadi partner teknologi terpercaya Anda
+        </p>
+        <div className="mt-4">
+          <a
+            href="https://drive.google.com/file/d/1wPFoAxPdjcDkokuj0N-KsY_5agu4gGkN/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-hexa-red text-white px-4 py-2 rounded-lg font-semibold hover:bg-hexa-red/80 transition"
+          >
+            📄 Unduh Proposal PDF
+          </a>
         </div>
-      )
-    }
+      </div>
+    </div>
+  )
+}
   ];
 
   const nextSlide = () => {
