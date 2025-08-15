@@ -290,7 +290,7 @@ const ProposalSlider = () => {
             {/* Konten */}
             <div className="space-y-4">
               <p className="text-sm text-gray-700">
-                Di samping ini adalah daftar pekerjaan yang akan dilakukan.
+                Di bawah ini adalah daftar pekerjaan yang akan dilakukan.
                 Proses pengerjaan dilaksanakan secara bertahap dibagi 3 fase.
                 Kami mengikuti prosedur standar <strong>SDLC</strong> untuk menghasilkan kualitas terbaik.
               </p>
