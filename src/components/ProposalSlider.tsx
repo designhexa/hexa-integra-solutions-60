@@ -112,7 +112,7 @@ const ProposalSlider = () => {
                 </div>
         
                 <h3 className="text-sm sm:text-2xl font-semibold text-gray-900 mb-2 sm:mb-6 text-center">
-                  Format & Scope Kerjasama
+                  Format & Ruang Lingkup Kerjasama
                 </h3>
                 <p className="text-xs sm:text-base text-gray-600 leading-relaxed mb-2 sm:mb-8 text-center">
                   Format kerjasama yang ditawarkan adalah:
@@ -163,7 +163,7 @@ const ProposalSlider = () => {
                       <div className="flex items-start gap-2">
                         <span className="text-hexa-red font-bold">4.</span>
                         <p className="text-gray-700 text-xs sm:text-base font-semibold">
-                          Yang termasuk scope kerja:
+                          Yang termasuk lingkup kerja:
                         </p>
                       </div>
                       <div className="ml-8 mt-1 space-y-1">
@@ -188,7 +188,7 @@ const ProposalSlider = () => {
                       <div className="flex items-start gap-2">
                         <span className="text-hexa-red font-bold">5.</span>
                         <p className="text-gray-700 text-xs sm:text-base font-semibold">
-                          Yang tidak termasuk scope kerja:
+                          Yang tidak termasuk lingkup kerja:
                         </p>
                       </div>
                       <div className="ml-8 mt-1 space-y-1">
@@ -231,35 +231,30 @@ const ProposalSlider = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-4 lg:gap-6">
             {[
               {
-                icon: BarChart3,
                 title: "Keuangan",
                 description: "Pencatatan, pengelolaan, dan pelaporan transaksi keuangan secara real-time.",
                 year: "2022",
                 project: "Implementasi sistem keuangan pada bosCOD (PT. Hadid Parama Indonesia)"
               },
               {
-                icon: FileText,
                 title: "Pengadaan",
                 description: "Manajemen permintaan dan pembelian barang/jasa hingga monitoring proses pengadaan.",
                 year: "2019",
                 project: "Implementasi sistem pengadaan barang (PT. Pelnas Ekalya Purnamasari/ ELPI)"
               },
               {
-                icon: Database,
                 title: "Inventory Management",
                 description: "Manajemen persediaan yang mengatur masuk keluar barang untuk kebutuhan per proyek dan terintegrasi dengan keuangan.",
                 year: "2018 atau sebelumnya",
                 project: "Implementasi sistem inventory dan pergudangan (PT. Orela Shipyard)"
               },
               {
-                icon: Target,
                 title: "Finance Dashboard Monitoring",
                 description: "Dashboard interaktif untuk memantau kondisi keuangan dan KPI utama secara komprehensif.",
                 year: "2023",
                 project: "Implementasi finance dashboard Obama (PT. Oremus Bahari Mandiri)"
               },
               {
-                icon: CheckCircle,
                 title: "Multi Approval System",
                 description: "Mekanisme persetujuan berlapis sesuai struktur organisasi dan otorisasi di setiap perusahaan.",
                 year: "2018 atau sebelumnya",
