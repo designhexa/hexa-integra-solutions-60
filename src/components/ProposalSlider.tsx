@@ -570,8 +570,8 @@ const ProposalSlider = () => {
             </li>
           </ul>
         </div>
-      ),
-    }
+      )
+    },
     {
       id: "estimation",
       title: "Estimasi Waktu dan Biaya",
