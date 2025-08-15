@@ -592,30 +592,6 @@ const ProposalSlider = () => {
       )
     },
     {
-      {
-  id: "estimation",
-  title: "Estimasi Biaya",
-  content: (
-    <div className="max-w-4xl mx-auto">
-      <Card className="card-hover border-gray-200 animate-scale-in bg-white mx-2 sm:mx-0">
-        <CardContent className="p-4 sm:p-12 text-center">
-          <div className="w-6 h-6 sm:w-16 sm:h-16 bg-hexa-red/10 rounded-lg sm:rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-6">
-            <Clock className="w-3 h-3 sm:w-8 sm:h-8 text-hexa-red" />
-          </div>
-          <h3 className="text-sm sm:text-2xl font-semibold text-gray-900 mb-2 sm:mb-4">
-            Estimasi Biaya Pengembangan
-          </h3>
-          <p className="text-xs sm:text-lg text-gray-600 leading-relaxed">
-            Demi kenyamanan dan transparansi, detail estimasi biaya akan kami
-            sampaikan melalui dokumen terpisah yang mudah dibaca (PDF atau format
-            lain yang sesuai).
-          </p>
-        </CardContent>
-      </Card>
-    </div>
-  )
-  },
-  {
     id: "estimation",
     title: "Estimasi Biaya",
     content: (
@@ -636,7 +612,7 @@ const ProposalSlider = () => {
           </CardContent>
         </Card>
       </div>
-    )
+      )
     },
     {
       id: "discussion",
