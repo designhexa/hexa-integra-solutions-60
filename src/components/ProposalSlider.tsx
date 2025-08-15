@@ -27,13 +27,13 @@ const ProposalSlider = () => {
           </p>
     
           <div className="bg-white rounded-lg sm:rounded-2xl p-2 sm:p-8 shadow-lg border border-gray-200 mx-2 sm:mx-0">
+            <BookOpenText className="w-3 h-3 sm:w-8 sm:h-8 text-hexa-red mb-2" />
             <h3 className="text-sm sm:text-2xl font-semibold text-gray-900 mb-2 sm:mb-6 text-center">
               Kebutuhan Sistem Terintegrasi
             </h3>
     
             <div className="mt-2 sm:mt-6 p-2 sm:p-6 bg-hexa-red/5 rounded-lg sm:rounded-2xl border border-hexa-red/20">
               <div className="flex flex-col items-center text-center">
-                <BookOpenText className="w-3 h-3 sm:w-8 sm:h-8 text-hexa-red mb-2" />
                 <p className="text-xs sm:text-base text-gray-700 leading-relaxed">
                   Kebutuhan yang diminta adalah <span className="font-semibold text-hexa-red">Aplikasi Web terintegrasi untuk sebuah Grup Usaha</span> 
                   yang terdiri dari enam perusahaan dan saling terhubung, sehingga integrasi data dan keamanan menjadi prioritas utama.
@@ -402,11 +402,10 @@ const ProposalSlider = () => {
       content: (
       <div className="max-w-4xl mx-auto max-h-[450px] sm:max-h-[500px] lg:max-h-none overflow-y-auto">
         <div className="bg-white rounded-lg sm:rounded-2xl p-2 sm:p-4 lg:p-8 shadow-lg border border-gray-200 mx-1 sm:mx-2 lg:mx-0">
-        
+        <Settings className="w-3 h-3 sm:w-8 sm:h-8 text-hexa-red" />
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             {/* Kolom Kiri */}
             <div className="space-y-4">
-              <Settings className="w-3 h-3 sm:w-8 sm:h-8 text-hexa-red" />
               <div>
                 <h4 className="font-semibold text-gray-900 mb-2">1. Frontend</h4>
                 <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
@@ -552,33 +551,35 @@ const ProposalSlider = () => {
       content: (
         <div className="max-w-4xl mx-auto">
           <Card className="card-hover border-gray-200 animate-scale-in bg-white mx-2 sm:mx-0">
-            <ul className="list-disc list-inside max-w-3xl mx-auto text-sm sm:text-base space-y-2 p-4 sm:p-6">
-              <Target className="w-3 h-3 sm:w-8 sm:h-8 text-hexa-red" />
-              <li>
-                <strong>Fase Awal:</strong> Fokus pada modul yang paling krusial
-                (Keuangan, Pengadaan, Inventory) untuk percepatan pengerjaan.
-              </li>
-              <li>
-                <strong>Integrasi Bertahap:</strong> Setiap modul diuji dan
-                diintegrasikan ke sistem live sebelum fase berikutnya.
-              </li>
-              <li>
-                <strong>User-Centric Development:</strong> Setiap akhir sprint
-                dilakukan review dengan user untuk memastikan kebutuhan terpenuhi.
-              </li>
-              <li>
-                <strong>Scalability:</strong> Arsitektur disiapkan untuk
-                multi-company &amp; multi-user tanpa mengubah core sistem.
-              </li>
-              <li>
-                <strong>Keamanan Data:</strong> Implementasi best-practice keamanan
-                data &amp; audit trail.
-              </li>
-              <li>
-                <strong>Training &amp; Handover:</strong> Menjamin transisi smooth
-                dari tim development ke tim operasional klien.
-              </li>
-            </ul>
+            <div className="flex flex-col items-center p-4 sm:p-6">
+              <Target className="w-5 h-5 sm:w-10 sm:h-10 text-hexa-red mb-4" />
+              <ul className="list-disc list-inside max-w-3xl text-sm sm:text-base space-y-2 text-left">
+                <li>
+                  <strong>Fase Awal:</strong> Fokus pada modul yang paling krusial
+                  (Keuangan, Pengadaan, Inventory) untuk percepatan pengerjaan.
+                </li>
+                <li>
+                  <strong>Integrasi Bertahap:</strong> Setiap modul diuji dan
+                  diintegrasikan ke sistem live sebelum fase berikutnya.
+                </li>
+                <li>
+                  <strong>User-Centric Development:</strong> Setiap akhir sprint
+                  dilakukan review dengan user untuk memastikan kebutuhan terpenuhi.
+                </li>
+                <li>
+                  <strong>Scalability:</strong> Arsitektur disiapkan untuk
+                  multi-company &amp; multi-user tanpa mengubah core sistem.
+                </li>
+                <li>
+                  <strong>Keamanan Data:</strong> Implementasi best-practice keamanan
+                  data &amp; audit trail.
+                </li>
+                <li>
+                  <strong>Training &amp; Handover:</strong> Menjamin transisi smooth
+                  dari tim development ke tim operasional klien.
+                </li>
+              </ul>
+            </div>
           </Card>
         </div>
       )
