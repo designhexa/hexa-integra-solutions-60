@@ -219,6 +219,93 @@ const ProposalSlider = () => {
         )
     },
     {
+    id: "pengalaman",
+    title: "Pengalaman Pekerjaan",
+    content: (
+      <div className="max-w-4xl mx-auto max-h-[450px] sm:max-h-none overflow-y-auto sm:overflow-visible">
+        <Card className="card-hover border-gray-200 animate-scale-in bg-white mx-2 sm:mx-0">
+          <CardContent className="p-2 sm:p-8">
+            <div className="w-6 h-6 sm:w-16 sm:h-16 bg-hexa-red/10 rounded-lg sm:rounded-2xl flex items-center justify-center mb-2 sm:mb-6 mx-auto">
+              <Clock className="w-3 h-3 sm:w-8 sm:h-8 text-hexa-red" />
+            </div>
+    
+            <h3 className="text-sm sm:text-2xl font-semibold text-gray-900 mb-2 sm:mb-6 text-center">
+              Pengalaman Implementasi Sistem
+            </h3>
+    
+            <div className="space-y-4">
+              {/* 1 */}
+              <div>
+                <div className="flex items-start gap-2">
+                  <span className="text-hexa-red font-bold">1.</span>
+                  <p className="text-gray-700 text-xs sm:text-base font-semibold">
+                    Keuangan – Pencatatan, pengelolaan, dan pelaporan transaksi keuangan secara real-time.
+                  </p>
+                </div>
+                <p className="ml-6 mt-1 text-gray-600 text-xs sm:text-base">
+                  2022: Implementasi sistem keuangan pada bosCOD (PT. Hadid Parama Indonesia)
+                </p>
+              </div>
+    
+              {/* 2 */}
+              <div>
+                <div className="flex items-start gap-2">
+                  <span className="text-hexa-red font-bold">2.</span>
+                  <p className="text-gray-700 text-xs sm:text-base font-semibold">
+                    Pengadaan – Manajemen permintaan dan pembelian barang/jasa hingga monitoring proses pengadaan.
+                  </p>
+                </div>
+                <p className="ml-6 mt-1 text-gray-600 text-xs sm:text-base">
+                  2019: Implementasi sistem pengadaan barang (PT. Pelnas Ekalya Purnamasari / ELPI)
+                </p>
+              </div>
+    
+              {/* 3 */}
+              <div>
+                <div className="flex items-start gap-2">
+                  <span className="text-hexa-red font-bold">3.</span>
+                  <p className="text-gray-700 text-xs sm:text-base font-semibold">
+                    Inventory Management – Manajemen persediaan yang mengatur masuk keluar barang untuk kebutuhan per proyek dan terintegrasi dengan keuangan.
+                  </p>
+                </div>
+                <p className="ml-6 mt-1 text-gray-600 text-xs sm:text-base">
+                  2018 atau sebelumnya: Implementasi sistem inventory dan pergudangan (PT. Orela Shipyard)
+                </p>
+              </div>
+    
+              {/* 4 */}
+              <div>
+                <div className="flex items-start gap-2">
+                  <span className="text-hexa-red font-bold">4.</span>
+                  <p className="text-gray-700 text-xs sm:text-base font-semibold">
+                    Finance Dashboard Monitoring – Dashboard interaktif untuk memantau kondisi keuangan dan KPI utama secara komprehensif.
+                  </p>
+                </div>
+                <p className="ml-6 mt-1 text-gray-600 text-xs sm:text-base">
+                  2023: Implementasi finance dashboard Obama (PT. Oremus Bahari Mandiri)
+                </p>
+              </div>
+    
+              {/* 5 */}
+              <div>
+                <div className="flex items-start gap-2">
+                  <span className="text-hexa-red font-bold">5.</span>
+                  <p className="text-gray-700 text-xs sm:text-base font-semibold">
+                    Multi Approval System – Mekanisme persetujuan berlapis sesuai struktur organisasi dan otorisasi di setiap perusahaan.
+                  </p>
+                </div>
+                <p className="ml-6 mt-1 text-gray-600 text-xs sm:text-base">
+                  2018 atau sebelumnya: Implementasi sistem pengadaan barang (PT. Orela Shipyard)
+                </p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    )
+    },
+
+    {
       id: "estimation",
       title: "Estimasi Waktu dan Biaya",
       content: (
