@@ -547,7 +547,7 @@ const ProposalSlider = () => {
       content: (
         <div className="max-w-4xl mx-auto">
           <Card className="card-hover border-gray-200 animate-scale-in bg-white mx-2 sm:mx-0">
-            <ul className="list-disc text-left max-w-3xl text-sm sm:text-base space-y-2 p-6">
+            <ul className="list-disc text-left max-w-3xl text-sm sm:text-base space-y-1 p-4 sm:p-6">
               <li>
                 <strong>Fase Awal:</strong> Fokus pada modul yang paling krusial (Keuangan, Pengadaan, Inventory) untuk percepatan pengerjaan.
               </li>
@@ -569,7 +569,7 @@ const ProposalSlider = () => {
             </ul>
           </Card>
         </div>
-      ),
+      )
     },
     {
       id: "estimation",
