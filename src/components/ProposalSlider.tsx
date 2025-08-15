@@ -730,6 +730,7 @@ const ProposalSlider = () => {
       content: (
         <div className="max-w-4xl mx-auto text-center">
           <div className="bg-white rounded-lg sm:rounded-2xl p-2 sm:p-6 shadow-lg border border-gray-200">
+            <HandHeart className="w-5 h-5 sm:w-10 sm:h-10 text-hexa-red" />
             <p className="text-gray-700 text-sm sm:text-base mb-4">
               Prototype ini memberikan gambaran awal tentang tampilan dan alur penggunaan aplikasi sebelum tahap pengembangan penuh. 
               Desain ini membantu memvisualisasikan fitur, memastikan pengalaman pengguna yang intuitif, 
