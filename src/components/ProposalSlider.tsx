@@ -830,6 +830,17 @@ const ProposalSlider = () => {
             <p className="text-gray-600 mt-0.5 sm:mt-2 text-xs sm:text-base">
               Siap menjadi partner teknologi terpercaya Anda
             </p>
+            <p className="text-gray-700 text-sm sm:text-base">
+              Klik tautan berikut untuk melihat proposal dalam format PDF:{" "}
+              <a
+                href="https://drive.google.com/file/d/1wPFoAxPdjcDkokuj0N-KsY_5agu4gGkN/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-hexa-red font-semibold hover:underline"
+              >
+                Unduh Proposal PDF
+              </a>
+            </p>
           </div>
         </div>
       )
