@@ -393,6 +393,81 @@ const ProposalSlider = () => {
       )
     },
     {
+      id: "timeline",
+      title: "Rencana Timeline",
+      content: (
+        <div className="flex flex-col items-center justify-center text-center p-6">
+          <p className="mb-6 text-base sm:text-lg">
+            Pengerjaan dilaksanakan dalam 4 fase, dengan estimasi total 4–5 bulan
+            sampai dengan proses implementasi.
+          </p>
+    
+          {/* Tabel Timeline */}
+          <table className="table-auto border-collapse border border-gray-300 text-sm w-full max-w-5xl">
+            <thead className="bg-gray-100">
+              <tr>
+                <th className="border border-gray-300 px-2 py-1">Fase</th>
+                <th className="border border-gray-300 px-2 py-1">Fokus Pekerjaan</th>
+                <th className="border border-gray-300 px-2 py-1">Modul / Aktivitas Utama</th>
+                <th className="border border-gray-300 px-2 py-1">Durasi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-gray-300 px-2 py-1">
+                  Phase 1 – Inception & Design
+                </td>
+                <td className="border border-gray-300 px-2 py-1">
+                  Analisis kebutuhan dan desain UI/UX
+                </td>
+                <td className="border border-gray-300 px-2 py-1">
+                  Requirement Gathering, UI/UX Design, Arsitektur Sistem
+                </td>
+                <td className="border border-gray-300 px-2 py-1">5 minggu</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-2 py-1">
+                  Phase 2 – Core Development
+                </td>
+                <td className="border border-gray-300 px-2 py-1">
+                  Pengembangan modul utama
+                </td>
+                <td className="border border-gray-300 px-2 py-1">
+                  Keuangan, Pengadaan, Inventory
+                </td>
+                <td className="border border-gray-300 px-2 py-1">9 minggu</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-2 py-1">
+                  Phase 3 – Extended Modules
+                </td>
+                <td className="border border-gray-300 px-2 py-1">
+                  Pengembangan modul tambahan & integrasi
+                </td>
+                <td className="border border-gray-300 px-2 py-1">
+                  Dashboard & KPI, Multi Approval System, Data Induk, Setting Sistem
+                </td>
+                <td className="border border-gray-300 px-2 py-1">6 minggu</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-2 py-1">
+                  Phase 4 – Testing & Deployment
+                </td>
+                <td className="border border-gray-300 px-2 py-1">
+                  Pengujian, deployment, dan training
+                </td>
+                <td className="border border-gray-300 px-2 py-1">
+                  QA, UAT, Deployment, Training, Dokumentasi
+                </td>
+                <td className="border border-gray-300 px-2 py-1">5 minggu</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      )
+    },
+
+    {
       id: "estimation",
       title: "Estimasi Waktu dan Biaya",
       content: (
