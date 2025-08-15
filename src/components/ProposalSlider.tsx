@@ -575,8 +575,8 @@ const ProposalSlider = () => {
             </ul>
           </Card>
         </div>
-      ),
-    }
+      )
+    },
     {
       id: "estimation",
       title: "Estimasi Biaya",
