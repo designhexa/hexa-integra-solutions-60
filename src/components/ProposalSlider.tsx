@@ -25,19 +25,23 @@ const ProposalSlider = () => {
             Menindaklanjuti permintaan penawaran dari Direktur PT Samugara Global Capital, berikut ini kami kirimkan proposal kerja pengembangan aplikasi perusahaan sesuai yang diminta.
             Proposal ini kami bagi dan rinci ke dalam beberapa aspek pembahasan.
           </p>
-          
+    
           <div className="bg-white rounded-lg sm:rounded-2xl p-2 sm:p-8 shadow-lg border border-gray-200 mx-2 sm:mx-0">
-            <h3 className="text-sm sm:text-2xl font-semibold text-gray-900 mb-2 sm:mb-6 text-center">Kebutuhan Sistem Terintegrasi</h3>
-            
+            <h3 className="text-sm sm:text-2xl font-semibold text-gray-900 mb-2 sm:mb-6 text-center">
+              Kebutuhan Sistem Terintegrasi
+            </h3>
+    
             <div className="mt-2 sm:mt-6 p-2 sm:p-6 bg-hexa-red/5 rounded-lg sm:rounded-2xl border border-hexa-red/20">
-              <p className="text-xs sm:text-base text-gray-700 leading-relaxed text-center">
-                <BookOpenText className="w-3 h-3 sm:w-8 sm:h-8 text-hexa-red" />
-                Kebutuhan yang diminta adalah <span className="font-semibold text-hexa-red">Aplikasi Web terintegrasi untuk sebuah Grup Usaha</span> yang terdiri dari enam perusahaan dan saling terhubung, sehingga integrasi data dan 
-                keamanan menjadi prioritas utama.
-              </p>
+              <div className="flex flex-col items-center text-center">
+                <BookOpenText className="w-3 h-3 sm:w-8 sm:h-8 text-hexa-red mb-2" />
+                <p className="text-xs sm:text-base text-gray-700 leading-relaxed">
+                  Kebutuhan yang diminta adalah <span className="font-semibold text-hexa-red">Aplikasi Web terintegrasi untuk sebuah Grup Usaha</span> 
+                  yang terdiri dari enam perusahaan dan saling terhubung, sehingga integrasi data dan keamanan menjadi prioritas utama.
+                </p>
+              </div>
             </div>
           </div>
-          
+    
           <p className="text-xs sm:text-lg text-gray-700 mt-2 sm:mt-8 leading-relaxed text-center px-2 sm:px-0">
             Melalui proposal ini, kami berharap dapat memberikan gambaran teknis, estimasi pengembangan, 
             serta solusi yang tepat untuk kebutuhan PT Samugara Global Capital.
