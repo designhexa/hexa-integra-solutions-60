@@ -257,8 +257,8 @@ const ProposalSlider = () => {
               {
                 title: "Multi Approval System",
                 description: "Mekanisme persetujuan berlapis sesuai struktur organisasi dan otorisasi di setiap perusahaan.",
-                year: "2018 atau sebelumnya",
-                project: "Implementasi sistem pengadaan barang (PT. Orela Shipyard)"
+                year: "2024",
+                project: "Implementasi Electronic Surat Izin Kerja E-SIKA (Pertamina Lomanis)"
               }
             ].map((item, index) => (
               <Card key={index} className="card-hover border-gray-200 bg-white">
@@ -393,6 +393,77 @@ const ProposalSlider = () => {
       )
     },
     {
+      id: "tech-stack",
+      title: "Pendekatan Teknis (Tech Stack)",
+      content: (
+      <div className="max-w-4xl mx-auto max-h-[450px] sm:max-h-[500px] lg:max-h-none overflow-y-auto">
+        <div className="bg-white rounded-lg sm:rounded-2xl p-2 sm:p-4 lg:p-8 shadow-lg border border-gray-200 mx-1 sm:mx-2 lg:mx-0">
+          <h3 className="text-sm sm:text-lg lg:text-2xl font-semibold text-gray-900 mb-4 text-center">
+            Rencana Teknikal
+          </h3>
+    
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            {/* Kolom Kiri */}
+            <div className="space-y-4">
+              <div>
+                <h4 className="font-semibold text-gray-900 mb-2">1. Frontend</h4>
+                <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
+                  <li>React.js (SPA/MPA, scalable UI)</li>
+                  <li>Next.js (SSR & SEO-friendly, image optimization, routing rapi)</li>
+                  <li>Tailwind CSS (konsistensi desain, cepat styling)</li>
+                </ul>
+              </div>
+    
+              <div>
+                <h4 className="font-semibold text-gray-900 mb-2">2. Backend</h4>
+                <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
+                  <li>Node.js + NestJS (arsitektur modular, dependency injection, cocok untuk skala enterprise)</li>
+                  <li>Express.js (opsional: lebih ringan, tapi NestJS lebih rapi jangka panjang)</li>
+                  <li>GraphQL atau REST API (GraphQL untuk query fleksibel, REST untuk endpoint fixed)</li>
+                </ul>
+              </div>
+    
+              <div>
+                <h4 className="font-semibold text-gray-900 mb-2">3. Database</h4>
+                <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
+                  <li>PostgreSQL (relasional, dukungan JSONB untuk semi-structured data, cocok multi-tenant)</li>
+                  <li>Prisma ORM (type safety, migrasi DB mudah, kompatibel dengan PostgreSQL)</li>
+                </ul>
+              </div>
+            </div>
+    
+            {/* Kolom Kanan */}
+            <div className="space-y-4">
+              <div>
+                <h4 className="font-semibold text-gray-900 mb-2">4. Infrastruktur & Hosting</h4>
+                <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
+                  <li>Docker (isolasi environment, memudahkan deployment ke server mana pun)</li>
+                  <li>Kubernetes (K8s) (opsional: untuk skala besar, orchestration container)</li>
+                  <li>NGINX (reverse proxy, load balancing)</li>
+                </ul>
+              </div>
+    
+              <div>
+                <h4 className="font-semibold text-gray-900 mb-2">5. Keamanan</h4>
+                <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
+                  <li>JWT + Refresh Token (autentikasi aman)</li>
+                  <li>SSL/TLS (enkripsi data in transit)</li>
+                </ul>
+              </div>
+    
+              <div>
+                <h4 className="font-semibold text-gray-900 mb-2">6. DevOps & CI/CD</h4>
+                <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
+                  <li>GitHub Actions (pipeline otomatis untuk build, test, dan deploy)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+    },
+    {
       id: "timeline",
       title: "Rencana Timeline",
       content: (
@@ -510,109 +581,6 @@ const ProposalSlider = () => {
                     <p className="text-sm sm:text-3xl font-bold text-hexa-red">Rp 150.000.000</p>
                   </div>
                 </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-      )
-    },
-
-    {
-      id: "tech-stack",
-      title: "Pendekatan Teknis (Tech Stack)",
-      content: (
-      <div className="max-w-4xl mx-auto max-h-[450px] sm:max-h-[500px] lg:max-h-none overflow-y-auto">
-        <div className="bg-white rounded-lg sm:rounded-2xl p-2 sm:p-4 lg:p-8 shadow-lg border border-gray-200 mx-1 sm:mx-2 lg:mx-0">
-          <h3 className="text-sm sm:text-lg lg:text-2xl font-semibold text-gray-900 mb-4 text-center">
-            Rekomendasi Tech Stack
-          </h3>
-    
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-            {/* Kolom Kiri */}
-            <div className="space-y-4">
-              <div>
-                <h4 className="font-semibold text-gray-900 mb-2">1. Frontend</h4>
-                <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
-                  <li>React.js (SPA/MPA, scalable UI)</li>
-                  <li>Next.js (SSR & SEO-friendly, image optimization, routing rapi)</li>
-                  <li>Tailwind CSS (konsistensi desain, cepat styling)</li>
-                </ul>
-              </div>
-    
-              <div>
-                <h4 className="font-semibold text-gray-900 mb-2">2. Backend</h4>
-                <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
-                  <li>Node.js + NestJS (arsitektur modular, dependency injection, cocok untuk skala enterprise)</li>
-                  <li>Express.js (opsional: lebih ringan, tapi NestJS lebih rapi jangka panjang)</li>
-                  <li>GraphQL atau REST API (GraphQL untuk query fleksibel, REST untuk endpoint fixed)</li>
-                </ul>
-              </div>
-    
-              <div>
-                <h4 className="font-semibold text-gray-900 mb-2">3. Database</h4>
-                <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
-                  <li>PostgreSQL (relasional, dukungan JSONB untuk semi-structured data, cocok multi-tenant)</li>
-                  <li>Prisma ORM (type safety, migrasi DB mudah, kompatibel dengan PostgreSQL)</li>
-                </ul>
-              </div>
-            </div>
-    
-            {/* Kolom Kanan */}
-            <div className="space-y-4">
-              <div>
-                <h4 className="font-semibold text-gray-900 mb-2">4. Infrastruktur & Hosting</h4>
-                <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
-                  <li>Docker (isolasi environment, memudahkan deployment ke server mana pun)</li>
-                  <li>Kubernetes (K8s) (opsional: untuk skala besar, orchestration container)</li>
-                  <li>NGINX (reverse proxy, load balancing)</li>
-                </ul>
-              </div>
-    
-              <div>
-                <h4 className="font-semibold text-gray-900 mb-2">5. Keamanan</h4>
-                <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
-                  <li>JWT + Refresh Token (autentikasi aman)</li>
-                  <li>SSL/TLS (enkripsi data in transit)</li>
-                </ul>
-              </div>
-    
-              <div>
-                <h4 className="font-semibold text-gray-900 mb-2">6. DevOps & CI/CD</h4>
-                <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
-                  <li>GitHub Actions (pipeline otomatis untuk build, test, dan deploy)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    )
-    },
-    {
-      id: "portfolio",
-      title: "Pengalaman & Portofolio",
-      content: (
-        <div className="max-w-4xl mx-auto">
-          <Card className="card-hover border-gray-200 animate-scale-in bg-white mx-2 sm:mx-0">
-            <CardContent className="p-2 sm:p-8">
-              <div className="w-6 h-6 sm:w-16 sm:h-16 bg-hexa-red/10 rounded-lg sm:rounded-2xl flex items-center justify-center mb-2 sm:mb-6 mx-auto">
-                <Briefcase className="w-3 h-3 sm:w-8 sm:h-8 text-hexa-red" />
-              </div>
-              <h3 className="text-sm sm:text-2xl font-semibold text-gray-900 mb-2 sm:mb-6 text-center">Portofolio Proyek Sejenis</h3>
-              <p className="text-xs sm:text-base text-gray-600 leading-relaxed mb-2 sm:mb-8 text-center">Pengalaman dan case studies proyek sejenis yang pernah dikerjakan</p>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-1 sm:gap-4 max-w-2xl mx-auto">
-                {[
-                  "Sistem Pelaporan SIKA Elektronik Pertamina Lomanis",
-                  "Sistem Informasi Jalan & Jembatan Dinas PU Jawa Timur",
-                  "Ship Monitoring System PT. Global Eka Marine",
-                  "Sistem Real Time Absensi & Payroll KCT Group"
-                ].map((project, index) => (
-                  <div key={index} className="flex items-start gap-1.5 p-2 sm:p-4 bg-gray-50 rounded-lg">
-                    <div className="w-1 h-1 sm:w-2 sm:h-2 bg-hexa-red rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
-                    <p className="text-gray-700 font-medium text-xs sm:text-sm">{project}</p>
-                  </div>
-                ))}
               </div>
             </CardContent>
           </Card>
