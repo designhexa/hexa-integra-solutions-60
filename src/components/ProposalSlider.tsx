@@ -130,8 +130,10 @@ const ProposalSlider = () => {
                     {[
                       "a. CV. Hexa Integra Mandiri",
                       "b. PT. Samugara Global Capital",
-                    2. Output kerjasama adalah aplikasi berbasis web sesuai requirement yang sudah siap digunakan,
-                    3. Proses pengerjaan tidak mengharuskan pihak Hexa untuk hadir di kantor Samugara, pengerjaan dimaksimalkan secara online,
+                  <p className="text-gray-700 text-xs sm:text-base font-semibold mb-2">
+                    2. Output kerjasama adalah aplikasi berbasis web sesuai requirement yang sudah siap digunakan</p>
+                  <p className="text-gray-700 text-xs sm:text-base font-semibold mb-2">
+                    3. Proses pengerjaan tidak mengharuskan pihak Hexa untuk hadir di kantor Samugara, pengerjaan dimaksimalkan secara online</p>
                     ].map((item, i) => (
                       <div key={i} className="flex items-start gap-1.5">
                         <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-hexa-red rounded-full mt-1.5 flex-shrink-0"></div>
