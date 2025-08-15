@@ -27,9 +27,9 @@ const ProposalSlider = () => {
           </p>
     
               <div className="bg-white rounded-lg sm:rounded-2xl p-2 sm:p-8 shadow-lg border border-gray-200 mx-2 sm:mx-0 text-center">
-          <div className="flex justify-center mb-2 sm:mb-4">
-            <BookOpenText className="w-5 h-5 sm:w-10 sm:h-10 text-hexa-red" />
-          </div>
+              <div className="w-6 h-6 sm:w-16 sm:h-16 bg-hexa-red/10 rounded-lg sm:rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-6">
+              <BookOpenText className="w-5 h-5 sm:w-10 sm:h-10 text-hexa-red" />
+            </div>
           <h3 className="text-sm sm:text-2xl font-semibold text-gray-900 mb-2 sm:mb-6">
             Kebutuhan Sistem Terintegrasi
           </h3>
@@ -407,9 +407,9 @@ const ProposalSlider = () => {
             
             {/* Icon & Title */}
             <div className="text-center">
-              <div className="flex justify-center mb-2 sm:mb-4">
-                <Settings className="w-5 h-5 sm:w-10 sm:h-10 text-hexa-red" />
-              </div>
+              <div className="w-6 h-6 sm:w-16 sm:h-16 bg-hexa-red/10 rounded-lg sm:rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-6">
+              <Settings className="w-5 h-5 sm:w-10 sm:h-10 text-hexa-red" />
+            </div>
             </div>
       
             {/* Grid 2 Kolom */}
@@ -563,8 +563,9 @@ const ProposalSlider = () => {
       content: (
         <div className="max-w-4xl mx-auto">
           <Card className="card-hover border-gray-200 animate-scale-in bg-white mx-2 sm:mx-0">
-            <div className="flex flex-col items-center p-4 sm:p-6">
-              <Target className="w-5 h-5 sm:w-10 sm:h-10 text-hexa-red mb-4" />
+            <div className="w-6 h-6 sm:w-16 sm:h-16 bg-hexa-red/10 rounded-lg sm:rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-6">
+              <Target className="w-5 h-5 sm:w-10 sm:h-10 text-hexa-red" />
+            
               <ul className="list-disc list-inside max-w-3xl text-sm sm:text-base space-y-2 text-left">
                 <li>
                   <strong>Fase Awal:</strong> Fokus pada modul yang paling krusial
@@ -729,8 +730,9 @@ const ProposalSlider = () => {
       title: "Prototype Design",
       content: (
         <div className="max-w-4xl mx-auto text-center">
-          <div className="bg-white rounded-lg sm:rounded-2xl p-2 sm:p-6 shadow-lg border border-gray-200">
-            <HandHeart className="w-5 h-5 sm:w-10 sm:h-10 text-hexa-red" />
+          <div className="w-6 h-6 sm:w-16 sm:h-16 bg-hexa-red/10 rounded-lg sm:rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-6">
+              <HandHeart className="w-5 h-5 sm:w-10 sm:h-10 text-hexa-red" />
+            </div>
             <p className="text-gray-700 text-sm sm:text-base mb-4">
               Prototype ini memberikan gambaran awal tentang tampilan dan alur penggunaan aplikasi sebelum tahap pengembangan penuh. 
               Desain ini membantu memvisualisasikan fitur, memastikan pengalaman pengguna yang intuitif, 
@@ -794,7 +796,9 @@ const ProposalSlider = () => {
         <div className="max-w-4xl mx-auto text-center">
           <Card className="bg-gray-50 border-gray-200 mx-2 sm:mx-0">
             <CardContent className="p-3 sm:p-12">
-              <Briefcase className="w-5 h-5 sm:w-12 sm:h-12 mx-auto mb-2 sm:mb-6 text-hexa-red" />
+              <div className="w-6 h-6 sm:w-16 sm:h-16 bg-hexa-red/10 rounded-lg sm:rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-6">
+              <BriefCase className="w-5 h-5 sm:w-10 sm:h-10 text-hexa-red" />
+            </div>
               
               <p className="text-xs sm:text-lg leading-relaxed mb-2 sm:mb-8 text-gray-700">
                 Terima kasih atas perhatian dan kerja sama yang baik. Kami menantikan kesempatan 
