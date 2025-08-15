@@ -220,91 +220,70 @@ const ProposalSlider = () => {
     },
     {
     id: "pengalaman",
-    title: "Pengalaman Pekerjaan",
+    title: "Pengalaman Implementasi",
     content: (
-      <div className="max-w-4xl mx-auto max-h-[450px] sm:max-h-none overflow-y-auto sm:overflow-visible">
-        <Card className="card-hover border-gray-200 animate-scale-in bg-white mx-2 sm:mx-0">
-          <CardContent className="p-2 sm:p-8">
-            <div className="w-6 h-6 sm:w-16 sm:h-16 bg-hexa-red/10 rounded-lg sm:rounded-2xl flex items-center justify-center mb-2 sm:mb-6 mx-auto">
-              <Clock className="w-3 h-3 sm:w-8 sm:h-8 text-hexa-red" />
-            </div>
+      <div className="max-w-4xl mx-auto max-h-[450px] sm:max-h-[500px] lg:max-h-none overflow-y-auto">
+        <div className="bg-white rounded-lg sm:rounded-2xl p-2 sm:p-4 lg:p-8 shadow-lg border border-gray-200 mx-1 sm:mx-2 lg:mx-0">
+          <h3 className="text-sm sm:text-lg lg:text-2xl font-semibold text-gray-900 mb-2 sm:mb-4 lg:mb-6 text-center">
+            Kami cukup berpengalaman dalam menghandle pekerjaan berikut:
+          </h3>
     
-            <h3 className="text-sm sm:text-2xl font-semibold text-gray-900 mb-2 sm:mb-6 text-center">
-              Pengalaman Implementasi Sistem
-            </h3>
-    
-            <div className="space-y-4">
-              {/* 1 */}
-              <div>
-                <div className="flex items-start gap-2">
-                  <span className="text-hexa-red font-bold">1.</span>
-                  <p className="text-gray-700 text-xs sm:text-base font-semibold">
-                    Keuangan – Pencatatan, pengelolaan, dan pelaporan transaksi keuangan secara real-time.
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-4 lg:gap-6">
+            {[
+              {
+                icon: BarChart3,
+                title: "Keuangan",
+                description: "Pencatatan, pengelolaan, dan pelaporan transaksi keuangan secara real-time.",
+                year: "2022",
+                project: "Implementasi sistem keuangan pada bosCOD (PT. Hadid Parama Indonesia)"
+              },
+              {
+                icon: FileText,
+                title: "Pengadaan",
+                description: "Manajemen permintaan dan pembelian barang/jasa hingga monitoring proses pengadaan.",
+                year: "2019",
+                project: "Implementasi sistem pengadaan barang (PT. Pelnas Ekalya Purnamasari/ ELPI)"
+              },
+              {
+                icon: Database,
+                title: "Inventory Management",
+                description: "Manajemen persediaan yang mengatur masuk keluar barang untuk kebutuhan per proyek dan terintegrasi dengan keuangan.",
+                year: "2018 atau sebelumnya",
+                project: "Implementasi sistem inventory dan pergudangan (PT. Orela Shipyard)"
+              },
+              {
+                icon: Target,
+                title: "Finance Dashboard Monitoring",
+                description: "Dashboard interaktif untuk memantau kondisi keuangan dan KPI utama secara komprehensif.",
+                year: "2023",
+                project: "Implementasi finance dashboard Obama (PT. Oremus Bahari Mandiri)"
+              },
+              {
+                icon: CheckCircle,
+                title: "Multi Approval System",
+                description: "Mekanisme persetujuan berlapis sesuai struktur organisasi dan otorisasi di setiap perusahaan.",
+                year: "2018 atau sebelumnya",
+                project: "Implementasi sistem pengadaan barang (PT. Orela Shipyard)"
+              }
+            ].map((item, index) => (
+              <Card key={index} className="card-hover border-gray-200 bg-white">
+                <CardContent className="p-2 sm:p-6">
+                  <div className="w-5 h-5 sm:w-12 sm:h-12 bg-hexa-red/10 rounded-lg sm:rounded-xl flex items-center justify-center mb-1 sm:mb-4">
+                    <item.icon className="w-3 h-3 sm:w-6 sm:h-6 text-hexa-red" />
+                  </div>
+                  <h4 className="font-semibold text-gray-900 mb-1 sm:mb-3 text-xs sm:text-base">{item.title}</h4>
+                  <p className="text-gray-600 text-xs sm:text-sm leading-relaxed mb-1">{item.description}</p>
+                  <p className="text-gray-500 text-[10px] sm:text-xs">
+                    <span className="font-semibold">{item.year}:</span> {item.project}
                   </p>
-                </div>
-                <p className="ml-6 mt-1 text-gray-600 text-xs sm:text-base">
-                  2022: Implementasi sistem keuangan pada bosCOD (PT. Hadid Parama Indonesia)
-                </p>
-              </div>
-    
-              {/* 2 */}
-              <div>
-                <div className="flex items-start gap-2">
-                  <span className="text-hexa-red font-bold">2.</span>
-                  <p className="text-gray-700 text-xs sm:text-base font-semibold">
-                    Pengadaan – Manajemen permintaan dan pembelian barang/jasa hingga monitoring proses pengadaan.
-                  </p>
-                </div>
-                <p className="ml-6 mt-1 text-gray-600 text-xs sm:text-base">
-                  2019: Implementasi sistem pengadaan barang (PT. Pelnas Ekalya Purnamasari / ELPI)
-                </p>
-              </div>
-    
-              {/* 3 */}
-              <div>
-                <div className="flex items-start gap-2">
-                  <span className="text-hexa-red font-bold">3.</span>
-                  <p className="text-gray-700 text-xs sm:text-base font-semibold">
-                    Inventory Management – Manajemen persediaan yang mengatur masuk keluar barang untuk kebutuhan per proyek dan terintegrasi dengan keuangan.
-                  </p>
-                </div>
-                <p className="ml-6 mt-1 text-gray-600 text-xs sm:text-base">
-                  2018 atau sebelumnya: Implementasi sistem inventory dan pergudangan (PT. Orela Shipyard)
-                </p>
-              </div>
-    
-              {/* 4 */}
-              <div>
-                <div className="flex items-start gap-2">
-                  <span className="text-hexa-red font-bold">4.</span>
-                  <p className="text-gray-700 text-xs sm:text-base font-semibold">
-                    Finance Dashboard Monitoring – Dashboard interaktif untuk memantau kondisi keuangan dan KPI utama secara komprehensif.
-                  </p>
-                </div>
-                <p className="ml-6 mt-1 text-gray-600 text-xs sm:text-base">
-                  2023: Implementasi finance dashboard Obama (PT. Oremus Bahari Mandiri)
-                </p>
-              </div>
-    
-              {/* 5 */}
-              <div>
-                <div className="flex items-start gap-2">
-                  <span className="text-hexa-red font-bold">5.</span>
-                  <p className="text-gray-700 text-xs sm:text-base font-semibold">
-                    Multi Approval System – Mekanisme persetujuan berlapis sesuai struktur organisasi dan otorisasi di setiap perusahaan.
-                  </p>
-                </div>
-                <p className="ml-6 mt-1 text-gray-600 text-xs sm:text-base">
-                  2018 atau sebelumnya: Implementasi sistem pengadaan barang (PT. Orela Shipyard)
-                </p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
       </div>
     )
     },
-
     {
       id: "estimation",
       title: "Estimasi Waktu dan Biaya",
