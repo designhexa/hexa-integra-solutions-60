@@ -400,76 +400,85 @@ const ProposalSlider = () => {
     },
     {
       id: "tech-stack",
-title: "Rencana Teknikal",
-content: (
-  <div className="max-w-4xl mx-auto max-h-[450px] sm:max-h-[500px] lg:max-h-none overflow-y-auto">
-    <div className="bg-white rounded-lg sm:rounded-2xl p-2 sm:p-4 lg:p-8 shadow-lg border border-gray-200 mx-1 sm:mx-2 lg:mx-0 text-center">
-      <div className="flex justify-center mb-2 sm:mb-4">
-        <Settings className="w-5 h-5 sm:w-10 sm:h-10 text-hexa-red" />
-      </div>
-      <h3 className="text-sm sm:text-2xl font-semibold text-gray-900 mb-2 sm:mb-6">
-        Rencana Teknikal
-      </h3>
-            {/* Kolom Kiri */}
-            <div className="space-y-4">
-              <div>
-                <h4 className="font-semibold text-gray-900 mb-2">1. Frontend</h4>
-                <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
-                  <li>React.js (SPA/MPA, scalable UI)</li>
-                  <li>Next.js (SSR & SEO-friendly, image optimization, routing rapi)</li>
-                  <li>Tailwind CSS (konsistensi desain, cepat styling)</li>
-                </ul>
+      title: "Rencana Teknikal",
+      content: (
+        <div className="max-w-4xl mx-auto max-h-[450px] sm:max-h-[500px] lg:max-h-none overflow-y-auto">
+          <div className="bg-white rounded-lg sm:rounded-2xl p-2 sm:p-4 lg:p-8 shadow-lg border border-gray-200 mx-1 sm:mx-2 lg:mx-0">
+            
+            {/* Icon & Title */}
+            <div className="text-center">
+              <div className="flex justify-center mb-2 sm:mb-4">
+                <Settings className="w-5 h-5 sm:w-10 sm:h-10 text-hexa-red" />
               </div>
-    
-              <div>
-                <h4 className="font-semibold text-gray-900 mb-2">2. Backend</h4>
-                <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
-                  <li>Node.js + NestJS (arsitektur modular, dependency injection, cocok untuk skala enterprise)</li>
-                  <li>Express.js (opsional: lebih ringan, tapi NestJS lebih rapi jangka panjang)</li>
-                  <li>GraphQL atau REST API (GraphQL untuk query fleksibel, REST untuk endpoint fixed)</li>
-                </ul>
-              </div>
-    
-              <div>
-                <h4 className="font-semibold text-gray-900 mb-2">3. Database</h4>
-                <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
-                  <li>PostgreSQL (relasional, dukungan JSONB untuk semi-structured data, cocok multi-tenant)</li>
-                  <li>Prisma ORM (type safety, migrasi DB mudah, kompatibel dengan PostgreSQL)</li>
-                </ul>
-              </div>
+              <h3 className="text-sm sm:text-2xl font-semibold text-gray-900 mb-4 sm:mb-6">
+                Rencana Teknikal
+              </h3>
             </div>
-    
-            {/* Kolom Kanan */}
-            <div className="space-y-4">
-              <div>
-                <h4 className="font-semibold text-gray-900 mb-2">4. Infrastruktur & Hosting</h4>
-                <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
-                  <li>Docker (isolasi environment, memudahkan deployment ke server mana pun)</li>
-                  <li>Kubernetes (K8s) (opsional: untuk skala besar, orchestration container)</li>
-                  <li>NGINX (reverse proxy, load balancing)</li>
-                </ul>
+      
+            {/* Grid 2 Kolom */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+              
+              {/* Kolom Kiri */}
+              <div className="space-y-4">
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">1. Frontend</h4>
+                  <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
+                    <li>React.js (SPA/MPA, scalable UI)</li>
+                    <li>Next.js (SSR & SEO-friendly, image optimization, routing rapi)</li>
+                    <li>Tailwind CSS (konsistensi desain, cepat styling)</li>
+                  </ul>
+                </div>
+      
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">2. Backend</h4>
+                  <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
+                    <li>Node.js + NestJS (arsitektur modular, dependency injection, cocok untuk skala enterprise)</li>
+                    <li>Express.js (opsional: lebih ringan, tapi NestJS lebih rapi jangka panjang)</li>
+                    <li>GraphQL atau REST API (GraphQL untuk query fleksibel, REST untuk endpoint fixed)</li>
+                  </ul>
+                </div>
+      
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">3. Database</h4>
+                  <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
+                    <li>PostgreSQL (relasional, dukungan JSONB untuk semi-structured data, cocok multi-tenant)</li>
+                    <li>Prisma ORM (type safety, migrasi DB mudah, kompatibel dengan PostgreSQL)</li>
+                  </ul>
+                </div>
               </div>
-    
-              <div>
-                <h4 className="font-semibold text-gray-900 mb-2">5. Keamanan</h4>
-                <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
-                  <li>JWT + Refresh Token (autentikasi aman)</li>
-                  <li>SSL/TLS (enkripsi data in transit)</li>
-                </ul>
+      
+              {/* Kolom Kanan */}
+              <div className="space-y-4">
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">4. Infrastruktur & Hosting</h4>
+                  <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
+                    <li>Docker (isolasi environment, memudahkan deployment ke server mana pun)</li>
+                    <li>Kubernetes (K8s) (opsional: untuk skala besar, orchestration container)</li>
+                    <li>NGINX (reverse proxy, load balancing)</li>
+                  </ul>
+                </div>
+      
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">5. Keamanan</h4>
+                  <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
+                    <li>JWT + Refresh Token (autentikasi aman)</li>
+                    <li>SSL/TLS (enkripsi data in transit)</li>
+                  </ul>
+                </div>
+      
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">6. DevOps & CI/CD</h4>
+                  <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
+                    <li>GitHub Actions (pipeline otomatis untuk build, test, dan deploy)</li>
+                  </ul>
+                </div>
               </div>
-    
-              <div>
-                <h4 className="font-semibold text-gray-900 mb-2">6. DevOps & CI/CD</h4>
-                <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
-                  <li>GitHub Actions (pipeline otomatis untuk build, test, dan deploy)</li>
-                </ul>
-              </div>
+      
             </div>
           </div>
         </div>
-      </div>
-    )
-    },
+      )
+      },
     {
       id: "timeline",
       title: "Rencana Timeline",
