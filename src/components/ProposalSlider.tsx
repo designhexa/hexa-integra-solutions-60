@@ -288,7 +288,7 @@ const ProposalSlider = () => {
           <div className="bg-white rounded-lg sm:rounded-2xl p-2 sm:p-4 lg:p-8 shadow-lg border border-gray-200 mx-1 sm:mx-2 lg:mx-0">
           
             {/* Konten Deskripsi */}
-            <div className="space-y-4">
+            <div className="flex flex-col items-center justify-center text-center p-4">
               <p className="text-sm text-gray-700">
                 Di samping ini adalah daftar pekerjaan yang akan dilakukan.
                 Proses pengerjaan dilaksanakan secara bertahap dibagi 3 fase.
@@ -309,7 +309,7 @@ const ProposalSlider = () => {
             </div>
       
             {/* Tabel Pekerjaan */}
-            <div className="overflow-x-auto">
+            <div className="flex flex-col items-center justify-center text-center p-4">
               <table className="table-auto border-collapse border border-gray-300 text-sm">
                 <thead className="bg-gray-100">
                   <tr>
