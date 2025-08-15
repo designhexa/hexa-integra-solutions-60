@@ -466,7 +466,7 @@ const ProposalSlider = () => {
     
           {/* Sisipkan gambar Gantt Chart */}
           <img
-            src="/images/gantt-chart.png" // ganti dengan path gambar kamu
+            src="https://hexaintegra.com/wp-content/uploads/2025/08/Ghantchart.png" // ganti dengan path gambar kamu
             alt="Gantt Chart Pengerjaan"
             className="mt-6 max-w-full h-auto rounded-lg shadow"
           />
