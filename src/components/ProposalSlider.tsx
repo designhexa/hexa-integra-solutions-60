@@ -21,7 +21,7 @@ const ProposalSlider = () => {
       title: "Latar Belakang",
       content: (
         <div className="max-w-4xl mx-auto">
-          <p className="text-xs sm:text-lg text-gray-700 leading-relaxed mb-2 sm:mb-8 px-2 sm:px-0">
+          <p className="text-xs sm:text-lg text-gray-700 leading-relaxed mb-2 sm:mb-8 px-2 sm:px-0 text-center">
             Menindaklanjuti permintaan penawaran dari Direktur PT Samugara Global Capital, berikut ini kami kirimkan proposal kerja pengembangan aplikasi perusahaan sesuai yang diminta. Pada proposal ini kami rinci dan bagi ke beberapa aspek pembahasan.
           </p>
           
