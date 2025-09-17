@@ -101,7 +101,7 @@ const CompanyProfile = () => {
 
                 <div className="p-8 flex-1 flex items-end">
                   <img
-                    src="https://hexaintegra.com/wp-content/uploads/2025/08/Layanan-5-2-scaled.png"
+                    src="https://hexaintegra.com/wp-content/uploads/2025/08/ChatGPT-Image-Jul-28-2025-03_58_48-PM-1.png"
                     alt="Hexa Integra Technology"
                     className="w-full h-auto object-contain rounded-lg shadow-lg"
                   />
